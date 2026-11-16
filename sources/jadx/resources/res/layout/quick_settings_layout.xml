@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/quick_settings_layout_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/apply"
+            android:background="@color/black_translucent_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/apply"
+            android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cancel"
+            android:background="@color/black_translucent_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:layout_weight="1"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <FrameLayout
+        android:id="@+id/fragment_container_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

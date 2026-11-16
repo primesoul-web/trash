@@ -1,0 +1,42 @@
+package defpackage;
+
+import android.text.TextUtils;
+
+/* JADX INFO: compiled from: r8-map-id-feb309be28723916b74a2526b1508f8a1f09227099db017fc1624552251bc072 */
+/* JADX INFO: loaded from: classes.dex */
+public final class uj1 {
+    public final String a;
+    public final String b;
+
+    public uj1(String str, String str2) {
+        this.a = str;
+        this.b = str2;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj != null && uj1.class == obj.getClass()) {
+            uj1 uj1Var = (uj1) obj;
+            if (TextUtils.equals(this.a, uj1Var.a) && TextUtils.equals(this.b, uj1Var.b)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public final int hashCode() {
+        return this.b.hashCode() + (this.a.hashCode() * 31);
+    }
+
+    public final String toString() {
+        String str = this.a;
+        int length = String.valueOf(str).length();
+        String str2 = this.b;
+        StringBuilder sb = new StringBuilder(length + 19 + String.valueOf(str2).length() + 1);
+        qj.o(sb, "Header[name=", str, ",value=", str2);
+        sb.append("]");
+        return sb.toString();
+    }
+}

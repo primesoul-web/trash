@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinator_layout" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@id/toolbar" layout="@layout/tool_bar" />
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="4.0">
+            <FrameLayout android:id="@id/main_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:textStyle="bold" android:textColor="#607d8b" android:id="@id/empty_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty" android:layout_centerInParent="true" android:lineSpacingMultiplier="@dimen/line_spacing_multiplier" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="#607d8b" android:gravity="center" android:id="@id/welcome_detail" android:padding="@dimen/padding_large" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/welcome_detail" android:layout_below="@id/empty_label" android:layout_centerHorizontal="true" android:lineSpacingMultiplier="@dimen/line_spacing_multiplier" />
+            <Button android:gravity="center" android:id="@id/get_started_button" android:padding="@dimen/padding_large" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/get_started_text" android:layout_below="@id/welcome_detail" android:layout_centerHorizontal="true" android:backgroundTint="@color/blue" />
+            <Button android:gravity="center" android:id="@id/learn_more_button" android:padding="@dimen/padding_large" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/learn_more_text" android:layout_below="@id/get_started_button" android:layout_centerHorizontal="true" android:backgroundTint="@color/blue" />
+            <ProgressBar android:id="@id/main_progressbar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/small_padding" android:layout_alignParentTop="true" style="?android:progressBarStyleHorizontal" />
+        </RelativeLayout>
+        <FrameLayout android:id="@id/ad_view_container" android:background="@color/cardview_dark_background" android:layout_width="match_parent" android:layout_height="60.0dp" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,11 @@
+package defpackage;
+
+import android.widget.EdgeEffect;
+
+/* JADX INFO: compiled from: r8-map-id-feb309be28723916b74a2526b1508f8a1f09227099db017fc1624552251bc072 */
+/* JADX INFO: loaded from: classes.dex */
+public abstract class tq {
+    public static void a(EdgeEffect edgeEffect, float f, float f2) {
+        edgeEffect.onPull(f, f2);
+    }
+}

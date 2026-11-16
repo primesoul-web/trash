@@ -1,0 +1,17 @@
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): false
+Verified using v3 scheme (APK Signature Scheme v3): true
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+Signer #1 certificate DN: CN=Local APK Recovery
+Signer #1 certificate SHA-256 digest: 4af6c2a0f4f5dbfed41610712758913ea2b2881906760642e0ac128674178d6a
+Signer #1 certificate SHA-1 digest: ad2fc289b8a22d161cc63c35af1af748bd025156
+Signer #1 certificate MD5 digest: a637c532824f4d6eb60c61890f25d2e7
+Signer #1 key algorithm: RSA
+Signer #1 key size (bits): 2048
+Signer #1 public key SHA-256 digest: 65ddc2b5ca3ed9ad8be72f1aeb7d92dd987ca2a22584eba0b68ef2122d433291
+Signer #1 public key SHA-1 digest: 6e05ebcc3da65f7123f8d97fd18289feb5b4cc30
+Signer #1 public key MD5 digest: 13f16a1e25079ba7bf304fdeb1fd02e4

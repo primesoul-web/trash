@@ -1,0 +1,1593 @@
+{
+  "result": {
+    "_meta": {
+      "provenance": {
+        "untrusted_content": true,
+        "source": "analysis_target"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"evidence_id\":\"ev_8766661951a0b31a57e41e79c28e2e505bdd7175cc488335b2a42fd785e43cb6\",\"subject\":{\"name\":\"base.apk\",\"digest\":{\"sha256\":\"e1156e8d0ff15f79241a2ed98cf6a26c71d39c3c37da439e3a753e4b33ed8d8f\"},\"local_path\":\"/workspace/attachments/e111578f-ce02-4ab3-bee9-f03dbce73199/base.apk\",\"format\":\"apk\",\"architecture\":null},\"provider\":{\"id\":\"jadx\",\"name\":\"JADX headless\",\"version\":\"0.7.1\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis\",\"operation\":\"inspect_android_package\",\"parameters\":{\"path\":\"/workspace/attachments/e111578f-ce02-4ab3-bee9-f03dbce73199/base.apk\"},\"raw_result\":{\"server\":{\"name\":\"rea-jadx-bridge\",\"version\":\"10\"},\"bridge_sha256\":\"f9d6d68eadd3d51a89e2debda359454c20534560080d4438f9b9cfe5a19f0b2e\",\"jar_sha256\":\"6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75\",\"loaded\":{\"state\":\"LOADED\",\"apk_path\":\"/tmp/rea-android-lPMWVo/target.apk\",\"class_count\":5524,\"resource_count\":681,\"threads\":1,\"resources\":\"full\"},\"calls\":[{\"operation\":\"rea_jvm_status\",\"input\":{},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"metadata_scope\\\":\\\"parsed_members\\\",\\\"max_heap_bytes\\\":8589934592,\\\"java_version\\\":\\\"21.0.13\\\",\\\"available_processors\\\":4,\\\"engine_reported_version\\\":\\\"0.7.1\\\"}\"}],\"isError\":false}},{\"operation\":\"load_apk\",\"input\":{\"path\":\"/tmp/rea-android-lPMWVo/target.apk\",\"threads\":1,\"resources\":\"full\"},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"state\\\":\\\"LOADED\\\",\\\"apk_path\\\":\\\"/tmp/rea-android-lPMWVo/target.apk\\\",\\\"class_count\\\":5524,\\\"raw_class_count\\\":5524,\\\"resource_count\\\":681,\\\"load_duration_ms\\\":5314,\\\"decompile_timeout_ms\\\":90000,\\\"threads\\\":1,\\\"code_cache_size\\\":64,\\\"resources\\\":\\\"full\\\"}\"}],\"isError\":false}},{\"operation\":\"get_app_info\",\"input\":{},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"package\\\":\\\"com.facebook.rethinkvision.Bimostitch\\\",\\\"version_name\\\":\\\"3.0.00-lite\\\",\\\"version_code\\\":\\\"253\\\",\\\"min_sdk\\\":\\\"32\\\",\\\"target_sdk\\\":\\\"37\\\",\\\"permissions\\\":[\\\"android.permission.INTERNET\\\",\\\"android.permission.WRITE_EXTERNAL_STORAGE\\\",\\\"android.permission.READ_EXTERNAL_STORAGE\\\",\\\"android.permission.READ_MEDIA_IMAGES\\\",\\\"android.permission.READ_MEDIA_VIDEO\\\",\\\"android.permission.ACCESS_MEDIA_LOCATION\\\",\\\"android.permission.WAKE_LOCK\\\",\\\"android.permission.VIBRATE\\\",\\\"com.android.vending.CHECK_LICENSE\\\",\\\"android.permission.FOREGROUND_SERVICE\\\",\\\"android.permission.FOREGROUND_SERVICE_SPECIAL_USE\\\",\\\"android.permission.POST_NOTIFICATIONS\\\",\\\"com.android.vending.BILLING\\\",\\\"android.permission.ACCESS_NETWORK_STATE\\\",\\\"com.google.android.gms.permission.AD_ID\\\",\\\"android.permission.ACCESS_ADSERVICES_AD_ID\\\",\\\"android.permission.ACCESS_ADSERVICES_ATTRIBUTION\\\",\\\"android.permission.ACCESS_ADSERVICES_TOPICS\\\",\\\"com.facebook.rethinkvision.Bimostitch.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION\\\"]}\"}],\"isError\":false}},{\"operation\":\"get_android_manifest\",\"input\":{},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"<?xml version=\\\"1.0\\\" encoding=\\\"utf-8\\\"?>\\n<manifest xmlns:android=\\\"http://schemas.android.com/apk/res/android\\\"\\n    android:versionCode=\\\"253\\\"\\n    android:versionName=\\\"3.0.00-lite\\\"\\n    android:compileSdkVersion=\\\"37\\\"\\n    android:compileSdkVersionCodename=\\\"17\\\"\\n    android:requiredSplitTypes=\\\"base__abi,base__density\\\"\\n    android:splitTypes=\\\"\\\"\\n    package=\\\"com.facebook.rethinkvision.Bimostitch\\\"\\n    platformBuildVersionCode=\\\"37\\\"\\n    platformBuildVersionName=\\\"17\\\">\\n    <uses-sdk\\n        android:minSdkVersion=\\\"32\\\"\\n        android:targetSdkVersion=\\\"37\\\"/>\\n    <uses-permission android:name=\\\"android.permission.INTERNET\\\"/>\\n    <uses-permission android:name=\\\"android.permission.WRITE_EXTERNAL_STORAGE\\\"/>\\n    <uses-permission android:name=\\\"android.permission.READ_EXTERNAL_STORAGE\\\"/>\\n    <uses-permission android:name=\\\"android.permission.READ_MEDIA_IMAGES\\\"/>\\n    <uses-permission android:name=\\\"android.permission.READ_MEDIA_VIDEO\\\"/>\\n    <uses-permission android:name=\\\"android.permission.ACCESS_MEDIA_LOCATION\\\"/>\\n    <uses-permission android:name=\\\"android.permission.WAKE_LOCK\\\"/>\\n    <uses-permission android:name=\\\"android.permission.VIBRATE\\\"/>\\n    <uses-permission android:name=\\\"com.android.vending.CHECK_LICENSE\\\"/>\\n    <uses-permission android:name=\\\"android.permission.FOREGROUND_SERVICE\\\"/>\\n    <uses-permission android:name=\\\"android.permission.FOREGROUND_SERVICE_SPECIAL_USE\\\"/>\\n    <uses-permission android:name=\\\"android.permission.POST_NOTIFICATIONS\\\"/>\\n    <queries>\\n        <package android:name=\\\"com.google.android.apps.photos\\\"/>\\n        <intent>\\n            <action android:name=\\\"android.intent.action.ACTION_PICK\\\"/>\\n            <data android:mimeType=\\\"image/*\\\"/>\\n        </intent>\\n        <intent>\\n            <action android:name=\\\"com.android.vending.billing.InAppBillingService.BIND\\\"/>\\n        </intent>\\n        <intent>\\n            <action android:name=\\\"com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND\\\"/>\\n        </intent>\\n        <intent>\\n            <action android:name=\\\"android.intent.action.VIEW\\\"/>\\n            <category android:name=\\\"android.intent.category.BROWSABLE\\\"/>\\n            <data android:scheme=\\\"https\\\"/>\\n        </intent>\\n        <intent>\\n            <action android:name=\\\"android.support.customtabs.action.CustomTabsService\\\"/>\\n        </intent>\\n        <intent>\\n            <action android:name=\\\"android.intent.action.INSERT\\\"/>\\n            <data android:mimeType=\\\"vnd.android.cursor.dir/event\\\"/>\\n        </intent>\\n        <intent>\\n            <action android:name=\\\"android.intent.action.VIEW\\\"/>\\n            <data android:scheme=\\\"sms\\\"/>\\n        </intent>\\n        <intent>\\n            <action android:name=\\\"android.intent.action.DIAL\\\"/>\\n            <data android:path=\\\"tel:\\\"/>\\n        </intent>\\n        <package android:name=\\\"com.android.vending\\\"/>\\n    </queries>\\n    <uses-feature\\n        android:name=\\\"android.hardware.touchscreen\\\"\\n        android:required=\\\"false\\\"/>\\n    <uses-feature\\n        android:name=\\\"android.hardware.camera\\\"\\n        android:required=\\\"false\\\"/>\\n    <uses-permission android:name=\\\"com.android.vending.BILLING\\\"/>\\n    <uses-permission android:name=\\\"android.permission.ACCESS_NETWORK_STATE\\\"/>\\n    <uses-permission android:name=\\\"com.google.android.gms.permission.AD_ID\\\"/>\\n    <uses-permission android:name=\\\"android.permission.ACCESS_ADSERVICES_AD_ID\\\"/>\\n    <uses-permission android:name=\\\"android.permission.ACCESS_ADSERVICES_ATTRIBUTION\\\"/>\\n    <uses-permission android:name=\\\"android.permission.ACCESS_ADSERVICES_TOPICS\\\"/>\\n    <permission\\n        android:name=\\\"com.facebook.rethinkvision.Bimostitch.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION\\\"\\n        android:protectionLevel=\\\"signature\\\"/>\\n    <uses-permission android:name=\\\"com.facebook.rethinkvision.Bimostitch.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION\\\"/>\\n    <application\\n        android:theme=\\\"@style/AppTheme\\\"\\n        android:label=\\\"@string/app_name\\\"\\n        android:icon=\\\"@mipmap/ic_launcher\\\"\\n        android:name=\\\"com.pairip.application.Application\\\"\\n        android:allowBackup=\\\"true\\\"\\n        android:largeHeap=\\\"true\\\"\\n        android:extractNativeLibs=\\\"false\\\"\\n        android:appComponentFactory=\\\"androidx.core.app.CoreComponentFactory\\\"\\n        android:requestLegacyExternalStorage=\\\"true\\\">\\n        <meta-data\\n            android:name=\\\"com.google.android.gms.ads.APPLICATION_ID\\\"\\n            android:value=\\\"ca-app-pub-7329778626013066~4565416236\\\"/>\\n        <receiver\\n            android:name=\\\"com.facebook.rethinkvision.Bimostitch.StitcherService$StopServiceReceiver\\\"\\n            android:exported=\\\"true\\\">\\n            <intent-filter>\\n                <action android:name=\\\"com.facebook.rethinkvision.Bimostitch.lite.action.STOP\\\"/>\\n            </intent-filter>\\n        </receiver>\\n        <uses-library\\n            android:name=\\\"org.apache.http.legacy\\\"\\n            android:required=\\\"false\\\"/>\\n        <activity\\n            android:theme=\\\"@style/AppTheme\\\"\\n            android:name=\\\"com.facebook.rethinkvision.Bimostitch.BimostitchActivity\\\"\\n            android:exported=\\\"true\\\"\\n            android:configChanges=\\\"screenSize|orientation\\\">\\n            <intent-filter>\\n                <action android:name=\\\"android.intent.action.MAIN\\\"/>\\n                <category android:name=\\\"android.intent.category.LAUNCHER\\\"/>\\n            </intent-filter>\\n            <intent-filter>\\n                <action android:name=\\\"android.intent.action.SEND_MULTIPLE\\\"/>\\n                <category android:name=\\\"android.intent.category.DEFAULT\\\"/>\\n                <data android:mimeType=\\\"image/*\\\"/>\\n            </intent-filter>\\n        </activity>\\n        <activity\\n            android:theme=\\\"@style/SecondaryTheme\\\"\\n            android:label=\\\"@string/settings\\\"\\n            android:name=\\\"com.facebook.rethinkvision.Bimostitch.SettingsActivity\\\"\\n            android:configChanges=\\\"screenSize|orientation\\\"/>\\n        <activity\\n            android:theme=\\\"@style/SecondaryTheme\\\"\\n            android:label=\\\"@string/help\\\"\\n            android:name=\\\"com.facebook.rethinkvision.Bimostitch.HelpActivity\\\"\\n            android:configChanges=\\\"screenSize|orientation\\\"/>\\n        <activity\\n            android:theme=\\\"@style/AppTheme.NoActionBar\\\"\\n            android:label=\\\"@string/preview\\\"\\n            android:name=\\\"com.facebook.rethinkvision.Bimostitch.PreviewActivity\\\"/>\\n        <activity\\n            android:theme=\\\"@style/SecondaryTheme\\\"\\n            android:label=\\\"@string/settings\\\"\\n            android:name=\\\"com.facebook.rethinkvision.Bimostitch.QuickSettingsActivity\\\"/>\\n        <activity\\n            android:theme=\\\"@style/AppTheme\\\"\\n            android:label=\\\"@string/image_picker\\\"\\n            android:name=\\\"com.facebook.rethinkvision.Bimostitch.ImageDisplay\\\"\\n            android:configChanges=\\\"screenSize|orientation\\\"/>\\n        <provider\\n            android:name=\\\"androidx.core.content.FileProvider\\\"\\n            android:exported=\\\"false\\\"\\n            android:authorities=\\\"com.facebook.rethinkvision.Bimostitch.fileprovider\\\"\\n            android:grantUriPermissions=\\\"true\\\">\\n            <meta-data\\n                android:name=\\\"android.support.FILE_PROVIDER_PATHS\\\"\\n                android:resource=\\\"@xml/provider_paths\\\"/>\\n        </provider>\\n        <activity\\n            android:theme=\\\"@style/FullscreenTheme\\\"\\n            android:label=\\\"@string/title_activity_viewer\\\"\\n            android:name=\\\"com.facebook.rethinkvision.Bimostitch.ViewerActivity\\\"\\n            android:configChanges=\\\"screenSize|orientation|keyboardHidden\\\"/>\\n        <service\\n            android:name=\\\"com.facebook.rethinkvision.Bimostitch.StitcherService\\\"\\n            android:enabled=\\\"true\\\"\\n            android:exported=\\\"false\\\"\\n            android:foregroundServiceType=\\\"specialUse\\\">\\n            <property\\n                android:name=\\\"android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE\\\"\\n                android:value=\\\"image_stitching\\\"/>\\n        </service>\\n        <meta-data\\n            android:name=\\\"com.google.android.play.billingclient.version\\\"\\n            android:value=\\\"9.1.0\\\"/>\\n        <activity\\n            android:theme=\\\"@android:style/Theme.Translucent.NoTitleBar\\\"\\n            android:name=\\\"com.android.billingclient.api.ProxyBillingActivity\\\"\\n            android:exported=\\\"false\\\"\\n            android:configChanges=\\\"screenSize|screenLayout|orientation|keyboardHidden|keyboard\\\"/>\\n        <activity\\n            android:theme=\\\"@android:style/Theme.Translucent.NoTitleBar\\\"\\n            android:name=\\\"com.android.billingclient.api.ProxyBillingActivityV2\\\"\\n            android:exported=\\\"false\\\"\\n            android:configChanges=\\\"screenSize|screenLayout|orientation|keyboardHidden|keyboard\\\"/>\\n        <activity\\n            android:theme=\\\"@android:style/Theme.Translucent\\\"\\n            android:name=\\\"com.google.android.gms.ads.AdActivity\\\"\\n            android:exported=\\\"false\\\"\\n            android:configChanges=\\\"smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard\\\"\\n            android:enableOnBackInvokedCallback=\\\"false\\\"/>\\n        <provider\\n            android:name=\\\"com.google.android.gms.ads.MobileAdsInitProvider\\\"\\n            android:exported=\\\"false\\\"\\n            android:authorities=\\\"com.facebook.rethinkvision.Bimostitch.mobileadsinitprovider\\\"\\n            android:initOrder=\\\"100\\\"/>\\n        <service\\n            android:name=\\\"com.google.android.gms.ads.AdService\\\"\\n            android:enabled=\\\"true\\\"\\n            android:exported=\\\"false\\\"/>\\n        <activity\\n            android:name=\\\"com.google.android.gms.ads.OutOfContextTestingActivity\\\"\\n            android:exported=\\\"false\\\"\\n            android:configChanges=\\\"smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard\\\"/>\\n        <activity\\n            android:theme=\\\"@android:style/Theme.Translucent.NoTitleBar\\\"\\n            android:name=\\\"com.google.android.gms.ads.NotificationHandlerActivity\\\"\\n            android:exported=\\\"false\\\"\\n            android:taskAffinity=\\\"\\\"\\n            android:excludeFromRecents=\\\"true\\\"\\n            android:launchMode=\\\"singleTask\\\"/>\\n        <meta-data\\n            android:name=\\\"com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING\\\"\\n            android:value=\\\"true\\\"/>\\n        <meta-data\\n            android:name=\\\"com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION\\\"\\n            android:value=\\\"true\\\"/>\\n        <activity\\n            android:theme=\\\"@style/Theme.HsdpServiceTransparent\\\"\\n            android:name=\\\"com.google.android.play.core.hsdp.service.HsdpShimActivity\\\"\\n            android:exported=\\\"false\\\"\\n            android:excludeFromRecents=\\\"true\\\"\\n            android:launchMode=\\\"singleTop\\\"\\n            android:configChanges=\\\"screenSize|screenLayout|orientation|keyboardHidden\\\"/>\\n        <activity\\n            android:theme=\\\"@android:style/Theme.Translucent.NoTitleBar\\\"\\n            android:name=\\\"com.google.android.gms.common.api.GoogleApiActivity\\\"\\n            android:exported=\\\"false\\\"/>\\n        <meta-data\\n            android:name=\\\"com.google.android.gms.version\\\"\\n            android:value=\\\"@integer/google_play_services_version\\\"/>\\n        <provider\\n            android:name=\\\"androidx.startup.InitializationProvider\\\"\\n            android:exported=\\\"false\\\"\\n            android:authorities=\\\"com.facebook.rethinkvision.Bimostitch.androidx-startup\\\">\\n            <meta-data\\n                android:name=\\\"androidx.emoji2.text.EmojiCompatInitializer\\\"\\n                android:value=\\\"androidx.startup\\\"/>\\n            <meta-data\\n                android:name=\\\"androidx.work.WorkManagerInitializer\\\"\\n                android:value=\\\"androidx.startup\\\"/>\\n            <meta-data\\n                android:name=\\\"androidx.lifecycle.ProcessLifecycleInitializer\\\"\\n                android:value=\\\"androidx.startup\\\"/>\\n            <meta-data\\n                android:name=\\\"androidx.profileinstaller.ProfileInstallerInitializer\\\"\\n                android:value=\\\"androidx.startup\\\"/>\\n        </provider>\\n        <service\\n            android:name=\\\"androidx.work.impl.background.systemalarm.SystemAlarmService\\\"\\n            android:enabled=\\\"@bool/enable_system_alarm_service_default\\\"\\n            android:exported=\\\"false\\\"\\n            android:directBootAware=\\\"false\\\"/>\\n        <service\\n            android:name=\\\"androidx.work.impl.background.systemjob.SystemJobService\\\"\\n            android:permission=\\\"android.permission.BIND_JOB_SERVICE\\\"\\n            android:enabled=\\\"@bool/enable_system_job_service_default\\\"\\n            android:exported=\\\"true\\\"\\n            android:directBootAware=\\\"false\\\"/>\\n        <service\\n            android:name=\\\"androidx.work.impl.foreground.SystemForegroundService\\\"\\n            android:enabled=\\\"@bool/enable_system_foreground_service_default\\\"\\n            android:exported=\\\"false\\\"\\n            android:directBootAware=\\\"false\\\"/>\\n        <receiver\\n            android:name=\\\"androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver\\\"\\n            android:enabled=\\\"true\\\"\\n            android:exported=\\\"false\\\"\\n            android:directBootAware=\\\"false\\\"/>\\n        <receiver\\n            android:name=\\\"androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy\\\"\\n            android:enabled=\\\"false\\\"\\n            android:exported=\\\"false\\\"\\n            android:directBootAware=\\\"false\\\">\\n            <intent-filter>\\n                <action android:name=\\\"android.intent.action.ACTION_POWER_CONNECTED\\\"/>\\n                <action android:name=\\\"android.intent.action.ACTION_POWER_DISCONNECTED\\\"/>\\n            </intent-filter>\\n        </receiver>\\n        <receiver\\n            android:name=\\\"androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy\\\"\\n            android:enabled=\\\"false\\\"\\n            android:exported=\\\"false\\\"\\n            android:directBootAware=\\\"false\\\">\\n            <intent-filter>\\n                <action android:name=\\\"android.intent.action.BATTERY_OKAY\\\"/>\\n                <action android:name=\\\"android.intent.action.BATTERY_LOW\\\"/>\\n            </intent-filter>\\n        </receiver>\\n        <receiver\\n            android:name=\\\"androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy\\\"\\n            android:enabled=\\\"false\\\"\\n            android:exported=\\\"false\\\"\\n            android:directBootAware=\\\"false\\\">\\n            <intent-filter>\\n                <action android:name=\\\"android.intent.action.DEVICE_STORAGE_LOW\\\"/>\\n                <action android:name=\\\"android.intent.action.DEVICE_STORAGE_OK\\\"/>\\n            </intent-filter>\\n        </receiver>\\n        <receiver\\n            android:name=\\\"androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy\\\"\\n            android:enabled=\\\"false\\\"\\n            android:exported=\\\"false\\\"\\n            android:directBootAware=\\\"false\\\">\\n            <intent-filter>\\n                <action android:name=\\\"android.net.conn.CONNECTIVITY_CHANGE\\\"/>\\n            </intent-filter>\\n        </receiver>\\n        <receiver\\n            android:name=\\\"androidx.work.impl.background.systemalarm.RescheduleReceiver\\\"\\n            android:enabled=\\\"false\\\"\\n            android:exported=\\\"false\\\"\\n            android:directBootAware=\\\"false\\\">\\n            <intent-filter>\\n                <action android:name=\\\"android.intent.action.BOOT_COMPLETED\\\"/>\\n                <action android:name=\\\"android.intent.action.TIME_SET\\\"/>\\n                <action android:name=\\\"android.intent.action.TIMEZONE_CHANGED\\\"/>\\n            </intent-filter>\\n        </receiver>\\n        <receiver\\n            android:name=\\\"androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver\\\"\\n            android:enabled=\\\"@bool/enable_system_alarm_service_default\\\"\\n            android:exported=\\\"false\\\"\\n            android:directBootAware=\\\"false\\\">\\n            <intent-filter>\\n                <action android:name=\\\"androidx.work.impl.background.systemalarm.UpdateProxies\\\"/>\\n            </intent-filter>\\n        </receiver>\\n        <receiver\\n            android:name=\\\"androidx.work.impl.diagnostics.DiagnosticsReceiver\\\"\\n            android:permission=\\\"android.permission.DUMP\\\"\\n            android:enabled=\\\"true\\\"\\n            android:exported=\\\"true\\\"\\n            android:directBootAware=\\\"false\\\">\\n            <intent-filter>\\n                <action android:name=\\\"androidx.work.diagnostics.REQUEST_DIAGNOSTICS\\\"/>\\n            </intent-filter>\\n        </receiver>\\n        <uses-library\\n            android:name=\\\"androidx.window.extensions\\\"\\n            android:required=\\\"false\\\"/>\\n        <uses-library\\n            android:name=\\\"androidx.window.sidecar\\\"\\n            android:required=\\\"false\\\"/>\\n        <uses-library\\n            android:name=\\\"android.ext.adservices\\\"\\n            android:required=\\\"false\\\"/>\\n        <receiver\\n            android:name=\\\"androidx.profileinstaller.ProfileInstallReceiver\\\"\\n            android:permission=\\\"android.permission.DUMP\\\"\\n            android:enabled=\\\"true\\\"\\n            android:exported=\\\"true\\\"\\n            android:directBootAware=\\\"false\\\">\\n            <intent-filter>\\n                <action android:name=\\\"androidx.profileinstaller.action.INSTALL_PROFILE\\\"/>\\n            </intent-filter>\\n            <intent-filter>\\n                <action android:name=\\\"androidx.profileinstaller.action.SKIP_FILE\\\"/>\\n            </intent-filter>\\n            <intent-filter>\\n                <action android:name=\\\"androidx.profileinstaller.action.SAVE_PROFILE\\\"/>\\n            </intent-filter>\\n            <intent-filter>\\n                <action android:name=\\\"androidx.profileinstaller.action.BENCHMARK_OPERATION\\\"/>\\n            </intent-filter>\\n        </receiver>\\n        <service\\n            android:name=\\\"com.google.android.datatransport.runtime.backends.TransportBackendDiscovery\\\"\\n            android:exported=\\\"false\\\">\\n            <meta-data\\n                android:name=\\\"backend:com.google.android.datatransport.cct.CctBackendFactory\\\"\\n                android:value=\\\"cct\\\"/>\\n        </service>\\n        <service\\n            android:name=\\\"com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService\\\"\\n            android:permission=\\\"android.permission.BIND_JOB_SERVICE\\\"\\n            android:exported=\\\"false\\\"/>\\n        <receiver\\n            android:name=\\\"com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver\\\"\\n            android:exported=\\\"false\\\"/>\\n        <service\\n            android:name=\\\"androidx.room.MultiInstanceInvalidationService\\\"\\n            android:exported=\\\"false\\\"\\n            android:directBootAware=\\\"true\\\"/>\\n        <activity\\n            android:name=\\\"com.pairip.licensecheck.LicenseActivity\\\"\\n            android:exported=\\\"false\\\"/>\\n        <meta-data\\n            android:name=\\\"com.android.vending.splits.required\\\"\\n            android:value=\\\"true\\\"/>\\n        <meta-data\\n            android:name=\\\"com.android.stamp.source\\\"\\n            android:value=\\\"https://play.google.com/store\\\"/>\\n        <meta-data\\n            android:name=\\\"com.android.stamp.type\\\"\\n            android:value=\\\"STAMP_TYPE_DISTRIBUTION_APK\\\"/>\\n        <meta-data\\n            android:name=\\\"com.android.vending.splits\\\"\\n            android:resource=\\\"@xml/splits0\\\"/>\\n        <meta-data\\n            android:name=\\\"com.android.vending.derived.apk.id\\\"\\n            android:value=\\\"4\\\"/>\\n    </application>\\n</manifest>\"}],\"isError\":false}}]},\"normalized_result\":{\"engine\":{\"name\":\"jadx-headless-mcp\",\"version\":\"0.7.1\",\"artifact_sha256\":\"6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75\",\"source_revision\":\"5844800a486d2248fa949b74c9896285f5b54de2\",\"worker_count\":1,\"heap_limit_mib\":8192},\"package_name\":\"com.facebook.rethinkvision.Bimostitch\",\"version_name\":\"3.0.00-lite\",\"version_code\":\"253\",\"min_sdk\":\"32\",\"target_sdk\":\"37\",\"permissions\":[\"android.permission.INTERNET\",\"android.permission.WRITE_EXTERNAL_STORAGE\",\"android.permission.READ_EXTERNAL_STORAGE\",\"android.permission.READ_MEDIA_IMAGES\",\"android.permission.READ_MEDIA_VIDEO\",\"android.permission.ACCESS_MEDIA_LOCATION\",\"android.permission.WAKE_LOCK\",\"android.permission.VIBRATE\",\"com.android.vending.CHECK_LICENSE\",\"android.permission.FOREGROUND_SERVICE\",\"android.permission.FOREGROUND_SERVICE_SPECIAL_USE\",\"android.permission.POST_NOTIFICATIONS\",\"com.android.vending.BILLING\",\"android.permission.ACCESS_NETWORK_STATE\",\"com.google.android.gms.permission.AD_ID\",\"android.permission.ACCESS_ADSERVICES_AD_ID\",\"android.permission.ACCESS_ADSERVICES_ATTRIBUTION\",\"android.permission.ACCESS_ADSERVICES_TOPICS\",\"com.facebook.rethinkvision.Bimostitch.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION\"],\"manifest\":{\"status\":\"complete\",\"text\":\"<?xml version=\\\"1.0\\\" encoding=\\\"utf-8\\\"?>\\n<manifest xmlns:android=\\\"http://schemas.android.com/apk/res/android\\\"\\n    android:versionCode=\\\"253\\\"\\n    android:versionName=\\\"3.0.00-lite\\\"\\n    android:compileSdkVersion=\\\"37\\\"\\n    android:compileSdkVersionCodename=\\\"17\\\"\\n    android:requiredSplitTypes=\\\"base__abi,base__density\\\"\\n    android:splitTypes=\\\"\\\"\\n    package=\\\"com.facebook.rethinkvision.Bimostitch\\\"\\n    platformBuildVersionCode=\\\"37\\\"\\n    platformBuildVersionName=\\\"17\\\">\\n    <uses-sdk\\n        android:minSdkVersion=\\\"32\\\"\\n        android:targetSdkVersion=\\\"37\\\"/>\\n    <uses-permission android:name=\\\"android.permission.INTERNET\\\"/>\\n    <uses-permission android:name=\\\"android.permission.WRITE_EXTERNAL_STORAGE\\\"/>\\n    <uses-permission android:name=\\\"android.permission.READ_EXTERNAL_STORAGE\\\"/>\\n    <uses-permission android:name=\\\"android.permission.READ_MEDIA_IMAGES\\\"/>\\n    <uses-permission android:name=\\\"android.permission.READ_MEDIA_VIDEO\\\"/>\\n    <uses-permission android:name=\\\"android.permission.ACCESS_MEDIA_LOCATION\\\"/>\\n    <uses-permission android:name=\\\"android.permission.WAKE_LOCK\\\"/>\\n    <uses-permission android:name=\\\"android.permission.VIBRATE\\\"/>\\n    <uses-permission android:name=\\\"com.android.vending.CHECK_LICENSE\\\"/>\\n    <uses-permission android:name=\\\"android.permission.FOREGROUND_SERVICE\\\"/>\\n    <uses-permission android:name=\\\"android.permission.FOREGROUND_SERVICE_SPECIAL_USE\\\"/>\\n    <uses-permission android:name=\\\"android.permission.POST_NOTIFICATIONS\\\"/>\\n    <queries>\\n        <package android:name=\\\"com.google.android.apps.photos\\\"/>\\n        <intent>\\n            <action android:name=\\\"android.intent.action.ACTION_PICK\\\"/>\\n            <data android:mimeType=\\\"image/*\\\"/>\\n        </intent>\\n        <intent>\\n            <action android:name=\\\"com.android.vending.billing.InAppBillingService.BIND\\\"/>\\n        </intent>\\n        <intent>\\n            <action android:name=\\\"com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND\\\"/>\\n        </intent>\\n        <intent>\\n            <action android:name=\\\"android.intent.action.VIEW\\\"/>\\n            <category android:name=\\\"android.intent.category.BROWSABLE\\\"/>\\n            <data android:scheme=\\\"https\\\"/>\\n        </intent>\\n        <intent>\\n            <action android:name=\\\"android.support.customtabs.action.CustomTabsService\\\"/>\\n        </intent>\\n        <intent>\\n            <action android:name=\\\"android.intent.action.INSERT\\\"/>\\n            <data android:mimeType=\\\"vnd.android.cursor.dir/event\\\"/>\\n        </intent>\\n        <intent>\\n            <action android:name=\\\"android.intent.action.VIEW\\\"/>\\n            <data android:scheme=\\\"sms\\\"/>\\n        </intent>\\n        <intent>\\n            <action android:name=\\\"android.intent.action.DIAL\\\"/>\\n            <data android:path=\\\"tel:\\\"/>\\n        </intent>\\n        <package android:name=\\\"com.android.vending\\\"/>\\n    </queries>\\n    <uses-feature\\n        android:name=\\\"android.hardware.touchscreen\\\"\\n        android:required=\\\"false\\\"/>\\n    <uses-feature\\n        android:name=\\\"android.hardware.camera\\\"\\n        android:required=\\\"false\\\"/>\\n    <uses-permission android:name=\\\"com.android.vending.BILLING\\\"/>\\n    <uses-permission android:name=\\\"android.permission.ACCESS_NETWORK_STATE\\\"/>\\n    <uses-permission android:name=\\\"com.google.android.gms.permission.AD_ID\\\"/>\\n    <uses-permission android:name=\\\"android.permission.ACCESS_ADSERVICES_AD_ID\\\"/>\\n    <uses-permission android:name=\\\"android.permission.ACCESS_ADSERVICES_ATTRIBUTION\\\"/>\\n    <uses-permission android:name=\\\"android.permission.ACCESS_ADSERVICES_TOPICS\\\"/>\\n    <permission\\n        android:name=\\\"com.facebook.rethinkvision.Bimostitch.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION\\\"\\n        android:protectionLevel=\\\"signature\\\"/>\\n    <uses-permission android:name=\\\"com.facebook.rethinkvision.Bimostitch.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION\\\"/>\\n    <application\\n        android:theme=\\\"@style/AppTheme\\\"\\n        android:label=\\\"@string/app_name\\\"\\n        android:icon=\\\"@mipmap/ic_launcher\\\"\\n        android:name=\\\"com.pairip.application.Application\\\"\\n        android:allowBackup=\\\"true\\\"\\n        android:largeHeap=\\\"true\\\"\\n        android:extractNativeLibs=\\\"false\\\"\\n        android:appComponentFactory=\\\"androidx.core.app.CoreComponentFactory\\\"\\n        android:requestLegacyExternalStorage=\\\"true\\\">\\n        <meta-data\\n            android:name=\\\"com.google.android.gms.ads.APPLICATION_ID\\\"\\n            android:value=\\\"ca-app-pub-7329778626013066~4565416236\\\"/>\\n        <receiver\\n            android:name=\\\"com.facebook.rethinkvision.Bimostitch.StitcherService$StopServiceReceiver\\\"\\n            android:exported=\\\"true\\\">\\n            <intent-filter>\\n                <action android:name=\\\"com.facebook.rethinkvision.Bimostitch.lite.action.STOP\\\"/>\\n            </intent-filter>\\n        </receiver>\\n        <uses-library\\n            android:name=\\\"org.apache.http.legacy\\\"\\n            android:required=\\\"false\\\"/>\\n        <activity\\n            android:theme=\\\"@style/AppTheme\\\"\\n            android:name=\\\"com.facebook.rethinkvision.Bimostitch.BimostitchActivity\\\"\\n            android:exported=\\\"true\\\"\\n            android:configChanges=\\\"screenSize|orientation\\\">\\n            <intent-filter>\\n                <action android:name=\\\"android.intent.action.MAIN\\\"/>\\n                <category android:name=\\\"android.intent.category.LAUNCHER\\\"/>\\n            </intent-filter>\\n            <intent-filter>\\n                <action android:name=\\\"android.intent.action.SEND_MULTIPLE\\\"/>\\n                <category android:name=\\\"android.intent.category.DEFAULT\\\"/>\\n                <data android:mimeType=\\\"image/*\\\"/>\\n            </intent-filter>\\n        </activity>\\n        <activity\\n            android:theme=\\\"@style/SecondaryTheme\\\"\\n            android:label=\\\"@string/settings\\\"\\n            android:name=\\\"com.facebook.rethinkvision.Bimostitch.SettingsActivity\\\"\\n            android:configChanges=\\\"screenSize|orientation\\\"/>\\n        <activity\\n            android:theme=\\\"@style/SecondaryTheme\\\"\\n            android:label=\\\"@string/help\\\"\\n            android:name=\\\"com.facebook.rethinkvision.Bimostitch.HelpActivity\\\"\\n            android:configChanges=\\\"screenSize|orientation\\\"/>\\n        <activity\\n            android:theme=\\\"@style/AppTheme.NoActionBar\\\"\\n            android:label=\\\"@string/preview\\\"\\n            android:name=\\\"com.facebook.rethinkvision.Bimostitch.PreviewActivity\\\"/>\\n        <activity\\n            android:theme=\\\"@style/SecondaryTheme\\\"\\n            android:label=\\\"@string/settings\\\"\\n            android:name=\\\"com.facebook.rethinkvision.Bimostitch.QuickSettingsActivity\\\"/>\\n        <activity\\n            android:theme=\\\"@style/AppTheme\\\"\\n            android:label=\\\"@string/image_picker\\\"\\n            android:name=\\\"com.facebook.rethinkvision.Bimostitch.ImageDisplay\\\"\\n            android:configChanges=\\\"screenSize|orientation\\\"/>\\n        <provider\\n            android:name=\\\"androidx.core.content.FileProvider\\\"\\n            android:exported=\\\"false\\\"\\n            android:authorities=\\\"com.facebook.rethinkvision.Bimostitch.fileprovider\\\"\\n            android:grantUriPermissions=\\\"true\\\">\\n            <meta-data\\n                android:name=\\\"android.support.FILE_PROVIDER_PATHS\\\"\\n                android:resource=\\\"@xml/provider_paths\\\"/>\\n        </provider>\\n        <activity\\n            android:theme=\\\"@style/FullscreenTheme\\\"\\n            android:label=\\\"@string/title_activity_viewer\\\"\\n            android:name=\\\"com.facebook.rethinkvision.Bimostitch.ViewerActivity\\\"\\n            android:configChanges=\\\"screenSize|orientation|keyboardHidden\\\"/>\\n        <service\\n            android:name=\\\"com.facebook.rethinkvision.Bimostitch.StitcherService\\\"\\n            android:enabled=\\\"true\\\"\\n            android:exported=\\\"false\\\"\\n            android:foregroundServiceType=\\\"specialUse\\\">\\n            <property\\n                android:name=\\\"android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE\\\"\\n                android:value=\\\"image_stitching\\\"/>\\n        </service>\\n        <meta-data\\n            android:name=\\\"com.google.android.play.billingclient.version\\\"\\n            android:value=\\\"9.1.0\\\"/>\\n        <activity\\n            android:theme=\\\"@android:style/Theme.Translucent.NoTitleBar\\\"\\n            android:name=\\\"com.android.billingclient.api.ProxyBillingActivity\\\"\\n            android:exported=\\\"false\\\"\\n            android:configChanges=\\\"screenSize|screenLayout|orientation|keyboardHidden|keyboard\\\"/>\\n        <activity\\n            android:theme=\\\"@android:style/Theme.Translucent.NoTitleBar\\\"\\n            android:name=\\\"com.android.billingclient.api.ProxyBillingActivityV2\\\"\\n            android:exported=\\\"false\\\"\\n            android:configChanges=\\\"screenSize|screenLayout|orientation|keyboardHidden|keyboard\\\"/>\\n        <activity\\n            android:theme=\\\"@android:style/Theme.Translucent\\\"\\n            android:name=\\\"com.google.android.gms.ads.AdActivity\\\"\\n            android:exported=\\\"false\\\"\\n            android:configChanges=\\\"smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard\\\"\\n            android:enableOnBackInvokedCallback=\\\"false\\\"/>\\n        <provider\\n            android:name=\\\"com.google.android.gms.ads.MobileAdsInitProvider\\\"\\n            android:exported=\\\"false\\\"\\n            android:authorities=\\\"com.facebook.rethinkvision.Bimostitch.mobileadsinitprovider\\\"\\n            android:initOrder=\\\"100\\\"/>\\n        <service\\n            android:name=\\\"com.google.android.gms.ads.AdService\\\"\\n            android:enabled=\\\"true\\\"\\n            android:exported=\\\"false\\\"/>\\n        <activity\\n            android:name=\\\"com.google.android.gms.ads.OutOfContextTestingActivity\\\"\\n            android:exported=\\\"false\\\"\\n            android:configChanges=\\\"smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard\\\"/>\\n        <activity\\n            android:theme=\\\"@android:style/Theme.Translucent.NoTitleBar\\\"\\n            android:name=\\\"com.google.android.gms.ads.NotificationHandlerActivity\\\"\\n            android:exported=\\\"false\\\"\\n            android:taskAffinity=\\\"\\\"\\n            android:excludeFromRecents=\\\"true\\\"\\n            android:launchMode=\\\"singleTask\\\"/>\\n        <meta-data\\n            android:name=\\\"com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING\\\"\\n            android:value=\\\"true\\\"/>\\n        <meta-data\\n            android:name=\\\"com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION\\\"\\n            android:value=\\\"true\\\"/>\\n        <activity\\n            android:theme=\\\"@style/Theme.HsdpServiceTransparent\\\"\\n            android:name=\\\"com.google.android.play.core.hsdp.service.HsdpShimActivity\\\"\\n            android:exported=\\\"false\\\"\\n            android:excludeFromRecents=\\\"true\\\"\\n            android:launchMode=\\\"singleTop\\\"\\n            android:configChanges=\\\"screenSize|screenLayout|orientation|keyboardHidden\\\"/>\\n        <activity\\n            android:theme=\\\"@android:style/Theme.Translucent.NoTitleBar\\\"\\n            android:name=\\\"com.google.android.gms.common.api.GoogleApiActivity\\\"\\n            android:exported=\\\"false\\\"/>\\n        <meta-data\\n            android:name=\\\"com.google.android.gms.version\\\"\\n            android:value=\\\"@integer/google_play_services_version\\\"/>\\n        <provider\\n            android:name=\\\"androidx.startup.InitializationProvider\\\"\\n            android:exported=\\\"false\\\"\\n            android:authorities=\\\"com.facebook.rethinkvision.Bimostitch.androidx-startup\\\">\\n            <meta-data\\n                android:name=\\\"androidx.emoji2.text.EmojiCompatInitializer\\\"\\n                android:value=\\\"androidx.startup\\\"/>\\n            <meta-data\\n                android:name=\\\"androidx.work.WorkManagerInitializer\\\"\\n                android:value=\\\"androidx.startup\\\"/>\\n            <meta-data\\n                android:name=\\\"androidx.lifecycle.ProcessLifecycleInitializer\\\"\\n                android:value=\\\"androidx.startup\\\"/>\\n            <meta-data\\n                android:name=\\\"androidx.profileinstaller.ProfileInstallerInitializer\\\"\\n                android:value=\\\"androidx.startup\\\"/>\\n        </provider>\\n        <service\\n            android:name=\\\"androidx.work.impl.background.systemalarm.SystemAlarmService\\\"\\n            android:enabled=\\\"@bool/enable_system_alarm_service_default\\\"\\n            android:exported=\\\"false\\\"\\n            android:directBootAware=\\\"false\\\"/>\\n        <service\\n            android:name=\\\"androidx.work.impl.background.systemjob.SystemJobService\\\"\\n            android:permission=\\\"android.permission.BIND_JOB_SERVICE\\\"\\n            android:enabled=\\\"@bool/enable_system_job_service_default\\\"\\n            android:exported=\\\"true\\\"\\n            android:directBootAware=\\\"false\\\"/>\\n        <service\\n            android:name=\\\"androidx.work.impl.foreground.SystemForegroundService\\\"\\n            android:enabled=\\\"@bool/enable_system_foreground_service_default\\\"\\n            android:exported=\\\"false\\\"\\n            android:directBootAware=\\\"false\\\"/>\\n        <receiver\\n            android:name=\\\"androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver\\\"\\n            android:enabled=\\\"true\\\"\\n            android:exported=\\\"false\\\"\\n            android:directBootAware=\\\"false\\\"/>\\n        <receiver\\n            android:name=\\\"androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy\\\"\\n            android:enabled=\\\"false\\\"\\n            android:exported=\\\"false\\\"\\n            android:directBootAware=\\\"false\\\">\\n            <intent-filter>\\n                <action android:name=\\\"android.intent.action.ACTION_POWER_CONNECTED\\\"/>\\n                <action android:name=\\\"android.intent.action.ACTION_POWER_DISCONNECTED\\\"/>\\n            </intent-filter>\\n        </receiver>\\n        <receiver\\n            android:name=\\\"androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy\\\"\\n            android:enabled=\\\"false\\\"\\n            android:exported=\\\"false\\\"\\n            android:directBootAware=\\\"false\\\">\\n            <intent-filter>\\n                <action android:name=\\\"android.intent.action.BATTERY_OKAY\\\"/>\\n                <action android:name=\\\"android.intent.action.BATTERY_LOW\\\"/>\\n            </intent-filter>\\n        </receiver>\\n        <receiver\\n            android:name=\\\"androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy\\\"\\n            android:enabled=\\\"false\\\"\\n            android:exported=\\\"false\\\"\\n            android:directBootAware=\\\"false\\\">\\n            <intent-filter>\\n                <action android:name=\\\"android.intent.action.DEVICE_STORAGE_LOW\\\"/>\\n                <action android:name=\\\"android.intent.action.DEVICE_STORAGE_OK\\\"/>\\n            </intent-filter>\\n        </receiver>\\n        <receiver\\n            android:name=\\\"androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy\\\"\\n            android:enabled=\\\"false\\\"\\n            android:exported=\\\"false\\\"\\n            android:directBootAware=\\\"false\\\">\\n            <intent-filter>\\n                <action android:name=\\\"android.net.conn.CONNECTIVITY_CHANGE\\\"/>\\n            </intent-filter>\\n        </receiver>\\n        <receiver\\n            android:name=\\\"androidx.work.impl.background.systemalarm.RescheduleReceiver\\\"\\n            android:enabled=\\\"false\\\"\\n            android:exported=\\\"false\\\"\\n            android:directBootAware=\\\"false\\\">\\n            <intent-filter>\\n                <action android:name=\\\"android.intent.action.BOOT_COMPLETED\\\"/>\\n                <action android:name=\\\"android.intent.action.TIME_SET\\\"/>\\n                <action android:name=\\\"android.intent.action.TIMEZONE_CHANGED\\\"/>\\n            </intent-filter>\\n        </receiver>\\n        <receiver\\n            android:name=\\\"androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver\\\"\\n            android:enabled=\\\"@bool/enable_system_alarm_service_default\\\"\\n            android:exported=\\\"false\\\"\\n            android:directBootAware=\\\"false\\\">\\n            <intent-filter>\\n                <action android:name=\\\"androidx.work.impl.background.systemalarm.UpdateProxies\\\"/>\\n            </intent-filter>\\n        </receiver>\\n        <receiver\\n            android:name=\\\"androidx.work.impl.diagnostics.DiagnosticsReceiver\\\"\\n            android:permission=\\\"android.permission.DUMP\\\"\\n            android:enabled=\\\"true\\\"\\n            android:exported=\\\"true\\\"\\n            android:directBootAware=\\\"false\\\">\\n            <intent-filter>\\n                <action android:name=\\\"androidx.work.diagnostics.REQUEST_DIAGNOSTICS\\\"/>\\n            </intent-filter>\\n        </receiver>\\n        <uses-library\\n            android:name=\\\"androidx.window.extensions\\\"\\n            android:required=\\\"false\\\"/>\\n        <uses-library\\n            android:name=\\\"androidx.window.sidecar\\\"\\n            android:required=\\\"false\\\"/>\\n        <uses-library\\n            android:name=\\\"android.ext.adservices\\\"\\n            android:required=\\\"false\\\"/>\\n        <receiver\\n            android:name=\\\"androidx.profileinstaller.ProfileInstallReceiver\\\"\\n            android:permission=\\\"android.permission.DUMP\\\"\\n            android:enabled=\\\"true\\\"\\n            android:exported=\\\"true\\\"\\n            android:directBootAware=\\\"false\\\">\\n            <intent-filter>\\n                <action android:name=\\\"androidx.profileinstaller.action.INSTALL_PROFILE\\\"/>\\n            </intent-filter>\\n            <intent-filter>\\n                <action android:name=\\\"androidx.profileinstaller.action.SKIP_FILE\\\"/>\\n            </intent-filter>\\n            <intent-filter>\\n                <action android:name=\\\"androidx.profileinstaller.action.SAVE_PROFILE\\\"/>\\n            </intent-filter>\\n            <intent-filter>\\n                <action android:name=\\\"androidx.profileinstaller.action.BENCHMARK_OPERATION\\\"/>\\n            </intent-filter>\\n        </receiver>\\n        <service\\n            android:name=\\\"com.google.android.datatransport.runtime.backends.TransportBackendDiscovery\\\"\\n            android:exported=\\\"false\\\">\\n            <meta-data\\n                android:name=\\\"backend:com.google.android.datatransport.cct.CctBackendFactory\\\"\\n                android:value=\\\"cct\\\"/>\\n        </service>\\n        <service\\n            android:name=\\\"com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService\\\"\\n            android:permission=\\\"android.permission.BIND_JOB_SERVICE\\\"\\n            android:exported=\\\"false\\\"/>\\n        <receiver\\n            android:name=\\\"com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver\\\"\\n            android:exported=\\\"false\\\"/>\\n        <service\\n            android:name=\\\"androidx.room.MultiInstanceInvalidationService\\\"\\n            android:exported=\\\"false\\\"\\n            android:directBootAware=\\\"true\\\"/>\\n        <activity\\n            android:name=\\\"com.pairip.licensecheck.LicenseActivity\\\"\\n            android:exported=\\\"false\\\"/>\\n        <meta-data\\n            android:name=\\\"com.android.vending.splits.required\\\"\\n            android:value=\\\"true\\\"/>\\n        <meta-data\\n            android:name=\\\"com.android.stamp.source\\\"\\n            android:value=\\\"https://play.google.com/store\\\"/>\\n        <meta-data\\n            android:name=\\\"com.android.stamp.type\\\"\\n            android:value=\\\"STAMP_TYPE_DISTRIBUTION_APK\\\"/>\\n        <meta-data\\n            android:name=\\\"com.android.vending.splits\\\"\\n            android:resource=\\\"@xml/splits0\\\"/>\\n        <meta-data\\n            android:name=\\\"com.android.vending.derived.apk.id\\\"\\n            android:value=\\\"4\\\"/>\\n    </application>\\n</manifest>\",\"reported_total_bytes\":null},\"components\":{\"status\":\"complete\",\"items\":[{\"kind\":\"receiver\",\"declared_name\":\"com.facebook.rethinkvision.Bimostitch.StitcherService$StopServiceReceiver\",\"name\":\"com.facebook.rethinkvision.Bimostitch.StitcherService$StopServiceReceiver\",\"exported\":true,\"exported_default\":true,\"permission\":null,\"permission_source\":\"none\",\"intent_filter_count\":1,\"actions\":[\"com.facebook.rethinkvision.Bimostitch.lite.action.STOP\"],\"categories\":[],\"foreground_service_type\":null,\"authorities\":null,\"target_activity\":null,\"declaration_coverage\":\"complete\",\"declaration_index\":0,\"location\":{\"line\":90,\"column\":9,\"offset\":4369},\"enabled\":null,\"enabled_declaration\":null,\"process\":null,\"grant_uri_permissions\":null,\"grant_uri_permissions_declaration\":null,\"intent_filters\":[{\"source_index\":0,\"location\":{\"line\":93,\"column\":13,\"offset\":4529},\"priority\":null,\"actions\":[\"com.facebook.rethinkvision.Bimostitch.lite.action.STOP\"],\"categories\":[],\"data\":[],\"coverage\":\"complete\"}],\"meta_data\":[]},{\"kind\":\"activity\",\"declared_name\":\"com.facebook.rethinkvision.Bimostitch.BimostitchActivity\",\"name\":\"com.facebook.rethinkvision.Bimostitch.BimostitchActivity\",\"exported\":true,\"exported_default\":true,\"permission\":null,\"permission_source\":\"none\",\"intent_filter_count\":2,\"actions\":[\"android.intent.action.MAIN\",\"android.intent.action.SEND_MULTIPLE\"],\"categories\":[\"android.intent.category.LAUNCHER\",\"android.intent.category.DEFAULT\"],\"foreground_service_type\":null,\"authorities\":null,\"target_activity\":null,\"declaration_coverage\":\"complete\",\"declaration_index\":1,\"location\":{\"line\":100,\"column\":9,\"offset\":4809},\"enabled\":null,\"enabled_declaration\":null,\"process\":null,\"grant_uri_permissions\":null,\"grant_uri_permissions_declaration\":null,\"intent_filters\":[{\"source_index\":0,\"location\":{\"line\":105,\"column\":13,\"offset\":5055},\"priority\":null,\"actions\":[\"android.intent.action.MAIN\"],\"categories\":[\"android.intent.category.LAUNCHER\"],\"data\":[],\"coverage\":\"complete\"},{\"source_index\":1,\"location\":{\"line\":109,\"column\":13,\"offset\":5256},\"priority\":null,\"actions\":[\"android.intent.action.SEND_MULTIPLE\"],\"categories\":[\"android.intent.category.DEFAULT\"],\"data\":[{\"location\":{\"line\":112,\"column\":17,\"offset\":5440},\"scheme\":null,\"host\":null,\"port\":null,\"path\":null,\"path_prefix\":null,\"path_pattern\":null,\"path_advanced_pattern\":null,\"path_suffix\":null,\"mime_type\":\"image/*\"}],\"coverage\":\"complete\"}],\"meta_data\":[]},{\"kind\":\"activity\",\"declared_name\":\"com.facebook.rethinkvision.Bimostitch.SettingsActivity\",\"name\":\"com.facebook.rethinkvision.Bimostitch.SettingsActivity\",\"exported\":null,\"exported_default\":false,\"permission\":null,\"permission_source\":\"none\",\"intent_filter_count\":0,\"actions\":[],\"categories\":[],\"foreground_service_type\":null,\"authorities\":null,\"target_activity\":null,\"declaration_coverage\":\"complete\",\"declaration_index\":2,\"location\":{\"line\":115,\"column\":9,\"offset\":5532},\"enabled\":null,\"enabled_declaration\":null,\"process\":null,\"grant_uri_permissions\":null,\"grant_uri_permissions_declaration\":null,\"intent_filters\":[],\"meta_data\":[]},{\"kind\":\"activity\",\"declared_name\":\"com.facebook.rethinkvision.Bimostitch.HelpActivity\",\"name\":\"com.facebook.rethinkvision.Bimostitch.HelpActivity\",\"exported\":null,\"exported_default\":false,\"permission\":null,\"permission_source\":\"none\",\"intent_filter_count\":0,\"actions\":[],\"categories\":[],\"foreground_service_type\":null,\"authorities\":null,\"target_activity\":null,\"declaration_coverage\":\"complete\",\"declaration_index\":3,\"location\":{\"line\":120,\"column\":9,\"offset\":5788},\"enabled\":null,\"enabled_declaration\":null,\"process\":null,\"grant_uri_permissions\":null,\"grant_uri_permissions_declaration\":null,\"intent_filters\":[],\"meta_data\":[]},{\"kind\":\"activity\",\"declared_name\":\"com.facebook.rethinkvision.Bimostitch.PreviewActivity\",\"name\":\"com.facebook.rethinkvision.Bimostitch.PreviewActivity\",\"exported\":null,\"exported_default\":false,\"permission\":null,\"permission_source\":\"none\",\"intent_filter_count\":0,\"actions\":[],\"categories\":[],\"foreground_service_type\":null,\"authorities\":null,\"target_activity\":null,\"declaration_coverage\":\"complete\",\"declaration_index\":4,\"location\":{\"line\":125,\"column\":9,\"offset\":6036},\"enabled\":null,\"enabled_declaration\":null,\"process\":null,\"grant_uri_permissions\":null,\"grant_uri_permissions_declaration\":null,\"intent_filters\":[],\"meta_data\":[]},{\"kind\":\"activity\",\"declared_name\":\"com.facebook.rethinkvision.Bimostitch.QuickSettingsActivity\",\"name\":\"com.facebook.rethinkvision.Bimostitch.QuickSettingsActivity\",\"exported\":null,\"exported_default\":false,\"permission\":null,\"permission_source\":\"none\",\"intent_filter_count\":0,\"actions\":[],\"categories\":[],\"foreground_service_type\":null,\"authorities\":null,\"target_activity\":null,\"declaration_coverage\":\"complete\",\"declaration_index\":5,\"location\":{\"line\":129,\"column\":9,\"offset\":6237},\"enabled\":null,\"enabled_declaration\":null,\"process\":null,\"grant_uri_permissions\":null,\"grant_uri_permissions_declaration\":null,\"intent_filters\":[],\"meta_data\":[]},{\"kind\":\"activity\",\"declared_name\":\"com.facebook.rethinkvision.Bimostitch.ImageDisplay\",\"name\":\"com.facebook.rethinkvision.Bimostitch.ImageDisplay\",\"exported\":null,\"exported_default\":false,\"permission\":null,\"permission_source\":\"none\",\"intent_filter_count\":0,\"actions\":[],\"categories\":[],\"foreground_service_type\":null,\"authorities\":null,\"target_activity\":null,\"declaration_coverage\":\"complete\",\"declaration_index\":6,\"location\":{\"line\":133,\"column\":9,\"offset\":6439},\"enabled\":null,\"enabled_declaration\":null,\"process\":null,\"grant_uri_permissions\":null,\"grant_uri_permissions_declaration\":null,\"intent_filters\":[],\"meta_data\":[]},{\"kind\":\"provider\",\"declared_name\":\"androidx.core.content.FileProvider\",\"name\":\"androidx.core.content.FileProvider\",\"exported\":false,\"exported_default\":false,\"permission\":null,\"permission_source\":\"none\",\"intent_filter_count\":0,\"actions\":[],\"categories\":[],\"foreground_service_type\":null,\"authorities\":[\"com.facebook.rethinkvision.Bimostitch.fileprovider\"],\"target_activity\":null,\"declaration_coverage\":\"complete\",\"declaration_index\":7,\"location\":{\"line\":138,\"column\":9,\"offset\":6689},\"enabled\":null,\"enabled_declaration\":null,\"process\":null,\"grant_uri_permissions\":true,\"grant_uri_permissions_declaration\":\"true\",\"intent_filters\":[],\"meta_data\":[{\"name\":\"android.support.FILE_PROVIDER_PATHS\",\"location\":{\"line\":143,\"column\":13,\"offset\":6943}}]},{\"kind\":\"activity\",\"declared_name\":\"com.facebook.rethinkvision.Bimostitch.ViewerActivity\",\"name\":\"com.facebook.rethinkvision.Bimostitch.ViewerActivity\",\"exported\":null,\"exported_default\":false,\"permission\":null,\"permission_source\":\"none\",\"intent_filter_count\":0,\"actions\":[],\"categories\":[],\"foreground_service_type\":null,\"authorities\":null,\"target_activity\":null,\"declaration_coverage\":\"complete\",\"declaration_index\":8,\"location\":{\"line\":147,\"column\":9,\"offset\":7106},\"enabled\":null,\"enabled_declaration\":null,\"process\":null,\"grant_uri_permissions\":null,\"grant_uri_permissions_declaration\":null,\"intent_filters\":[],\"meta_data\":[]},{\"kind\":\"service\",\"declared_name\":\"com.facebook.rethinkvision.Bimostitch.StitcherService\",\"name\":\"com.facebook.rethinkvision.Bimostitch.StitcherService\",\"exported\":false,\"exported_default\":false,\"permission\":null,\"permission_source\":\"none\",\"intent_filter_count\":0,\"actions\":[],\"categories\":[],\"foreground_service_type\":\"specialUse\",\"authorities\":null,\"target_activity\":null,\"declaration_coverage\":\"complete\",\"declaration_index\":9,\"location\":{\"line\":152,\"column\":9,\"offset\":7389},\"enabled\":true,\"enabled_declaration\":\"true\",\"process\":null,\"grant_uri_permissions\":null,\"grant_uri_permissions_declaration\":null,\"intent_filters\":[],\"meta_data\":[]},{\"kind\":\"activity\",\"declared_name\":\"com.android.billingclient.api.ProxyBillingActivity\",\"name\":\"com.android.billingclient.api.ProxyBillingActivity\",\"exported\":false,\"exported_default\":false,\"permission\":null,\"permission_source\":\"none\",\"intent_filter_count\":0,\"actions\":[],\"categories\":[],\"foreground_service_type\":null,\"authorities\":null,\"target_activity\":null,\"declaration_coverage\":\"complete\",\"declaration_index\":10,\"location\":{\"line\":164,\"column\":9,\"offset\":7910},\"enabled\":null,\"enabled_declaration\":null,\"process\":null,\"grant_uri_permissions\":null,\"grant_uri_permissions_declaration\":null,\"intent_filters\":[],\"meta_data\":[]},{\"kind\":\"activity\",\"declared_name\":\"com.android.billingclient.api.ProxyBillingActivityV2\",\"name\":\"com.android.billingclient.api.ProxyBillingActivityV2\",\"exported\":false,\"exported_default\":false,\"permission\":null,\"permission_source\":\"none\",\"intent_filter_count\":0,\"actions\":[],\"categories\":[],\"foreground_service_type\":null,\"authorities\":null,\"target_activity\":null,\"declaration_coverage\":\"complete\",\"declaration_index\":11,\"location\":{\"line\":169,\"column\":9,\"offset\":8213},\"enabled\":null,\"enabled_declaration\":null,\"process\":null,\"grant_uri_permissions\":null,\"grant_uri_permissions_declaration\":null,\"intent_filters\":[],\"meta_data\":[]},{\"kind\":\"activity\",\"declared_name\":\"com.google.android.gms.ads.AdActivity\",\"name\":\"com.google.android.gms.ads.AdActivity\",\"exported\":false,\"exported_default\":false,\"permission\":null,\"permission_source\":\"none\",\"intent_filter_count\":0,\"actions\":[],\"categories\":[],\"foreground_service_type\":null,\"authorities\":null,\"target_activity\":null,\"declaration_coverage\":\"complete\",\"declaration_index\":12,\"location\":{\"line\":174,\"column\":9,\"offset\":8518},\"enabled\":null,\"enabled_declaration\":null,\"process\":null,\"grant_uri_permissions\":null,\"grant_uri_permissions_declaration\":null,\"intent_filters\":[],\"meta_data\":[]},{\"kind\":\"provider\",\"declared_name\":\"com.google.android.gms.ads.MobileAdsInitProvider\",\"name\":\"com.google.android.gms.ads.MobileAdsInitProvider\",\"exported\":false,\"exported_default\":false,\"permission\":null,\"permission_source\":\"none\",\"intent_filter_count\":0,\"actions\":[],\"categories\":[],\"foreground_service_type\":null,\"authorities\":[\"com.facebook.rethinkvision.Bimostitch.mobileadsinitprovider\"],\"target_activity\":null,\"declaration_coverage\":\"complete\",\"declaration_index\":13,\"location\":{\"line\":180,\"column\":9,\"offset\":8879},\"enabled\":null,\"enabled_declaration\":null,\"process\":null,\"grant_uri_permissions\":null,\"grant_uri_permissions_declaration\":null,\"intent_filters\":[],\"meta_data\":[]},{\"kind\":\"service\",\"declared_name\":\"com.google.android.gms.ads.AdService\",\"name\":\"com.google.android.gms.ads.AdService\",\"exported\":false,\"exported_default\":false,\"permission\":null,\"permission_source\":\"none\",\"intent_filter_count\":0,\"actions\":[],\"categories\":[],\"foreground_service_type\":null,\"authorities\":null,\"target_activity\":null,\"declaration_coverage\":\"complete\",\"declaration_index\":14,\"location\":{\"line\":185,\"column\":9,\"offset\":9142},\"enabled\":true,\"enabled_declaration\":\"true\",\"process\":null,\"grant_uri_permissions\":null,\"grant_uri_permissions_declaration\":null,\"intent_filters\":[],\"meta_data\":[]},{\"kind\":\"activity\",\"declared_name\":\"com.google.android.gms.ads.OutOfContextTestingActivity\",\"name\":\"com.google.android.gms.ads.OutOfContextTestingActivity\",\"exported\":false,\"exported_default\":false,\"permission\":null,\"permission_source\":\"none\",\"intent_filter_count\":0,\"actions\":[],\"categories\":[],\"foreground_service_type\":null,\"authorities\":null,\"target_activity\":null,\"declaration_coverage\":\"complete\",\"declaration_index\":15,\"location\":{\"line\":189,\"column\":9,\"offset\":9297},\"enabled\":null,\"enabled_declaration\":null,\"process\":null,\"grant_uri_permissions\":null,\"grant_uri_permissions_declaration\":null,\"intent_filters\":[],\"meta_data\":[]},{\"kind\":\"activity\",\"declared_name\":\"com.google.android.gms.ads.NotificationHandlerActivity\",\"name\":\"com.google.android.gms.ads.NotificationHandlerActivity\",\"exported\":false,\"exported_default\":false,\"permission\":null,\"permission_source\":\"none\",\"intent_filter_count\":0,\"actions\":[],\"categories\":[],\"foreground_service_type\":null,\"authorities\":null,\"target_activity\":null,\"declaration_coverage\":\"complete\",\"declaration_index\":16,\"location\":{\"line\":193,\"column\":9,\"offset\":9558},\"enabled\":null,\"enabled_declaration\":null,\"process\":null,\"grant_uri_permissions\":null,\"grant_uri_permissions_declaration\":null,\"intent_filters\":[],\"meta_data\":[]},{\"kind\":\"activity\",\"declared_name\":\"com.google.android.play.core.hsdp.service.HsdpShimActivity\",\"name\":\"com.google.android.play.core.hsdp.service.HsdpShimActivity\",\"exported\":false,\"exported_default\":false,\"permission\":null,\"permission_source\":\"none\",\"intent_filter_count\":0,\"actions\":[],\"categories\":[],\"foreground_service_type\":null,\"authorities\":null,\"target_activity\":null,\"declaration_coverage\":\"complete\",\"declaration_index\":17,\"location\":{\"line\":206,\"column\":9,\"offset\":10165},\"enabled\":null,\"enabled_declaration\":null,\"process\":null,\"grant_uri_permissions\":null,\"grant_uri_permissions_declaration\":null,\"intent_filters\":[],\"meta_data\":[]},{\"kind\":\"activity\",\"declared_name\":\"com.google.android.gms.common.api.GoogleApiActivity\",\"name\":\"com.google.android.gms.common.api.GoogleApiActivity\",\"exported\":false,\"exported_default\":false,\"permission\":null,\"permission_source\":\"none\",\"intent_filter_count\":0,\"actions\":[],\"categories\":[],\"foreground_service_type\":null,\"authorities\":null,\"target_activity\":null,\"declaration_coverage\":\"complete\",\"declaration_index\":18,\"location\":{\"line\":213,\"column\":9,\"offset\":10548},\"enabled\":null,\"enabled_declaration\":null,\"process\":null,\"grant_uri_permissions\":null,\"grant_uri_permissions_declaration\":null,\"intent_filters\":[],\"meta_data\":[]},{\"kind\":\"provider\",\"declared_name\":\"androidx.startup.InitializationProvider\",\"name\":\"androidx.startup.InitializationProvider\",\"exported\":false,\"exported_default\":false,\"permission\":null,\"permission_source\":\"none\",\"intent_filter_count\":0,\"actions\":[],\"categories\":[],\"foreground_service_type\":null,\"authorities\":[\"com.facebook.rethinkvision.Bimostitch.androidx-startup\"],\"target_activity\":null,\"declaration_coverage\":\"complete\",\"declaration_index\":19,\"location\":{\"line\":220,\"column\":9,\"offset\":10901},\"enabled\":null,\"enabled_declaration\":null,\"process\":null,\"grant_uri_permissions\":null,\"grant_uri_permissions_declaration\":null,\"intent_filters\":[],\"meta_data\":[{\"name\":\"androidx.emoji2.text.EmojiCompatInitializer\",\"location\":{\"line\":224,\"column\":13,\"offset\":11117}},{\"name\":\"androidx.work.WorkManagerInitializer\",\"location\":{\"line\":227,\"column\":13,\"offset\":11266}},{\"name\":\"androidx.lifecycle.ProcessLifecycleInitializer\",\"location\":{\"line\":230,\"column\":13,\"offset\":11408}},{\"name\":\"androidx.profileinstaller.ProfileInstallerInitializer\",\"location\":{\"line\":233,\"column\":13,\"offset\":11560}}]},{\"kind\":\"service\",\"declared_name\":\"androidx.work.impl.background.systemalarm.SystemAlarmService\",\"name\":\"androidx.work.impl.background.systemalarm.SystemAlarmService\",\"exported\":false,\"exported_default\":false,\"permission\":null,\"permission_source\":\"none\",\"intent_filter_count\":0,\"actions\":[],\"categories\":[],\"foreground_service_type\":null,\"authorities\":null,\"target_activity\":null,\"declaration_coverage\":\"complete\",\"declaration_index\":20,\"location\":{\"line\":237,\"column\":9,\"offset\":11735},\"enabled\":null,\"enabled_declaration\":\"@bool/enable_system_alarm_service_default\",\"process\":null,\"grant_uri_permissions\":null,\"grant_uri_permissions_declaration\":null,\"intent_filters\":[],\"meta_data\":[]},{\"kind\":\"service\",\"declared_name\":\"androidx.work.impl.background.systemjob.SystemJobService\",\"name\":\"androidx.work.impl.background.systemjob.SystemJobService\",\"exported\":true,\"exported_default\":false,\"permission\":\"android.permission.BIND_JOB_SERVICE\",\"permission_source\":\"component\",\"intent_filter_count\":0,\"actions\":[],\"categories\":[],\"foreground_service_type\":null,\"authorities\":null,\"target_activity\":null,\"declaration_coverage\":\"complete\",\"declaration_index\":21,\"location\":{\"line\":242,\"column\":9,\"offset\":11995},\"enabled\":null,\"enabled_declaration\":\"@bool/enable_system_job_service_default\",\"process\":null,\"grant_uri_permissions\":null,\"grant_uri_permissions_declaration\":null,\"intent_filters\":[],\"meta_data\":[]},{\"kind\":\"service\",\"declared_name\":\"androidx.work.impl.foreground.SystemForegroundService\",\"name\":\"androidx.work.impl.foreground.SystemForegroundService\",\"exported\":false,\"exported_default\":false,\"permission\":null,\"permission_source\":\"none\",\"intent_filter_count\":0,\"actions\":[],\"categories\":[],\"foreground_service_type\":null,\"authorities\":null,\"target_activity\":null,\"declaration_coverage\":\"complete\",\"declaration_index\":22,\"location\":{\"line\":248,\"column\":9,\"offset\":12317},\"enabled\":null,\"enabled_declaration\":\"@bool/enable_system_foreground_service_default\",\"process\":null,\"grant_uri_permissions\":null,\"grant_uri_permissions_declaration\":null,\"intent_filters\":[],\"meta_data\":[]},{\"kind\":\"receiver\",\"declared_name\":\"androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver\",\"name\":\"androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver\",\"exported\":false,\"exported_default\":false,\"permission\":null,\"permission_source\":\"none\",\"intent_filter_count\":0,\"actions\":[],\"categories\":[],\"foreground_service_type\":null,\"authorities\":null,\"target_activity\":null,\"declaration_coverage\":\"complete\",\"declaration_index\":23,\"location\":{\"line\":253,\"column\":9,\"offset\":12575},\"enabled\":true,\"enabled_declaration\":\"true\",\"process\":null,\"grant_uri_permissions\":null,\"grant_uri_permissions_declaration\":null,\"intent_filters\":[],\"meta_data\":[]},{\"kind\":\"receiver\",\"declared_name\":\"androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy\",\"name\":\"androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy\",\"exported\":false,\"exported_default\":true,\"permission\":null,\"permission_source\":\"none\",\"intent_filter_count\":1,\"actions\":[\"android.intent.action.ACTION_POWER_CONNECTED\",\"android.intent.action.ACTION_POWER_DISCONNECTED\"],\"categories\":[],\"foreground_service_type\":null,\"authorities\":null,\"target_activity\":null,\"declaration_coverage\":\"complete\",\"declaration_index\":24,\"location\":{\"line\":258,\"column\":9,\"offset\":12799},\"enabled\":false,\"enabled_declaration\":\"false\",\"process\":null,\"grant_uri_permissions\":null,\"grant_uri_permissions_declaration\":null,\"intent_filters\":[{\"source_index\":0,\"location\":{\"line\":263,\"column\":13,\"offset\":13045},\"priority\":null,\"actions\":[\"android.intent.action.ACTION_POWER_CONNECTED\",\"android.intent.action.ACTION_POWER_DISCONNECTED\"],\"categories\":[],\"data\":[],\"coverage\":\"complete\"}],\"meta_data\":[]},{\"kind\":\"receiver\",\"declared_name\":\"androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy\",\"name\":\"androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy\",\"exported\":false,\"exported_default\":true,\"permission\":null,\"permission_source\":\"none\",\"intent_filter_count\":1,\"actions\":[\"android.intent.action.BATTERY_OKAY\",\"android.intent.action.BATTERY_LOW\"],\"categories\":[],\"foreground_service_type\":null,\"authorities\":null,\"target_activity\":null,\"declaration_coverage\":\"complete\",\"declaration_index\":25,\"location\":{\"line\":268,\"column\":9,\"offset\":13293},\"enabled\":false,\"enabled_declaration\":\"false\",\"process\":null,\"grant_uri_permissions\":null,\"grant_uri_permissions_declaration\":null,\"intent_filters\":[{\"source_index\":0,\"location\":{\"line\":273,\"column\":13,\"offset\":13537},\"priority\":null,\"actions\":[\"android.intent.action.BATTERY_OKAY\",\"android.intent.action.BATTERY_LOW\"],\"categories\":[],\"data\":[],\"coverage\":\"complete\"}],\"meta_data\":[]},{\"kind\":\"receiver\",\"declared_name\":\"androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy\",\"name\":\"androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy\",\"exported\":false,\"exported_default\":true,\"permission\":null,\"permission_source\":\"none\",\"intent_filter_count\":1,\"actions\":[\"android.intent.action.DEVICE_STORAGE_LOW\",\"android.intent.action.DEVICE_STORAGE_OK\"],\"categories\":[],\"foreground_service_type\":null,\"authorities\":null,\"target_activity\":null,\"declaration_coverage\":\"complete\",\"declaration_index\":26,\"location\":{\"line\":278,\"column\":9,\"offset\":13761},\"enabled\":false,\"enabled_declaration\":\"false\",\"process\":null,\"grant_uri_permissions\":null,\"grant_uri_permissions_declaration\":null,\"intent_filters\":[{\"source_index\":0,\"location\":{\"line\":283,\"column\":13,\"offset\":14005},\"priority\":null,\"actions\":[\"android.intent.action.DEVICE_STORAGE_LOW\",\"android.intent.action.DEVICE_STORAGE_OK\"],\"categories\":[],\"data\":[],\"coverage\":\"complete\"}],\"meta_data\":[]},{\"kind\":\"receiver\",\"declared_name\":\"androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy\",\"name\":\"androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy\",\"exported\":false,\"exported_default\":true,\"permission\":null,\"permission_source\":\"none\",\"intent_filter_count\":1,\"actions\":[\"android.net.conn.CONNECTIVITY_CHANGE\"],\"categories\":[],\"foreground_service_type\":null,\"authorities\":null,\"target_activity\":null,\"declaration_coverage\":\"complete\",\"declaration_index\":27,\"location\":{\"line\":288,\"column\":9,\"offset\":14241},\"enabled\":false,\"enabled_declaration\":\"false\",\"process\":null,\"grant_uri_permissions\":null,\"grant_uri_permissions_declaration\":null,\"intent_filters\":[{\"source_index\":0,\"location\":{\"line\":293,\"column\":13,\"offset\":14484},\"priority\":null,\"actions\":[\"android.net.conn.CONNECTIVITY_CHANGE\"],\"categories\":[],\"data\":[],\"coverage\":\"complete\"}],\"meta_data\":[]},{\"kind\":\"receiver\",\"declared_name\":\"androidx.work.impl.background.systemalarm.RescheduleReceiver\",\"name\":\"androidx.work.impl.background.systemalarm.RescheduleReceiver\",\"exported\":false,\"exported_default\":true,\"permission\":null,\"permission_source\":\"none\",\"intent_filter_count\":1,\"actions\":[\"android.intent.action.BOOT_COMPLETED\",\"android.intent.action.TIME_SET\",\"android.intent.action.TIMEZONE_CHANGED\"],\"categories\":[],\"foreground_service_type\":null,\"authorities\":null,\"target_activity\":null,\"declaration_coverage\":\"complete\",\"declaration_index\":28,\"location\":{\"line\":297,\"column\":9,\"offset\":14635},\"enabled\":false,\"enabled_declaration\":\"false\",\"process\":null,\"grant_uri_permissions\":null,\"grant_uri_permissions_declaration\":null,\"intent_filters\":[{\"source_index\":0,\"location\":{\"line\":302,\"column\":13,\"offset\":14863},\"priority\":null,\"actions\":[\"android.intent.action.BOOT_COMPLETED\",\"android.intent.action.TIME_SET\",\"android.intent.action.TIMEZONE_CHANGED\"],\"categories\":[],\"data\":[],\"coverage\":\"complete\"}],\"meta_data\":[]},{\"kind\":\"receiver\",\"declared_name\":\"androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver\",\"name\":\"androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver\",\"exported\":false,\"exported_default\":true,\"permission\":null,\"permission_source\":\"none\",\"intent_filter_count\":1,\"actions\":[\"androidx.work.impl.background.systemalarm.UpdateProxies\"],\"categories\":[],\"foreground_service_type\":null,\"authorities\":null,\"target_activity\":null,\"declaration_coverage\":\"complete\",\"declaration_index\":29,\"location\":{\"line\":308,\"column\":9,\"offset\":15166},\"enabled\":null,\"enabled_declaration\":\"@bool/enable_system_alarm_service_default\",\"process\":null,\"grant_uri_permissions\":null,\"grant_uri_permissions_declaration\":null,\"intent_filters\":[{\"source_index\":0,\"location\":{\"line\":313,\"column\":13,\"offset\":15441},\"priority\":null,\"actions\":[\"androidx.work.impl.background.systemalarm.UpdateProxies\"],\"categories\":[],\"data\":[],\"coverage\":\"complete\"}],\"meta_data\":[]},{\"kind\":\"receiver\",\"declared_name\":\"androidx.work.impl.diagnostics.DiagnosticsReceiver\",\"name\":\"androidx.work.impl.diagnostics.DiagnosticsReceiver\",\"exported\":true,\"exported_default\":true,\"permission\":\"android.permission.DUMP\",\"permission_source\":\"component\",\"intent_filter_count\":1,\"actions\":[\"androidx.work.diagnostics.REQUEST_DIAGNOSTICS\"],\"categories\":[],\"foreground_service_type\":null,\"authorities\":null,\"target_activity\":null,\"declaration_coverage\":\"complete\",\"declaration_index\":30,\"location\":{\"line\":317,\"column\":9,\"offset\":15611},\"enabled\":true,\"enabled_declaration\":\"true\",\"process\":null,\"grant_uri_permissions\":null,\"grant_uri_permissions_declaration\":null,\"intent_filters\":[{\"source_index\":0,\"location\":{\"line\":323,\"column\":13,\"offset\":15884},\"priority\":null,\"actions\":[\"androidx.work.diagnostics.REQUEST_DIAGNOSTICS\"],\"categories\":[],\"data\":[],\"coverage\":\"complete\"}],\"meta_data\":[]},{\"kind\":\"receiver\",\"declared_name\":\"androidx.profileinstaller.ProfileInstallReceiver\",\"name\":\"androidx.profileinstaller.ProfileInstallReceiver\",\"exported\":true,\"exported_default\":true,\"permission\":\"android.permission.DUMP\",\"permission_source\":\"component\",\"intent_filter_count\":4,\"actions\":[\"androidx.profileinstaller.action.INSTALL_PROFILE\",\"androidx.profileinstaller.action.SKIP_FILE\",\"androidx.profileinstaller.action.SAVE_PROFILE\",\"androidx.profileinstaller.action.BENCHMARK_OPERATION\"],\"categories\":[],\"foreground_service_type\":null,\"authorities\":null,\"target_activity\":null,\"declaration_coverage\":\"complete\",\"declaration_index\":31,\"location\":{\"line\":336,\"column\":9,\"offset\":16382},\"enabled\":true,\"enabled_declaration\":\"true\",\"process\":null,\"grant_uri_permissions\":null,\"grant_uri_permissions_declaration\":null,\"intent_filters\":[{\"source_index\":0,\"location\":{\"line\":342,\"column\":13,\"offset\":16653},\"priority\":null,\"actions\":[\"androidx.profileinstaller.action.INSTALL_PROFILE\"],\"categories\":[],\"data\":[],\"coverage\":\"complete\"},{\"source_index\":1,\"location\":{\"line\":345,\"column\":13,\"offset\":16800},\"priority\":null,\"actions\":[\"androidx.profileinstaller.action.SKIP_FILE\"],\"categories\":[],\"data\":[],\"coverage\":\"complete\"},{\"source_index\":2,\"location\":{\"line\":348,\"column\":13,\"offset\":16941},\"priority\":null,\"actions\":[\"androidx.profileinstaller.action.SAVE_PROFILE\"],\"categories\":[],\"data\":[],\"coverage\":\"complete\"},{\"source_index\":3,\"location\":{\"line\":351,\"column\":13,\"offset\":17085},\"priority\":null,\"actions\":[\"androidx.profileinstaller.action.BENCHMARK_OPERATION\"],\"categories\":[],\"data\":[],\"coverage\":\"complete\"}],\"meta_data\":[]},{\"kind\":\"service\",\"declared_name\":\"com.google.android.datatransport.runtime.backends.TransportBackendDiscovery\",\"name\":\"com.google.android.datatransport.runtime.backends.TransportBackendDiscovery\",\"exported\":false,\"exported_default\":false,\"permission\":null,\"permission_source\":\"none\",\"intent_filter_count\":0,\"actions\":[],\"categories\":[],\"foreground_service_type\":null,\"authorities\":null,\"target_activity\":null,\"declaration_coverage\":\"complete\",\"declaration_index\":32,\"location\":{\"line\":355,\"column\":9,\"offset\":17252},\"enabled\":null,\"enabled_declaration\":null,\"process\":null,\"grant_uri_permissions\":null,\"grant_uri_permissions_declaration\":null,\"intent_filters\":[],\"meta_data\":[{\"name\":\"backend:com.google.android.datatransport.cct.CctBackendFactory\",\"location\":{\"line\":358,\"column\":13,\"offset\":17414}}]},{\"kind\":\"service\",\"declared_name\":\"com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService\",\"name\":\"com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService\",\"exported\":false,\"exported_default\":false,\"permission\":\"android.permission.BIND_JOB_SERVICE\",\"permission_source\":\"component\",\"intent_filter_count\":0,\"actions\":[],\"categories\":[],\"foreground_service_type\":null,\"authorities\":null,\"target_activity\":null,\"declaration_coverage\":\"complete\",\"declaration_index\":33,\"location\":{\"line\":362,\"column\":9,\"offset\":17584},\"enabled\":null,\"enabled_declaration\":null,\"process\":null,\"grant_uri_permissions\":null,\"grant_uri_permissions_declaration\":null,\"intent_filters\":[],\"meta_data\":[]},{\"kind\":\"receiver\",\"declared_name\":\"com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver\",\"name\":\"com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver\",\"exported\":false,\"exported_default\":false,\"permission\":null,\"permission_source\":\"none\",\"intent_filter_count\":0,\"actions\":[],\"categories\":[],\"foreground_service_type\":null,\"authorities\":null,\"target_activity\":null,\"declaration_coverage\":\"complete\",\"declaration_index\":34,\"location\":{\"line\":366,\"column\":9,\"offset\":17826},\"enabled\":null,\"enabled_declaration\":null,\"process\":null,\"grant_uri_permissions\":null,\"grant_uri_permissions_declaration\":null,\"intent_filters\":[],\"meta_data\":[]},{\"kind\":\"service\",\"declared_name\":\"androidx.room.MultiInstanceInvalidationService\",\"name\":\"androidx.room.MultiInstanceInvalidationService\",\"exported\":false,\"exported_default\":false,\"permission\":null,\"permission_source\":\"none\",\"intent_filter_count\":0,\"actions\":[],\"categories\":[],\"foreground_service_type\":null,\"authorities\":null,\"target_activity\":null,\"declaration_coverage\":\"complete\",\"declaration_index\":35,\"location\":{\"line\":369,\"column\":9,\"offset\":18015},\"enabled\":null,\"enabled_declaration\":null,\"process\":null,\"grant_uri_permissions\":null,\"grant_uri_permissions_declaration\":null,\"intent_filters\":[],\"meta_data\":[]},{\"kind\":\"activity\",\"declared_name\":\"com.pairip.licensecheck.LicenseActivity\",\"name\":\"com.pairip.licensecheck.LicenseActivity\",\"exported\":false,\"exported_default\":false,\"permission\":null,\"permission_source\":\"none\",\"intent_filter_count\":0,\"actions\":[],\"categories\":[],\"foreground_service_type\":null,\"authorities\":null,\"target_activity\":null,\"declaration_coverage\":\"complete\",\"declaration_index\":36,\"location\":{\"line\":373,\"column\":9,\"offset\":18188},\"enabled\":null,\"enabled_declaration\":null,\"process\":null,\"grant_uri_permissions\":null,\"grant_uri_permissions_declaration\":null,\"intent_filters\":[],\"meta_data\":[]}],\"limitations\":[\"4 component declaration(s) set android:enabled to a nonliteral boolean; the declared enabled state is unknown.\"]},\"class_count\":5524,\"resource_count\":681,\"signature_verification\":\"not_performed\"},\"confidence\":\"observed\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Static decompiler observations do not establish runtime behavior; the APK is never executed.\",\"Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.\",\"Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.\",\"Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.\",\"Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.\"],\"relationship_coverage\":null,\"locations\":[{\"kind\":\"artifact-path\",\"path\":\"AndroidManifest.xml\"}],\"evidence_links\":[]}"
+      }
+    ],
+    "structuredContent": {
+      "evidence_id": "ev_8766661951a0b31a57e41e79c28e2e505bdd7175cc488335b2a42fd785e43cb6",
+      "subject": {
+        "name": "base.apk",
+        "digest": {
+          "sha256": "e1156e8d0ff15f79241a2ed98cf6a26c71d39c3c37da439e3a753e4b33ed8d8f"
+        },
+        "local_path": "/workspace/attachments/e111578f-ce02-4ab3-bee9-f03dbce73199/base.apk",
+        "format": "apk",
+        "architecture": null
+      },
+      "provider": {
+        "id": "jadx",
+        "name": "JADX headless",
+        "version": "0.7.1"
+      },
+      "analysis_profile": null,
+      "predicate_type": "rea.analysis",
+      "operation": "inspect_android_package",
+      "parameters": {
+        "path": "/workspace/attachments/e111578f-ce02-4ab3-bee9-f03dbce73199/base.apk"
+      },
+      "raw_result": {
+        "server": {
+          "name": "rea-jadx-bridge",
+          "version": "10"
+        },
+        "bridge_sha256": "f9d6d68eadd3d51a89e2debda359454c20534560080d4438f9b9cfe5a19f0b2e",
+        "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "loaded": {
+          "state": "LOADED",
+          "apk_path": "/tmp/rea-android-lPMWVo/target.apk",
+          "class_count": 5524,
+          "resource_count": 681,
+          "threads": 1,
+          "resources": "full"
+        },
+        "calls": [
+          {
+            "operation": "rea_jvm_status",
+            "input": {},
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":8589934592,\"java_version\":\"21.0.13\",\"available_processors\":4,\"engine_reported_version\":\"0.7.1\"}"
+                }
+              ],
+              "isError": false
+            }
+          },
+          {
+            "operation": "load_apk",
+            "input": {
+              "path": "/tmp/rea-android-lPMWVo/target.apk",
+              "threads": 1,
+              "resources": "full"
+            },
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"state\":\"LOADED\",\"apk_path\":\"/tmp/rea-android-lPMWVo/target.apk\",\"class_count\":5524,\"raw_class_count\":5524,\"resource_count\":681,\"load_duration_ms\":5314,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+                }
+              ],
+              "isError": false
+            }
+          },
+          {
+            "operation": "get_app_info",
+            "input": {},
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"package\":\"com.facebook.rethinkvision.Bimostitch\",\"version_name\":\"3.0.00-lite\",\"version_code\":\"253\",\"min_sdk\":\"32\",\"target_sdk\":\"37\",\"permissions\":[\"android.permission.INTERNET\",\"android.permission.WRITE_EXTERNAL_STORAGE\",\"android.permission.READ_EXTERNAL_STORAGE\",\"android.permission.READ_MEDIA_IMAGES\",\"android.permission.READ_MEDIA_VIDEO\",\"android.permission.ACCESS_MEDIA_LOCATION\",\"android.permission.WAKE_LOCK\",\"android.permission.VIBRATE\",\"com.android.vending.CHECK_LICENSE\",\"android.permission.FOREGROUND_SERVICE\",\"android.permission.FOREGROUND_SERVICE_SPECIAL_USE\",\"android.permission.POST_NOTIFICATIONS\",\"com.android.vending.BILLING\",\"android.permission.ACCESS_NETWORK_STATE\",\"com.google.android.gms.permission.AD_ID\",\"android.permission.ACCESS_ADSERVICES_AD_ID\",\"android.permission.ACCESS_ADSERVICES_ATTRIBUTION\",\"android.permission.ACCESS_ADSERVICES_TOPICS\",\"com.facebook.rethinkvision.Bimostitch.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION\"]}"
+                }
+              ],
+              "isError": false
+            }
+          },
+          {
+            "operation": "get_android_manifest",
+            "input": {},
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    android:versionCode=\"253\"\n    android:versionName=\"3.0.00-lite\"\n    android:compileSdkVersion=\"37\"\n    android:compileSdkVersionCodename=\"17\"\n    android:requiredSplitTypes=\"base__abi,base__density\"\n    android:splitTypes=\"\"\n    package=\"com.facebook.rethinkvision.Bimostitch\"\n    platformBuildVersionCode=\"37\"\n    platformBuildVersionName=\"17\">\n    <uses-sdk\n        android:minSdkVersion=\"32\"\n        android:targetSdkVersion=\"37\"/>\n    <uses-permission android:name=\"android.permission.INTERNET\"/>\n    <uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>\n    <uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\"/>\n    <uses-permission android:name=\"android.permission.READ_MEDIA_IMAGES\"/>\n    <uses-permission android:name=\"android.permission.READ_MEDIA_VIDEO\"/>\n    <uses-permission android:name=\"android.permission.ACCESS_MEDIA_LOCATION\"/>\n    <uses-permission android:name=\"android.permission.WAKE_LOCK\"/>\n    <uses-permission android:name=\"android.permission.VIBRATE\"/>\n    <uses-permission android:name=\"com.android.vending.CHECK_LICENSE\"/>\n    <uses-permission android:name=\"android.permission.FOREGROUND_SERVICE\"/>\n    <uses-permission android:name=\"android.permission.FOREGROUND_SERVICE_SPECIAL_USE\"/>\n    <uses-permission android:name=\"android.permission.POST_NOTIFICATIONS\"/>\n    <queries>\n        <package android:name=\"com.google.android.apps.photos\"/>\n        <intent>\n            <action android:name=\"android.intent.action.ACTION_PICK\"/>\n            <data android:mimeType=\"image/*\"/>\n        </intent>\n        <intent>\n            <action android:name=\"com.android.vending.billing.InAppBillingService.BIND\"/>\n        </intent>\n        <intent>\n            <action android:name=\"com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND\"/>\n        </intent>\n        <intent>\n            <action android:name=\"android.intent.action.VIEW\"/>\n            <category android:name=\"android.intent.category.BROWSABLE\"/>\n            <data android:scheme=\"https\"/>\n        </intent>\n        <intent>\n            <action android:name=\"android.support.customtabs.action.CustomTabsService\"/>\n        </intent>\n        <intent>\n            <action android:name=\"android.intent.action.INSERT\"/>\n            <data android:mimeType=\"vnd.android.cursor.dir/event\"/>\n        </intent>\n        <intent>\n            <action android:name=\"android.intent.action.VIEW\"/>\n            <data android:scheme=\"sms\"/>\n        </intent>\n        <intent>\n            <action android:name=\"android.intent.action.DIAL\"/>\n            <data android:path=\"tel:\"/>\n        </intent>\n        <package android:name=\"com.android.vending\"/>\n    </queries>\n    <uses-feature\n        android:name=\"android.hardware.touchscreen\"\n        android:required=\"false\"/>\n    <uses-feature\n        android:name=\"android.hardware.camera\"\n        android:required=\"false\"/>\n    <uses-permission android:name=\"com.android.vending.BILLING\"/>\n    <uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>\n    <uses-permission android:name=\"com.google.android.gms.permission.AD_ID\"/>\n    <uses-permission android:name=\"android.permission.ACCESS_ADSERVICES_AD_ID\"/>\n    <uses-permission android:name=\"android.permission.ACCESS_ADSERVICES_ATTRIBUTION\"/>\n    <uses-permission android:name=\"android.permission.ACCESS_ADSERVICES_TOPICS\"/>\n    <permission\n        android:name=\"com.facebook.rethinkvision.Bimostitch.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION\"\n        android:protectionLevel=\"signature\"/>\n    <uses-permission android:name=\"com.facebook.rethinkvision.Bimostitch.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION\"/>\n    <application\n        android:theme=\"@style/AppTheme\"\n        android:label=\"@string/app_name\"\n        android:icon=\"@mipmap/ic_launcher\"\n        android:name=\"com.pairip.application.Application\"\n        android:allowBackup=\"true\"\n        android:largeHeap=\"true\"\n        android:extractNativeLibs=\"false\"\n        android:appComponentFactory=\"androidx.core.app.CoreComponentFactory\"\n        android:requestLegacyExternalStorage=\"true\">\n        <meta-data\n            android:name=\"com.google.android.gms.ads.APPLICATION_ID\"\n            android:value=\"ca-app-pub-7329778626013066~4565416236\"/>\n        <receiver\n            android:name=\"com.facebook.rethinkvision.Bimostitch.StitcherService$StopServiceReceiver\"\n            android:exported=\"true\">\n            <intent-filter>\n                <action android:name=\"com.facebook.rethinkvision.Bimostitch.lite.action.STOP\"/>\n            </intent-filter>\n        </receiver>\n        <uses-library\n            android:name=\"org.apache.http.legacy\"\n            android:required=\"false\"/>\n        <activity\n            android:theme=\"@style/AppTheme\"\n            android:name=\"com.facebook.rethinkvision.Bimostitch.BimostitchActivity\"\n            android:exported=\"true\"\n            android:configChanges=\"screenSize|orientation\">\n            <intent-filter>\n                <action android:name=\"android.intent.action.MAIN\"/>\n                <category android:name=\"android.intent.category.LAUNCHER\"/>\n            </intent-filter>\n            <intent-filter>\n                <action android:name=\"android.intent.action.SEND_MULTIPLE\"/>\n                <category android:name=\"android.intent.category.DEFAULT\"/>\n                <data android:mimeType=\"image/*\"/>\n            </intent-filter>\n        </activity>\n        <activity\n            android:theme=\"@style/SecondaryTheme\"\n            android:label=\"@string/settings\"\n            android:name=\"com.facebook.rethinkvision.Bimostitch.SettingsActivity\"\n            android:configChanges=\"screenSize|orientation\"/>\n        <activity\n            android:theme=\"@style/SecondaryTheme\"\n            android:label=\"@string/help\"\n            android:name=\"com.facebook.rethinkvision.Bimostitch.HelpActivity\"\n            android:configChanges=\"screenSize|orientation\"/>\n        <activity\n            android:theme=\"@style/AppTheme.NoActionBar\"\n            android:label=\"@string/preview\"\n            android:name=\"com.facebook.rethinkvision.Bimostitch.PreviewActivity\"/>\n        <activity\n            android:theme=\"@style/SecondaryTheme\"\n            android:label=\"@string/settings\"\n            android:name=\"com.facebook.rethinkvision.Bimostitch.QuickSettingsActivity\"/>\n        <activity\n            android:theme=\"@style/AppTheme\"\n            android:label=\"@string/image_picker\"\n            android:name=\"com.facebook.rethinkvision.Bimostitch.ImageDisplay\"\n            android:configChanges=\"screenSize|orientation\"/>\n        <provider\n            android:name=\"androidx.core.content.FileProvider\"\n            android:exported=\"false\"\n            android:authorities=\"com.facebook.rethinkvision.Bimostitch.fileprovider\"\n            android:grantUriPermissions=\"true\">\n            <meta-data\n                android:name=\"android.support.FILE_PROVIDER_PATHS\"\n                android:resource=\"@xml/provider_paths\"/>\n        </provider>\n        <activity\n            android:theme=\"@style/FullscreenTheme\"\n            android:label=\"@string/title_activity_viewer\"\n            android:name=\"com.facebook.rethinkvision.Bimostitch.ViewerActivity\"\n            android:configChanges=\"screenSize|orientation|keyboardHidden\"/>\n        <service\n            android:name=\"com.facebook.rethinkvision.Bimostitch.StitcherService\"\n            android:enabled=\"true\"\n            android:exported=\"false\"\n            android:foregroundServiceType=\"specialUse\">\n            <property\n                android:name=\"android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE\"\n                android:value=\"image_stitching\"/>\n        </service>\n        <meta-data\n            android:name=\"com.google.android.play.billingclient.version\"\n            android:value=\"9.1.0\"/>\n        <activity\n            android:theme=\"@android:style/Theme.Translucent.NoTitleBar\"\n            android:name=\"com.android.billingclient.api.ProxyBillingActivity\"\n            android:exported=\"false\"\n            android:configChanges=\"screenSize|screenLayout|orientation|keyboardHidden|keyboard\"/>\n        <activity\n            android:theme=\"@android:style/Theme.Translucent.NoTitleBar\"\n            android:name=\"com.android.billingclient.api.ProxyBillingActivityV2\"\n            android:exported=\"false\"\n            android:configChanges=\"screenSize|screenLayout|orientation|keyboardHidden|keyboard\"/>\n        <activity\n            android:theme=\"@android:style/Theme.Translucent\"\n            android:name=\"com.google.android.gms.ads.AdActivity\"\n            android:exported=\"false\"\n            android:configChanges=\"smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard\"\n            android:enableOnBackInvokedCallback=\"false\"/>\n        <provider\n            android:name=\"com.google.android.gms.ads.MobileAdsInitProvider\"\n            android:exported=\"false\"\n            android:authorities=\"com.facebook.rethinkvision.Bimostitch.mobileadsinitprovider\"\n            android:initOrder=\"100\"/>\n        <service\n            android:name=\"com.google.android.gms.ads.AdService\"\n            android:enabled=\"true\"\n            android:exported=\"false\"/>\n        <activity\n            android:name=\"com.google.android.gms.ads.OutOfContextTestingActivity\"\n            android:exported=\"false\"\n            android:configChanges=\"smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard\"/>\n        <activity\n            android:theme=\"@android:style/Theme.Translucent.NoTitleBar\"\n            android:name=\"com.google.android.gms.ads.NotificationHandlerActivity\"\n            android:exported=\"false\"\n            android:taskAffinity=\"\"\n            android:excludeFromRecents=\"true\"\n            android:launchMode=\"singleTask\"/>\n        <meta-data\n            android:name=\"com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING\"\n            android:value=\"true\"/>\n        <meta-data\n            android:name=\"com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION\"\n            android:value=\"true\"/>\n        <activity\n            android:theme=\"@style/Theme.HsdpServiceTransparent\"\n            android:name=\"com.google.android.play.core.hsdp.service.HsdpShimActivity\"\n            android:exported=\"false\"\n            android:excludeFromRecents=\"true\"\n            android:launchMode=\"singleTop\"\n            android:configChanges=\"screenSize|screenLayout|orientation|keyboardHidden\"/>\n        <activity\n            android:theme=\"@android:style/Theme.Translucent.NoTitleBar\"\n            android:name=\"com.google.android.gms.common.api.GoogleApiActivity\"\n            android:exported=\"false\"/>\n        <meta-data\n            android:name=\"com.google.android.gms.version\"\n            android:value=\"@integer/google_play_services_version\"/>\n        <provider\n            android:name=\"androidx.startup.InitializationProvider\"\n            android:exported=\"false\"\n            android:authorities=\"com.facebook.rethinkvision.Bimostitch.androidx-startup\">\n            <meta-data\n                android:name=\"androidx.emoji2.text.EmojiCompatInitializer\"\n                android:value=\"androidx.startup\"/>\n            <meta-data\n                android:name=\"androidx.work.WorkManagerInitializer\"\n                android:value=\"androidx.startup\"/>\n            <meta-data\n                android:name=\"androidx.lifecycle.ProcessLifecycleInitializer\"\n                android:value=\"androidx.startup\"/>\n            <meta-data\n                android:name=\"androidx.profileinstaller.ProfileInstallerInitializer\"\n                android:value=\"androidx.startup\"/>\n        </provider>\n        <service\n            android:name=\"androidx.work.impl.background.systemalarm.SystemAlarmService\"\n            android:enabled=\"@bool/enable_system_alarm_service_default\"\n            android:exported=\"false\"\n            android:directBootAware=\"false\"/>\n        <service\n            android:name=\"androidx.work.impl.background.systemjob.SystemJobService\"\n            android:permission=\"android.permission.BIND_JOB_SERVICE\"\n            android:enabled=\"@bool/enable_system_job_service_default\"\n            android:exported=\"true\"\n            android:directBootAware=\"false\"/>\n        <service\n            android:name=\"androidx.work.impl.foreground.SystemForegroundService\"\n            android:enabled=\"@bool/enable_system_foreground_service_default\"\n            android:exported=\"false\"\n            android:directBootAware=\"false\"/>\n        <receiver\n            android:name=\"androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver\"\n            android:enabled=\"true\"\n            android:exported=\"false\"\n            android:directBootAware=\"false\"/>\n        <receiver\n            android:name=\"androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy\"\n            android:enabled=\"false\"\n            android:exported=\"false\"\n            android:directBootAware=\"false\">\n            <intent-filter>\n                <action android:name=\"android.intent.action.ACTION_POWER_CONNECTED\"/>\n                <action android:name=\"android.intent.action.ACTION_POWER_DISCONNECTED\"/>\n            </intent-filter>\n        </receiver>\n        <receiver\n            android:name=\"androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy\"\n            android:enabled=\"false\"\n            android:exported=\"false\"\n            android:directBootAware=\"false\">\n            <intent-filter>\n                <action android:name=\"android.intent.action.BATTERY_OKAY\"/>\n                <action android:name=\"android.intent.action.BATTERY_LOW\"/>\n            </intent-filter>\n        </receiver>\n        <receiver\n            android:name=\"androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy\"\n            android:enabled=\"false\"\n            android:exported=\"false\"\n            android:directBootAware=\"false\">\n            <intent-filter>\n                <action android:name=\"android.intent.action.DEVICE_STORAGE_LOW\"/>\n                <action android:name=\"android.intent.action.DEVICE_STORAGE_OK\"/>\n            </intent-filter>\n        </receiver>\n        <receiver\n            android:name=\"androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy\"\n            android:enabled=\"false\"\n            android:exported=\"false\"\n            android:directBootAware=\"false\">\n            <intent-filter>\n                <action android:name=\"android.net.conn.CONNECTIVITY_CHANGE\"/>\n            </intent-filter>\n        </receiver>\n        <receiver\n            android:name=\"androidx.work.impl.background.systemalarm.RescheduleReceiver\"\n            android:enabled=\"false\"\n            android:exported=\"false\"\n            android:directBootAware=\"false\">\n            <intent-filter>\n                <action android:name=\"android.intent.action.BOOT_COMPLETED\"/>\n                <action android:name=\"android.intent.action.TIME_SET\"/>\n                <action android:name=\"android.intent.action.TIMEZONE_CHANGED\"/>\n            </intent-filter>\n        </receiver>\n        <receiver\n            android:name=\"androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver\"\n            android:enabled=\"@bool/enable_system_alarm_service_default\"\n            android:exported=\"false\"\n            android:directBootAware=\"false\">\n            <intent-filter>\n                <action android:name=\"androidx.work.impl.background.systemalarm.UpdateProxies\"/>\n            </intent-filter>\n        </receiver>\n        <receiver\n            android:name=\"androidx.work.impl.diagnostics.DiagnosticsReceiver\"\n            android:permission=\"android.permission.DUMP\"\n            android:enabled=\"true\"\n            android:exported=\"true\"\n            android:directBootAware=\"false\">\n            <intent-filter>\n                <action android:name=\"androidx.work.diagnostics.REQUEST_DIAGNOSTICS\"/>\n            </intent-filter>\n        </receiver>\n        <uses-library\n            android:name=\"androidx.window.extensions\"\n            android:required=\"false\"/>\n        <uses-library\n            android:name=\"androidx.window.sidecar\"\n            android:required=\"false\"/>\n        <uses-library\n            android:name=\"android.ext.adservices\"\n            android:required=\"false\"/>\n        <receiver\n            android:name=\"androidx.profileinstaller.ProfileInstallReceiver\"\n            android:permission=\"android.permission.DUMP\"\n            android:enabled=\"true\"\n            android:exported=\"true\"\n            android:directBootAware=\"false\">\n            <intent-filter>\n                <action android:name=\"androidx.profileinstaller.action.INSTALL_PROFILE\"/>\n            </intent-filter>\n            <intent-filter>\n                <action android:name=\"androidx.profileinstaller.action.SKIP_FILE\"/>\n            </intent-filter>\n            <intent-filter>\n                <action android:name=\"androidx.profileinstaller.action.SAVE_PROFILE\"/>\n            </intent-filter>\n            <intent-filter>\n                <action android:name=\"androidx.profileinstaller.action.BENCHMARK_OPERATION\"/>\n            </intent-filter>\n        </receiver>\n        <service\n            android:name=\"com.google.android.datatransport.runtime.backends.TransportBackendDiscovery\"\n            android:exported=\"false\">\n            <meta-data\n                android:name=\"backend:com.google.android.datatransport.cct.CctBackendFactory\"\n                android:value=\"cct\"/>\n        </service>\n        <service\n            android:name=\"com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService\"\n            android:permission=\"android.permission.BIND_JOB_SERVICE\"\n            android:exported=\"false\"/>\n        <receiver\n            android:name=\"com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver\"\n            android:exported=\"false\"/>\n        <service\n            android:name=\"androidx.room.MultiInstanceInvalidationService\"\n            android:exported=\"false\"\n            android:directBootAware=\"true\"/>\n        <activity\n            android:name=\"com.pairip.licensecheck.LicenseActivity\"\n            android:exported=\"false\"/>\n        <meta-data\n            android:name=\"com.android.vending.splits.required\"\n            android:value=\"true\"/>\n        <meta-data\n            android:name=\"com.android.stamp.source\"\n            android:value=\"https://play.google.com/store\"/>\n        <meta-data\n            android:name=\"com.android.stamp.type\"\n            android:value=\"STAMP_TYPE_DISTRIBUTION_APK\"/>\n        <meta-data\n            android:name=\"com.android.vending.splits\"\n            android:resource=\"@xml/splits0\"/>\n        <meta-data\n            android:name=\"com.android.vending.derived.apk.id\"\n            android:value=\"4\"/>\n    </application>\n</manifest>"
+                }
+              ],
+              "isError": false
+            }
+          }
+        ]
+      },
+      "normalized_result": {
+        "engine": {
+          "name": "jadx-headless-mcp",
+          "version": "0.7.1",
+          "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+          "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+          "worker_count": 1,
+          "heap_limit_mib": 8192
+        },
+        "package_name": "com.facebook.rethinkvision.Bimostitch",
+        "version_name": "3.0.00-lite",
+        "version_code": "253",
+        "min_sdk": "32",
+        "target_sdk": "37",
+        "permissions": [
+          "android.permission.INTERNET",
+          "android.permission.WRITE_EXTERNAL_STORAGE",
+          "android.permission.READ_EXTERNAL_STORAGE",
+          "android.permission.READ_MEDIA_IMAGES",
+          "android.permission.READ_MEDIA_VIDEO",
+          "android.permission.ACCESS_MEDIA_LOCATION",
+          "android.permission.WAKE_LOCK",
+          "android.permission.VIBRATE",
+          "com.android.vending.CHECK_LICENSE",
+          "android.permission.FOREGROUND_SERVICE",
+          "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+          "android.permission.POST_NOTIFICATIONS",
+          "com.android.vending.BILLING",
+          "android.permission.ACCESS_NETWORK_STATE",
+          "com.google.android.gms.permission.AD_ID",
+          "android.permission.ACCESS_ADSERVICES_AD_ID",
+          "android.permission.ACCESS_ADSERVICES_ATTRIBUTION",
+          "android.permission.ACCESS_ADSERVICES_TOPICS",
+          "com.facebook.rethinkvision.Bimostitch.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        ],
+        "manifest": {
+          "status": "complete",
+          "text": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    android:versionCode=\"253\"\n    android:versionName=\"3.0.00-lite\"\n    android:compileSdkVersion=\"37\"\n    android:compileSdkVersionCodename=\"17\"\n    android:requiredSplitTypes=\"base__abi,base__density\"\n    android:splitTypes=\"\"\n    package=\"com.facebook.rethinkvision.Bimostitch\"\n    platformBuildVersionCode=\"37\"\n    platformBuildVersionName=\"17\">\n    <uses-sdk\n        android:minSdkVersion=\"32\"\n        android:targetSdkVersion=\"37\"/>\n    <uses-permission android:name=\"android.permission.INTERNET\"/>\n    <uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>\n    <uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\"/>\n    <uses-permission android:name=\"android.permission.READ_MEDIA_IMAGES\"/>\n    <uses-permission android:name=\"android.permission.READ_MEDIA_VIDEO\"/>\n    <uses-permission android:name=\"android.permission.ACCESS_MEDIA_LOCATION\"/>\n    <uses-permission android:name=\"android.permission.WAKE_LOCK\"/>\n    <uses-permission android:name=\"android.permission.VIBRATE\"/>\n    <uses-permission android:name=\"com.android.vending.CHECK_LICENSE\"/>\n    <uses-permission android:name=\"android.permission.FOREGROUND_SERVICE\"/>\n    <uses-permission android:name=\"android.permission.FOREGROUND_SERVICE_SPECIAL_USE\"/>\n    <uses-permission android:name=\"android.permission.POST_NOTIFICATIONS\"/>\n    <queries>\n        <package android:name=\"com.google.android.apps.photos\"/>\n        <intent>\n            <action android:name=\"android.intent.action.ACTION_PICK\"/>\n            <data android:mimeType=\"image/*\"/>\n        </intent>\n        <intent>\n            <action android:name=\"com.android.vending.billing.InAppBillingService.BIND\"/>\n        </intent>\n        <intent>\n            <action android:name=\"com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND\"/>\n        </intent>\n        <intent>\n            <action android:name=\"android.intent.action.VIEW\"/>\n            <category android:name=\"android.intent.category.BROWSABLE\"/>\n            <data android:scheme=\"https\"/>\n        </intent>\n        <intent>\n            <action android:name=\"android.support.customtabs.action.CustomTabsService\"/>\n        </intent>\n        <intent>\n            <action android:name=\"android.intent.action.INSERT\"/>\n            <data android:mimeType=\"vnd.android.cursor.dir/event\"/>\n        </intent>\n        <intent>\n            <action android:name=\"android.intent.action.VIEW\"/>\n            <data android:scheme=\"sms\"/>\n        </intent>\n        <intent>\n            <action android:name=\"android.intent.action.DIAL\"/>\n            <data android:path=\"tel:\"/>\n        </intent>\n        <package android:name=\"com.android.vending\"/>\n    </queries>\n    <uses-feature\n        android:name=\"android.hardware.touchscreen\"\n        android:required=\"false\"/>\n    <uses-feature\n        android:name=\"android.hardware.camera\"\n        android:required=\"false\"/>\n    <uses-permission android:name=\"com.android.vending.BILLING\"/>\n    <uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>\n    <uses-permission android:name=\"com.google.android.gms.permission.AD_ID\"/>\n    <uses-permission android:name=\"android.permission.ACCESS_ADSERVICES_AD_ID\"/>\n    <uses-permission android:name=\"android.permission.ACCESS_ADSERVICES_ATTRIBUTION\"/>\n    <uses-permission android:name=\"android.permission.ACCESS_ADSERVICES_TOPICS\"/>\n    <permission\n        android:name=\"com.facebook.rethinkvision.Bimostitch.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION\"\n        android:protectionLevel=\"signature\"/>\n    <uses-permission android:name=\"com.facebook.rethinkvision.Bimostitch.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION\"/>\n    <application\n        android:theme=\"@style/AppTheme\"\n        android:label=\"@string/app_name\"\n        android:icon=\"@mipmap/ic_launcher\"\n        android:name=\"com.pairip.application.Application\"\n        android:allowBackup=\"true\"\n        android:largeHeap=\"true\"\n        android:extractNativeLibs=\"false\"\n        android:appComponentFactory=\"androidx.core.app.CoreComponentFactory\"\n        android:requestLegacyExternalStorage=\"true\">\n        <meta-data\n            android:name=\"com.google.android.gms.ads.APPLICATION_ID\"\n            android:value=\"ca-app-pub-7329778626013066~4565416236\"/>\n        <receiver\n            android:name=\"com.facebook.rethinkvision.Bimostitch.StitcherService$StopServiceReceiver\"\n            android:exported=\"true\">\n            <intent-filter>\n                <action android:name=\"com.facebook.rethinkvision.Bimostitch.lite.action.STOP\"/>\n            </intent-filter>\n        </receiver>\n        <uses-library\n            android:name=\"org.apache.http.legacy\"\n            android:required=\"false\"/>\n        <activity\n            android:theme=\"@style/AppTheme\"\n            android:name=\"com.facebook.rethinkvision.Bimostitch.BimostitchActivity\"\n            android:exported=\"true\"\n            android:configChanges=\"screenSize|orientation\">\n            <intent-filter>\n                <action android:name=\"android.intent.action.MAIN\"/>\n                <category android:name=\"android.intent.category.LAUNCHER\"/>\n            </intent-filter>\n            <intent-filter>\n                <action android:name=\"android.intent.action.SEND_MULTIPLE\"/>\n                <category android:name=\"android.intent.category.DEFAULT\"/>\n                <data android:mimeType=\"image/*\"/>\n            </intent-filter>\n        </activity>\n        <activity\n            android:theme=\"@style/SecondaryTheme\"\n            android:label=\"@string/settings\"\n            android:name=\"com.facebook.rethinkvision.Bimostitch.SettingsActivity\"\n            android:configChanges=\"screenSize|orientation\"/>\n        <activity\n            android:theme=\"@style/SecondaryTheme\"\n            android:label=\"@string/help\"\n            android:name=\"com.facebook.rethinkvision.Bimostitch.HelpActivity\"\n            android:configChanges=\"screenSize|orientation\"/>\n        <activity\n            android:theme=\"@style/AppTheme.NoActionBar\"\n            android:label=\"@string/preview\"\n            android:name=\"com.facebook.rethinkvision.Bimostitch.PreviewActivity\"/>\n        <activity\n            android:theme=\"@style/SecondaryTheme\"\n            android:label=\"@string/settings\"\n            android:name=\"com.facebook.rethinkvision.Bimostitch.QuickSettingsActivity\"/>\n        <activity\n            android:theme=\"@style/AppTheme\"\n            android:label=\"@string/image_picker\"\n            android:name=\"com.facebook.rethinkvision.Bimostitch.ImageDisplay\"\n            android:configChanges=\"screenSize|orientation\"/>\n        <provider\n            android:name=\"androidx.core.content.FileProvider\"\n            android:exported=\"false\"\n            android:authorities=\"com.facebook.rethinkvision.Bimostitch.fileprovider\"\n            android:grantUriPermissions=\"true\">\n            <meta-data\n                android:name=\"android.support.FILE_PROVIDER_PATHS\"\n                android:resource=\"@xml/provider_paths\"/>\n        </provider>\n        <activity\n            android:theme=\"@style/FullscreenTheme\"\n            android:label=\"@string/title_activity_viewer\"\n            android:name=\"com.facebook.rethinkvision.Bimostitch.ViewerActivity\"\n            android:configChanges=\"screenSize|orientation|keyboardHidden\"/>\n        <service\n            android:name=\"com.facebook.rethinkvision.Bimostitch.StitcherService\"\n            android:enabled=\"true\"\n            android:exported=\"false\"\n            android:foregroundServiceType=\"specialUse\">\n            <property\n                android:name=\"android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE\"\n                android:value=\"image_stitching\"/>\n        </service>\n        <meta-data\n            android:name=\"com.google.android.play.billingclient.version\"\n            android:value=\"9.1.0\"/>\n        <activity\n            android:theme=\"@android:style/Theme.Translucent.NoTitleBar\"\n            android:name=\"com.android.billingclient.api.ProxyBillingActivity\"\n            android:exported=\"false\"\n            android:configChanges=\"screenSize|screenLayout|orientation|keyboardHidden|keyboard\"/>\n        <activity\n            android:theme=\"@android:style/Theme.Translucent.NoTitleBar\"\n            android:name=\"com.android.billingclient.api.ProxyBillingActivityV2\"\n            android:exported=\"false\"\n            android:configChanges=\"screenSize|screenLayout|orientation|keyboardHidden|keyboard\"/>\n        <activity\n            android:theme=\"@android:style/Theme.Translucent\"\n            android:name=\"com.google.android.gms.ads.AdActivity\"\n            android:exported=\"false\"\n            android:configChanges=\"smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard\"\n            android:enableOnBackInvokedCallback=\"false\"/>\n        <provider\n            android:name=\"com.google.android.gms.ads.MobileAdsInitProvider\"\n            android:exported=\"false\"\n            android:authorities=\"com.facebook.rethinkvision.Bimostitch.mobileadsinitprovider\"\n            android:initOrder=\"100\"/>\n        <service\n            android:name=\"com.google.android.gms.ads.AdService\"\n            android:enabled=\"true\"\n            android:exported=\"false\"/>\n        <activity\n            android:name=\"com.google.android.gms.ads.OutOfContextTestingActivity\"\n            android:exported=\"false\"\n            android:configChanges=\"smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard\"/>\n        <activity\n            android:theme=\"@android:style/Theme.Translucent.NoTitleBar\"\n            android:name=\"com.google.android.gms.ads.NotificationHandlerActivity\"\n            android:exported=\"false\"\n            android:taskAffinity=\"\"\n            android:excludeFromRecents=\"true\"\n            android:launchMode=\"singleTask\"/>\n        <meta-data\n            android:name=\"com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING\"\n            android:value=\"true\"/>\n        <meta-data\n            android:name=\"com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION\"\n            android:value=\"true\"/>\n        <activity\n            android:theme=\"@style/Theme.HsdpServiceTransparent\"\n            android:name=\"com.google.android.play.core.hsdp.service.HsdpShimActivity\"\n            android:exported=\"false\"\n            android:excludeFromRecents=\"true\"\n            android:launchMode=\"singleTop\"\n            android:configChanges=\"screenSize|screenLayout|orientation|keyboardHidden\"/>\n        <activity\n            android:theme=\"@android:style/Theme.Translucent.NoTitleBar\"\n            android:name=\"com.google.android.gms.common.api.GoogleApiActivity\"\n            android:exported=\"false\"/>\n        <meta-data\n            android:name=\"com.google.android.gms.version\"\n            android:value=\"@integer/google_play_services_version\"/>\n        <provider\n            android:name=\"androidx.startup.InitializationProvider\"\n            android:exported=\"false\"\n            android:authorities=\"com.facebook.rethinkvision.Bimostitch.androidx-startup\">\n            <meta-data\n                android:name=\"androidx.emoji2.text.EmojiCompatInitializer\"\n                android:value=\"androidx.startup\"/>\n            <meta-data\n                android:name=\"androidx.work.WorkManagerInitializer\"\n                android:value=\"androidx.startup\"/>\n            <meta-data\n                android:name=\"androidx.lifecycle.ProcessLifecycleInitializer\"\n                android:value=\"androidx.startup\"/>\n            <meta-data\n                android:name=\"androidx.profileinstaller.ProfileInstallerInitializer\"\n                android:value=\"androidx.startup\"/>\n        </provider>\n        <service\n            android:name=\"androidx.work.impl.background.systemalarm.SystemAlarmService\"\n            android:enabled=\"@bool/enable_system_alarm_service_default\"\n            android:exported=\"false\"\n            android:directBootAware=\"false\"/>\n        <service\n            android:name=\"androidx.work.impl.background.systemjob.SystemJobService\"\n            android:permission=\"android.permission.BIND_JOB_SERVICE\"\n            android:enabled=\"@bool/enable_system_job_service_default\"\n            android:exported=\"true\"\n            android:directBootAware=\"false\"/>\n        <service\n            android:name=\"androidx.work.impl.foreground.SystemForegroundService\"\n            android:enabled=\"@bool/enable_system_foreground_service_default\"\n            android:exported=\"false\"\n            android:directBootAware=\"false\"/>\n        <receiver\n            android:name=\"androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver\"\n            android:enabled=\"true\"\n            android:exported=\"false\"\n            android:directBootAware=\"false\"/>\n        <receiver\n            android:name=\"androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy\"\n            android:enabled=\"false\"\n            android:exported=\"false\"\n            android:directBootAware=\"false\">\n            <intent-filter>\n                <action android:name=\"android.intent.action.ACTION_POWER_CONNECTED\"/>\n                <action android:name=\"android.intent.action.ACTION_POWER_DISCONNECTED\"/>\n            </intent-filter>\n        </receiver>\n        <receiver\n            android:name=\"androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy\"\n            android:enabled=\"false\"\n            android:exported=\"false\"\n            android:directBootAware=\"false\">\n            <intent-filter>\n                <action android:name=\"android.intent.action.BATTERY_OKAY\"/>\n                <action android:name=\"android.intent.action.BATTERY_LOW\"/>\n            </intent-filter>\n        </receiver>\n        <receiver\n            android:name=\"androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy\"\n            android:enabled=\"false\"\n            android:exported=\"false\"\n            android:directBootAware=\"false\">\n            <intent-filter>\n                <action android:name=\"android.intent.action.DEVICE_STORAGE_LOW\"/>\n                <action android:name=\"android.intent.action.DEVICE_STORAGE_OK\"/>\n            </intent-filter>\n        </receiver>\n        <receiver\n            android:name=\"androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy\"\n            android:enabled=\"false\"\n            android:exported=\"false\"\n            android:directBootAware=\"false\">\n            <intent-filter>\n                <action android:name=\"android.net.conn.CONNECTIVITY_CHANGE\"/>\n            </intent-filter>\n        </receiver>\n        <receiver\n            android:name=\"androidx.work.impl.background.systemalarm.RescheduleReceiver\"\n            android:enabled=\"false\"\n            android:exported=\"false\"\n            android:directBootAware=\"false\">\n            <intent-filter>\n                <action android:name=\"android.intent.action.BOOT_COMPLETED\"/>\n                <action android:name=\"android.intent.action.TIME_SET\"/>\n                <action android:name=\"android.intent.action.TIMEZONE_CHANGED\"/>\n            </intent-filter>\n        </receiver>\n        <receiver\n            android:name=\"androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver\"\n            android:enabled=\"@bool/enable_system_alarm_service_default\"\n            android:exported=\"false\"\n            android:directBootAware=\"false\">\n            <intent-filter>\n                <action android:name=\"androidx.work.impl.background.systemalarm.UpdateProxies\"/>\n            </intent-filter>\n        </receiver>\n        <receiver\n            android:name=\"androidx.work.impl.diagnostics.DiagnosticsReceiver\"\n            android:permission=\"android.permission.DUMP\"\n            android:enabled=\"true\"\n            android:exported=\"true\"\n            android:directBootAware=\"false\">\n            <intent-filter>\n                <action android:name=\"androidx.work.diagnostics.REQUEST_DIAGNOSTICS\"/>\n            </intent-filter>\n        </receiver>\n        <uses-library\n            android:name=\"androidx.window.extensions\"\n            android:required=\"false\"/>\n        <uses-library\n            android:name=\"androidx.window.sidecar\"\n            android:required=\"false\"/>\n        <uses-library\n            android:name=\"android.ext.adservices\"\n            android:required=\"false\"/>\n        <receiver\n            android:name=\"androidx.profileinstaller.ProfileInstallReceiver\"\n            android:permission=\"android.permission.DUMP\"\n            android:enabled=\"true\"\n            android:exported=\"true\"\n            android:directBootAware=\"false\">\n            <intent-filter>\n                <action android:name=\"androidx.profileinstaller.action.INSTALL_PROFILE\"/>\n            </intent-filter>\n            <intent-filter>\n                <action android:name=\"androidx.profileinstaller.action.SKIP_FILE\"/>\n            </intent-filter>\n            <intent-filter>\n                <action android:name=\"androidx.profileinstaller.action.SAVE_PROFILE\"/>\n            </intent-filter>\n            <intent-filter>\n                <action android:name=\"androidx.profileinstaller.action.BENCHMARK_OPERATION\"/>\n            </intent-filter>\n        </receiver>\n        <service\n            android:name=\"com.google.android.datatransport.runtime.backends.TransportBackendDiscovery\"\n            android:exported=\"false\">\n            <meta-data\n                android:name=\"backend:com.google.android.datatransport.cct.CctBackendFactory\"\n                android:value=\"cct\"/>\n        </service>\n        <service\n            android:name=\"com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService\"\n            android:permission=\"android.permission.BIND_JOB_SERVICE\"\n            android:exported=\"false\"/>\n        <receiver\n            android:name=\"com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver\"\n            android:exported=\"false\"/>\n        <service\n            android:name=\"androidx.room.MultiInstanceInvalidationService\"\n            android:exported=\"false\"\n            android:directBootAware=\"true\"/>\n        <activity\n            android:name=\"com.pairip.licensecheck.LicenseActivity\"\n            android:exported=\"false\"/>\n        <meta-data\n            android:name=\"com.android.vending.splits.required\"\n            android:value=\"true\"/>\n        <meta-data\n            android:name=\"com.android.stamp.source\"\n            android:value=\"https://play.google.com/store\"/>\n        <meta-data\n            android:name=\"com.android.stamp.type\"\n            android:value=\"STAMP_TYPE_DISTRIBUTION_APK\"/>\n        <meta-data\n            android:name=\"com.android.vending.splits\"\n            android:resource=\"@xml/splits0\"/>\n        <meta-data\n            android:name=\"com.android.vending.derived.apk.id\"\n            android:value=\"4\"/>\n    </application>\n</manifest>",
+          "reported_total_bytes": null
+        },
+        "components": {
+          "status": "complete",
+          "items": [
+            {
+              "kind": "receiver",
+              "declared_name": "com.facebook.rethinkvision.Bimostitch.StitcherService$StopServiceReceiver",
+              "name": "com.facebook.rethinkvision.Bimostitch.StitcherService$StopServiceReceiver",
+              "exported": true,
+              "exported_default": true,
+              "permission": null,
+              "permission_source": "none",
+              "intent_filter_count": 1,
+              "actions": [
+                "com.facebook.rethinkvision.Bimostitch.lite.action.STOP"
+              ],
+              "categories": [],
+              "foreground_service_type": null,
+              "authorities": null,
+              "target_activity": null,
+              "declaration_coverage": "complete",
+              "declaration_index": 0,
+              "location": {
+                "line": 90,
+                "column": 9,
+                "offset": 4369
+              },
+              "enabled": null,
+              "enabled_declaration": null,
+              "process": null,
+              "grant_uri_permissions": null,
+              "grant_uri_permissions_declaration": null,
+              "intent_filters": [
+                {
+                  "source_index": 0,
+                  "location": {
+                    "line": 93,
+                    "column": 13,
+                    "offset": 4529
+                  },
+                  "priority": null,
+                  "actions": [
+                    "com.facebook.rethinkvision.Bimostitch.lite.action.STOP"
+                  ],
+                  "categories": [],
+                  "data": [],
+                  "coverage": "complete"
+                }
+              ],
+              "meta_data": []
+            },
+            {
+              "kind": "activity",
+              "declared_name": "com.facebook.rethinkvision.Bimostitch.BimostitchActivity",
+              "name": "com.facebook.rethinkvision.Bimostitch.BimostitchActivity",
+              "exported": true,
+              "exported_default": true,
+              "permission": null,
+              "permission_source": "none",
+              "intent_filter_count": 2,
+              "actions": [
+                "android.intent.action.MAIN",
+                "android.intent.action.SEND_MULTIPLE"
+              ],
+              "categories": [
+                "android.intent.category.LAUNCHER",
+                "android.intent.category.DEFAULT"
+              ],
+              "foreground_service_type": null,
+              "authorities": null,
+              "target_activity": null,
+              "declaration_coverage": "complete",
+              "declaration_index": 1,
+              "location": {
+                "line": 100,
+                "column": 9,
+                "offset": 4809
+              },
+              "enabled": null,
+              "enabled_declaration": null,
+              "process": null,
+              "grant_uri_permissions": null,
+              "grant_uri_permissions_declaration": null,
+              "intent_filters": [
+                {
+                  "source_index": 0,
+                  "location": {
+                    "line": 105,
+                    "column": 13,
+                    "offset": 5055
+                  },
+                  "priority": null,
+                  "actions": [
+                    "android.intent.action.MAIN"
+                  ],
+                  "categories": [
+                    "android.intent.category.LAUNCHER"
+                  ],
+                  "data": [],
+                  "coverage": "complete"
+                },
+                {
+                  "source_index": 1,
+                  "location": {
+                    "line": 109,
+                    "column": 13,
+                    "offset": 5256
+                  },
+                  "priority": null,
+                  "actions": [
+                    "android.intent.action.SEND_MULTIPLE"
+                  ],
+                  "categories": [
+                    "android.intent.category.DEFAULT"
+                  ],
+                  "data": [
+                    {
+                      "location": {
+                        "line": 112,
+                        "column": 17,
+                        "offset": 5440
+                      },
+                      "scheme": null,
+                      "host": null,
+                      "port": null,
+                      "path": null,
+                      "path_prefix": null,
+                      "path_pattern": null,
+                      "path_advanced_pattern": null,
+                      "path_suffix": null,
+                      "mime_type": "image/*"
+                    }
+                  ],
+                  "coverage": "complete"
+                }
+              ],
+              "meta_data": []
+            },
+            {
+              "kind": "activity",
+              "declared_name": "com.facebook.rethinkvision.Bimostitch.SettingsActivity",
+              "name": "com.facebook.rethinkvision.Bimostitch.SettingsActivity",
+              "exported": null,
+              "exported_default": false,
+              "permission": null,
+              "permission_source": "none",
+              "intent_filter_count": 0,
+              "actions": [],
+              "categories": [],
+              "foreground_service_type": null,
+              "authorities": null,
+              "target_activity": null,
+              "declaration_coverage": "complete",
+              "declaration_index": 2,
+              "location": {
+                "line": 115,
+                "column": 9,
+                "offset": 5532
+              },
+              "enabled": null,
+              "enabled_declaration": null,
+              "process": null,
+              "grant_uri_permissions": null,
+              "grant_uri_permissions_declaration": null,
+              "intent_filters": [],
+              "meta_data": []
+            },
+            {
+              "kind": "activity",
+              "declared_name": "com.facebook.rethinkvision.Bimostitch.HelpActivity",
+              "name": "com.facebook.rethinkvision.Bimostitch.HelpActivity",
+              "exported": null,
+              "exported_default": false,
+              "permission": null,
+              "permission_source": "none",
+              "intent_filter_count": 0,
+              "actions": [],
+              "categories": [],
+              "foreground_service_type": null,
+              "authorities": null,
+              "target_activity": null,
+              "declaration_coverage": "complete",
+              "declaration_index": 3,
+              "location": {
+                "line": 120,
+                "column": 9,
+                "offset": 5788
+              },
+              "enabled": null,
+              "enabled_declaration": null,
+              "process": null,
+              "grant_uri_permissions": null,
+              "grant_uri_permissions_declaration": null,
+              "intent_filters": [],
+              "meta_data": []
+            },
+            {
+              "kind": "activity",
+              "declared_name": "com.facebook.rethinkvision.Bimostitch.PreviewActivity",
+              "name": "com.facebook.rethinkvision.Bimostitch.PreviewActivity",
+              "exported": null,
+              "exported_default": false,
+              "permission": null,
+              "permission_source": "none",
+              "intent_filter_count": 0,
+              "actions": [],
+              "categories": [],
+              "foreground_service_type": null,
+              "authorities": null,
+              "target_activity": null,
+              "declaration_coverage": "complete",
+              "declaration_index": 4,
+              "location": {
+                "line": 125,
+                "column": 9,
+                "offset": 6036
+              },
+              "enabled": null,
+              "enabled_declaration": null,
+              "process": null,
+              "grant_uri_permissions": null,
+              "grant_uri_permissions_declaration": null,
+              "intent_filters": [],
+              "meta_data": []
+            },
+            {
+              "kind": "activity",
+              "declared_name": "com.facebook.rethinkvision.Bimostitch.QuickSettingsActivity",
+              "name": "com.facebook.rethinkvision.Bimostitch.QuickSettingsActivity",
+              "exported": null,
+              "exported_default": false,
+              "permission": null,
+              "permission_source": "none",
+              "intent_filter_count": 0,
+              "actions": [],
+              "categories": [],
+              "foreground_service_type": null,
+              "authorities": null,
+              "target_activity": null,
+              "declaration_coverage": "complete",
+              "declaration_index": 5,
+              "location": {
+                "line": 129,
+                "column": 9,
+                "offset": 6237
+              },
+              "enabled": null,
+              "enabled_declaration": null,
+              "process": null,
+              "grant_uri_permissions": null,
+              "grant_uri_permissions_declaration": null,
+              "intent_filters": [],
+              "meta_data": []
+            },
+            {
+              "kind": "activity",
+              "declared_name": "com.facebook.rethinkvision.Bimostitch.ImageDisplay",
+              "name": "com.facebook.rethinkvision.Bimostitch.ImageDisplay",
+              "exported": null,
+              "exported_default": false,
+              "permission": null,
+              "permission_source": "none",
+              "intent_filter_count": 0,
+              "actions": [],
+              "categories": [],
+              "foreground_service_type": null,
+              "authorities": null,
+              "target_activity": null,
+              "declaration_coverage": "complete",
+              "declaration_index": 6,
+              "location": {
+                "line": 133,
+                "column": 9,
+                "offset": 6439
+              },
+              "enabled": null,
+              "enabled_declaration": null,
+              "process": null,
+              "grant_uri_permissions": null,
+              "grant_uri_permissions_declaration": null,
+              "intent_filters": [],
+              "meta_data": []
+            },
+            {
+              "kind": "provider",
+              "declared_name": "androidx.core.content.FileProvider",
+              "name": "androidx.core.content.FileProvider",
+              "exported": false,
+              "exported_default": false,
+              "permission": null,
+              "permission_source": "none",
+              "intent_filter_count": 0,
+              "actions": [],
+              "categories": [],
+              "foreground_service_type": null,
+              "authorities": [
+                "com.facebook.rethinkvision.Bimostitch.fileprovider"
+              ],
+              "target_activity": null,
+              "declaration_coverage": "complete",
+              "declaration_index": 7,
+              "location": {
+                "line": 138,
+                "column": 9,
+                "offset": 6689
+              },
+              "enabled": null,
+              "enabled_declaration": null,
+              "process": null,
+              "grant_uri_permissions": true,
+              "grant_uri_permissions_declaration": "true",
+              "intent_filters": [],
+              "meta_data": [
+                {
+                  "name": "android.support.FILE_PROVIDER_PATHS",
+                  "location": {
+                    "line": 143,
+                    "column": 13,
+                    "offset": 6943
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "activity",
+              "declared_name": "com.facebook.rethinkvision.Bimostitch.ViewerActivity",
+              "name": "com.facebook.rethinkvision.Bimostitch.ViewerActivity",
+              "exported": null,
+              "exported_default": false,
+              "permission": null,
+              "permission_source": "none",
+              "intent_filter_count": 0,
+              "actions": [],
+              "categories": [],
+              "foreground_service_type": null,
+              "authorities": null,
+              "target_activity": null,
+              "declaration_coverage": "complete",
+              "declaration_index": 8,
+              "location": {
+                "line": 147,
+                "column": 9,
+                "offset": 7106
+              },
+              "enabled": null,
+              "enabled_declaration": null,
+              "process": null,
+              "grant_uri_permissions": null,
+              "grant_uri_permissions_declaration": null,
+              "intent_filters": [],
+              "meta_data": []
+            },
+            {
+              "kind": "service",
+              "declared_name": "com.facebook.rethinkvision.Bimostitch.StitcherService",
+              "name": "com.facebook.rethinkvision.Bimostitch.StitcherService",
+              "exported": false,
+              "exported_default": false,
+              "permission": null,
+              "permission_source": "none",
+              "intent_filter_count": 0,
+              "actions": [],
+              "categories": [],
+              "foreground_service_type": "specialUse",
+              "authorities": null,
+              "target_activity": null,
+              "declaration_coverage": "complete",
+              "declaration_index": 9,
+              "location": {
+                "line": 152,
+                "column": 9,
+                "offset": 7389
+              },
+              "enabled": true,
+              "enabled_declaration": "true",
+              "process": null,
+              "grant_uri_permissions": null,
+              "grant_uri_permissions_declaration": null,
+              "intent_filters": [],
+              "meta_data": []
+            },
+            {
+              "kind": "activity",
+              "declared_name": "com.android.billingclient.api.ProxyBillingActivity",
+              "name": "com.android.billingclient.api.ProxyBillingActivity",
+              "exported": false,
+              "exported_default": false,
+              "permission": null,
+              "permission_source": "none",
+              "intent_filter_count": 0,
+              "actions": [],
+              "categories": [],
+              "foreground_service_type": null,
+              "authorities": null,
+              "target_activity": null,
+              "declaration_coverage": "complete",
+              "declaration_index": 10,
+              "location": {
+                "line": 164,
+                "column": 9,
+                "offset": 7910
+              },
+              "enabled": null,
+              "enabled_declaration": null,
+              "process": null,
+              "grant_uri_permissions": null,
+              "grant_uri_permissions_declaration": null,
+              "intent_filters": [],
+              "meta_data": []
+            },
+            {
+              "kind": "activity",
+              "declared_name": "com.android.billingclient.api.ProxyBillingActivityV2",
+              "name": "com.android.billingclient.api.ProxyBillingActivityV2",
+              "exported": false,
+              "exported_default": false,
+              "permission": null,
+              "permission_source": "none",
+              "intent_filter_count": 0,
+              "actions": [],
+              "categories": [],
+              "foreground_service_type": null,
+              "authorities": null,
+              "target_activity": null,
+              "declaration_coverage": "complete",
+              "declaration_index": 11,
+              "location": {
+                "line": 169,
+                "column": 9,
+                "offset": 8213
+              },
+              "enabled": null,
+              "enabled_declaration": null,
+              "process": null,
+              "grant_uri_permissions": null,
+              "grant_uri_permissions_declaration": null,
+              "intent_filters": [],
+              "meta_data": []
+            },
+            {
+              "kind": "activity",
+              "declared_name": "com.google.android.gms.ads.AdActivity",
+              "name": "com.google.android.gms.ads.AdActivity",
+              "exported": false,
+              "exported_default": false,
+              "permission": null,
+              "permission_source": "none",
+              "intent_filter_count": 0,
+              "actions": [],
+              "categories": [],
+              "foreground_service_type": null,
+              "authorities": null,
+              "target_activity": null,
+              "declaration_coverage": "complete",
+              "declaration_index": 12,
+              "location": {
+                "line": 174,
+                "column": 9,
+                "offset": 8518
+              },
+              "enabled": null,
+              "enabled_declaration": null,
+              "process": null,
+              "grant_uri_permissions": null,
+              "grant_uri_permissions_declaration": null,
+              "intent_filters": [],
+              "meta_data": []
+            },
+            {
+              "kind": "provider",
+              "declared_name": "com.google.android.gms.ads.MobileAdsInitProvider",
+              "name": "com.google.android.gms.ads.MobileAdsInitProvider",
+              "exported": false,
+              "exported_default": false,
+              "permission": null,
+              "permission_source": "none",
+              "intent_filter_count": 0,
+              "actions": [],
+              "categories": [],
+              "foreground_service_type": null,
+              "authorities": [
+                "com.facebook.rethinkvision.Bimostitch.mobileadsinitprovider"
+              ],
+              "target_activity": null,
+              "declaration_coverage": "complete",
+              "declaration_index": 13,
+              "location": {
+                "line": 180,
+                "column": 9,
+                "offset": 8879
+              },
+              "enabled": null,
+              "enabled_declaration": null,
+              "process": null,
+              "grant_uri_permissions": null,
+              "grant_uri_permissions_declaration": null,
+              "intent_filters": [],
+              "meta_data": []
+            },
+            {
+              "kind": "service",
+              "declared_name": "com.google.android.gms.ads.AdService",
+              "name": "com.google.android.gms.ads.AdService",
+              "exported": false,
+              "exported_default": false,
+              "permission": null,
+              "permission_source": "none",
+              "intent_filter_count": 0,
+              "actions": [],
+              "categories": [],
+              "foreground_service_type": null,
+              "authorities": null,
+              "target_activity": null,
+              "declaration_coverage": "complete",
+              "declaration_index": 14,
+              "location": {
+                "line": 185,
+                "column": 9,
+                "offset": 9142
+              },
+              "enabled": true,
+              "enabled_declaration": "true",
+              "process": null,
+              "grant_uri_permissions": null,
+              "grant_uri_permissions_declaration": null,
+              "intent_filters": [],
+              "meta_data": []
+            },
+            {
+              "kind": "activity",
+              "declared_name": "com.google.android.gms.ads.OutOfContextTestingActivity",
+              "name": "com.google.android.gms.ads.OutOfContextTestingActivity",
+              "exported": false,
+              "exported_default": false,
+              "permission": null,
+              "permission_source": "none",
+              "intent_filter_count": 0,
+              "actions": [],
+              "categories": [],
+              "foreground_service_type": null,
+              "authorities": null,
+              "target_activity": null,
+              "declaration_coverage": "complete",
+              "declaration_index": 15,
+              "location": {
+                "line": 189,
+                "column": 9,
+                "offset": 9297
+              },
+              "enabled": null,
+              "enabled_declaration": null,
+              "process": null,
+              "grant_uri_permissions": null,
+              "grant_uri_permissions_declaration": null,
+              "intent_filters": [],
+              "meta_data": []
+            },
+            {
+              "kind": "activity",
+              "declared_name": "com.google.android.gms.ads.NotificationHandlerActivity",
+              "name": "com.google.android.gms.ads.NotificationHandlerActivity",
+              "exported": false,
+              "exported_default": false,
+              "permission": null,
+              "permission_source": "none",
+              "intent_filter_count": 0,
+              "actions": [],
+              "categories": [],
+              "foreground_service_type": null,
+              "authorities": null,
+              "target_activity": null,
+              "declaration_coverage": "complete",
+              "declaration_index": 16,
+              "location": {
+                "line": 193,
+                "column": 9,
+                "offset": 9558
+              },
+              "enabled": null,
+              "enabled_declaration": null,
+              "process": null,
+              "grant_uri_permissions": null,
+              "grant_uri_permissions_declaration": null,
+              "intent_filters": [],
+              "meta_data": []
+            },
+            {
+              "kind": "activity",
+              "declared_name": "com.google.android.play.core.hsdp.service.HsdpShimActivity",
+              "name": "com.google.android.play.core.hsdp.service.HsdpShimActivity",
+              "exported": false,
+              "exported_default": false,
+              "permission": null,
+              "permission_source": "none",
+              "intent_filter_count": 0,
+              "actions": [],
+              "categories": [],
+              "foreground_service_type": null,
+              "authorities": null,
+              "target_activity": null,
+              "declaration_coverage": "complete",
+              "declaration_index": 17,
+              "location": {
+                "line": 206,
+                "column": 9,
+                "offset": 10165
+              },
+              "enabled": null,
+              "enabled_declaration": null,
+              "process": null,
+              "grant_uri_permissions": null,
+              "grant_uri_permissions_declaration": null,
+              "intent_filters": [],
+              "meta_data": []
+            },
+            {
+              "kind": "activity",
+              "declared_name": "com.google.android.gms.common.api.GoogleApiActivity",
+              "name": "com.google.android.gms.common.api.GoogleApiActivity",
+              "exported": false,
+              "exported_default": false,
+              "permission": null,
+              "permission_source": "none",
+              "intent_filter_count": 0,
+              "actions": [],
+              "categories": [],
+              "foreground_service_type": null,
+              "authorities": null,
+              "target_activity": null,
+              "declaration_coverage": "complete",
+              "declaration_index": 18,
+              "location": {
+                "line": 213,
+                "column": 9,
+                "offset": 10548
+              },
+              "enabled": null,
+              "enabled_declaration": null,
+              "process": null,
+              "grant_uri_permissions": null,
+              "grant_uri_permissions_declaration": null,
+              "intent_filters": [],
+              "meta_data": []
+            },
+            {
+              "kind": "provider",
+              "declared_name": "androidx.startup.InitializationProvider",
+              "name": "androidx.startup.InitializationProvider",
+              "exported": false,
+              "exported_default": false,
+              "permission": null,
+              "permission_source": "none",
+              "intent_filter_count": 0,
+              "actions": [],
+              "categories": [],
+              "foreground_service_type": null,
+              "authorities": [
+                "com.facebook.rethinkvision.Bimostitch.androidx-startup"
+              ],
+              "target_activity": null,
+              "declaration_coverage": "complete",
+              "declaration_index": 19,
+              "location": {
+                "line": 220,
+                "column": 9,
+                "offset": 10901
+              },
+              "enabled": null,
+              "enabled_declaration": null,
+              "process": null,
+              "grant_uri_permissions": null,
+              "grant_uri_permissions_declaration": null,
+              "intent_filters": [],
+              "meta_data": [
+                {
+                  "name": "androidx.emoji2.text.EmojiCompatInitializer",
+                  "location": {
+                    "line": 224,
+                    "column": 13,
+                    "offset": 11117
+                  }
+                },
+                {
+                  "name": "androidx.work.WorkManagerInitializer",
+                  "location": {
+                    "line": 227,
+                    "column": 13,
+                    "offset": 11266
+                  }
+                },
+                {
+                  "name": "androidx.lifecycle.ProcessLifecycleInitializer",
+                  "location": {
+                    "line": 230,
+                    "column": 13,
+                    "offset": 11408
+                  }
+                },
+                {
+                  "name": "androidx.profileinstaller.ProfileInstallerInitializer",
+                  "location": {
+                    "line": 233,
+                    "column": 13,
+                    "offset": 11560
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "service",
+              "declared_name": "androidx.work.impl.background.systemalarm.SystemAlarmService",
+              "name": "androidx.work.impl.background.systemalarm.SystemAlarmService",
+              "exported": false,
+              "exported_default": false,
+              "permission": null,
+              "permission_source": "none",
+              "intent_filter_count": 0,
+              "actions": [],
+              "categories": [],
+              "foreground_service_type": null,
+              "authorities": null,
+              "target_activity": null,
+              "declaration_coverage": "complete",
+              "declaration_index": 20,
+              "location": {
+                "line": 237,
+                "column": 9,
+                "offset": 11735
+              },
+              "enabled": null,
+              "enabled_declaration": "@bool/enable_system_alarm_service_default",
+              "process": null,
+              "grant_uri_permissions": null,
+              "grant_uri_permissions_declaration": null,
+              "intent_filters": [],
+              "meta_data": []
+            },
+            {
+              "kind": "service",
+              "declared_name": "androidx.work.impl.background.systemjob.SystemJobService",
+              "name": "androidx.work.impl.background.systemjob.SystemJobService",
+              "exported": true,
+              "exported_default": false,
+              "permission": "android.permission.BIND_JOB_SERVICE",
+              "permission_source": "component",
+              "intent_filter_count": 0,
+              "actions": [],
+              "categories": [],
+              "foreground_service_type": null,
+              "authorities": null,
+              "target_activity": null,
+              "declaration_coverage": "complete",
+              "declaration_index": 21,
+              "location": {
+                "line": 242,
+                "column": 9,
+                "offset": 11995
+              },
+              "enabled": null,
+              "enabled_declaration": "@bool/enable_system_job_service_default",
+              "process": null,
+              "grant_uri_permissions": null,
+              "grant_uri_permissions_declaration": null,
+              "intent_filters": [],
+              "meta_data": []
+            },
+            {
+              "kind": "service",
+              "declared_name": "androidx.work.impl.foreground.SystemForegroundService",
+              "name": "androidx.work.impl.foreground.SystemForegroundService",
+              "exported": false,
+              "exported_default": false,
+              "permission": null,
+              "permission_source": "none",
+              "intent_filter_count": 0,
+              "actions": [],
+              "categories": [],
+              "foreground_service_type": null,
+              "authorities": null,
+              "target_activity": null,
+              "declaration_coverage": "complete",
+              "declaration_index": 22,
+              "location": {
+                "line": 248,
+                "column": 9,
+                "offset": 12317
+              },
+              "enabled": null,
+              "enabled_declaration": "@bool/enable_system_foreground_service_default",
+              "process": null,
+              "grant_uri_permissions": null,
+              "grant_uri_permissions_declaration": null,
+              "intent_filters": [],
+              "meta_data": []
+            },
+            {
+              "kind": "receiver",
+              "declared_name": "androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver",
+              "name": "androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver",
+              "exported": false,
+              "exported_default": false,
+              "permission": null,
+              "permission_source": "none",
+              "intent_filter_count": 0,
+              "actions": [],
+              "categories": [],
+              "foreground_service_type": null,
+              "authorities": null,
+              "target_activity": null,
+              "declaration_coverage": "complete",
+              "declaration_index": 23,
+              "location": {
+                "line": 253,
+                "column": 9,
+                "offset": 12575
+              },
+              "enabled": true,
+              "enabled_declaration": "true",
+              "process": null,
+              "grant_uri_permissions": null,
+              "grant_uri_permissions_declaration": null,
+              "intent_filters": [],
+              "meta_data": []
+            },
+            {
+              "kind": "receiver",
+              "declared_name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy",
+              "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy",
+              "exported": false,
+              "exported_default": true,
+              "permission": null,
+              "permission_source": "none",
+              "intent_filter_count": 1,
+              "actions": [
+                "android.intent.action.ACTION_POWER_CONNECTED",
+                "android.intent.action.ACTION_POWER_DISCONNECTED"
+              ],
+              "categories": [],
+              "foreground_service_type": null,
+              "authorities": null,
+              "target_activity": null,
+              "declaration_coverage": "complete",
+              "declaration_index": 24,
+              "location": {
+                "line": 258,
+                "column": 9,
+                "offset": 12799
+              },
+              "enabled": false,
+              "enabled_declaration": "false",
+              "process": null,
+              "grant_uri_permissions": null,
+              "grant_uri_permissions_declaration": null,
+              "intent_filters": [
+                {
+                  "source_index": 0,
+                  "location": {
+                    "line": 263,
+                    "column": 13,
+                    "offset": 13045
+                  },
+                  "priority": null,
+                  "actions": [
+                    "android.intent.action.ACTION_POWER_CONNECTED",
+                    "android.intent.action.ACTION_POWER_DISCONNECTED"
+                  ],
+                  "categories": [],
+                  "data": [],
+                  "coverage": "complete"
+                }
+              ],
+              "meta_data": []
+            },
+            {
+              "kind": "receiver",
+              "declared_name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy",
+              "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy",
+              "exported": false,
+              "exported_default": true,
+              "permission": null,
+              "permission_source": "none",
+              "intent_filter_count": 1,
+              "actions": [
+                "android.intent.action.BATTERY_OKAY",
+                "android.intent.action.BATTERY_LOW"
+              ],
+              "categories": [],
+              "foreground_service_type": null,
+              "authorities": null,
+              "target_activity": null,
+              "declaration_coverage": "complete",
+              "declaration_index": 25,
+              "location": {
+                "line": 268,
+                "column": 9,
+                "offset": 13293
+              },
+              "enabled": false,
+              "enabled_declaration": "false",
+              "process": null,
+              "grant_uri_permissions": null,
+              "grant_uri_permissions_declaration": null,
+              "intent_filters": [
+                {
+                  "source_index": 0,
+                  "location": {
+                    "line": 273,
+                    "column": 13,
+                    "offset": 13537
+                  },
+                  "priority": null,
+                  "actions": [
+                    "android.intent.action.BATTERY_OKAY",
+                    "android.intent.action.BATTERY_LOW"
+                  ],
+                  "categories": [],
+                  "data": [],
+                  "coverage": "complete"
+                }
+              ],
+              "meta_data": []
+            },
+            {
+              "kind": "receiver",
+              "declared_name": "androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy",
+              "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy",
+              "exported": false,
+              "exported_default": true,
+              "permission": null,
+              "permission_source": "none",
+              "intent_filter_count": 1,
+              "actions": [
+                "android.intent.action.DEVICE_STORAGE_LOW",
+                "android.intent.action.DEVICE_STORAGE_OK"
+              ],
+              "categories": [],
+              "foreground_service_type": null,
+              "authorities": null,
+              "target_activity": null,
+              "declaration_coverage": "complete",
+              "declaration_index": 26,
+              "location": {
+                "line": 278,
+                "column": 9,
+                "offset": 13761
+              },
+              "enabled": false,
+              "enabled_declaration": "false",
+              "process": null,
+              "grant_uri_permissions": null,
+              "grant_uri_permissions_declaration": null,
+              "intent_filters": [
+                {
+                  "source_index": 0,
+                  "location": {
+                    "line": 283,
+                    "column": 13,
+                    "offset": 14005
+                  },
+                  "priority": null,
+                  "actions": [
+                    "android.intent.action.DEVICE_STORAGE_LOW",
+                    "android.intent.action.DEVICE_STORAGE_OK"
+                  ],
+                  "categories": [],
+                  "data": [],
+                  "coverage": "complete"
+                }
+              ],
+              "meta_data": []
+            },
+            {
+              "kind": "receiver",
+              "declared_name": "androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy",
+              "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy",
+              "exported": false,
+              "exported_default": true,
+              "permission": null,
+              "permission_source": "none",
+              "intent_filter_count": 1,
+              "actions": [
+                "android.net.conn.CONNECTIVITY_CHANGE"
+              ],
+              "categories": [],
+              "foreground_service_type": null,
+              "authorities": null,
+              "target_activity": null,
+              "declaration_coverage": "complete",
+              "declaration_index": 27,
+              "location": {
+                "line": 288,
+                "column": 9,
+                "offset": 14241
+              },
+              "enabled": false,
+              "enabled_declaration": "false",
+              "process": null,
+              "grant_uri_permissions": null,
+              "grant_uri_permissions_declaration": null,
+              "intent_filters": [
+                {
+                  "source_index": 0,
+                  "location": {
+                    "line": 293,
+                    "column": 13,
+                    "offset": 14484
+                  },
+                  "priority": null,
+                  "actions": [
+                    "android.net.conn.CONNECTIVITY_CHANGE"
+                  ],
+                  "categories": [],
+                  "data": [],
+                  "coverage": "complete"
+                }
+              ],
+              "meta_data": []
+            },
+            {
+              "kind": "receiver",
+              "declared_name": "androidx.work.impl.background.systemalarm.RescheduleReceiver",
+              "name": "androidx.work.impl.background.systemalarm.RescheduleReceiver",
+              "exported": false,
+              "exported_default": true,
+              "permission": null,
+              "permission_source": "none",
+              "intent_filter_count": 1,
+              "actions": [
+                "android.intent.action.BOOT_COMPLETED",
+                "android.intent.action.TIME_SET",
+                "android.intent.action.TIMEZONE_CHANGED"
+              ],
+              "categories": [],
+              "foreground_service_type": null,
+              "authorities": null,
+              "target_activity": null,
+              "declaration_coverage": "complete",
+              "declaration_index": 28,
+              "location": {
+                "line": 297,
+                "column": 9,
+                "offset": 14635
+              },
+              "enabled": false,
+              "enabled_declaration": "false",
+              "process": null,
+              "grant_uri_permissions": null,
+              "grant_uri_permissions_declaration": null,
+              "intent_filters": [
+                {
+                  "source_index": 0,
+                  "location": {
+                    "line": 302,
+                    "column": 13,
+                    "offset": 14863
+                  },
+                  "priority": null,
+                  "actions": [
+                    "android.intent.action.BOOT_COMPLETED",
+                    "android.intent.action.TIME_SET",
+                    "android.intent.action.TIMEZONE_CHANGED"
+                  ],
+                  "categories": [],
+                  "data": [],
+                  "coverage": "complete"
+                }
+              ],
+              "meta_data": []
+            },
+            {
+              "kind": "receiver",
+              "declared_name": "androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver",
+              "name": "androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver",
+              "exported": false,
+              "exported_default": true,
+              "permission": null,
+              "permission_source": "none",
+              "intent_filter_count": 1,
+              "actions": [
+                "androidx.work.impl.background.systemalarm.UpdateProxies"
+              ],
+              "categories": [],
+              "foreground_service_type": null,
+              "authorities": null,
+              "target_activity": null,
+              "declaration_coverage": "complete",
+              "declaration_index": 29,
+              "location": {
+                "line": 308,
+                "column": 9,
+                "offset": 15166
+              },
+              "enabled": null,
+              "enabled_declaration": "@bool/enable_system_alarm_service_default",
+              "process": null,
+              "grant_uri_permissions": null,
+              "grant_uri_permissions_declaration": null,
+              "intent_filters": [
+                {
+                  "source_index": 0,
+                  "location": {
+                    "line": 313,
+                    "column": 13,
+                    "offset": 15441
+                  },
+                  "priority": null,
+                  "actions": [
+                    "androidx.work.impl.background.systemalarm.UpdateProxies"
+                  ],
+                  "categories": [],
+                  "data": [],
+                  "coverage": "complete"
+                }
+              ],
+              "meta_data": []
+            },
+            {
+              "kind": "receiver",
+              "declared_name": "androidx.work.impl.diagnostics.DiagnosticsReceiver",
+              "name": "androidx.work.impl.diagnostics.DiagnosticsReceiver",
+              "exported": true,
+              "exported_default": true,
+              "permission": "android.permission.DUMP",
+              "permission_source": "component",
+              "intent_filter_count": 1,
+              "actions": [
+                "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+              ],
+              "categories": [],
+              "foreground_service_type": null,
+              "authorities": null,
+              "target_activity": null,
+              "declaration_coverage": "complete",
+              "declaration_index": 30,
+              "location": {
+                "line": 317,
+                "column": 9,
+                "offset": 15611
+              },
+              "enabled": true,
+              "enabled_declaration": "true",
+              "process": null,
+              "grant_uri_permissions": null,
+              "grant_uri_permissions_declaration": null,
+              "intent_filters": [
+                {
+                  "source_index": 0,
+                  "location": {
+                    "line": 323,
+                    "column": 13,
+                    "offset": 15884
+                  },
+                  "priority": null,
+                  "actions": [
+                    "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+                  ],
+                  "categories": [],
+                  "data": [],
+                  "coverage": "complete"
+                }
+              ],
+              "meta_data": []
+            },
+            {
+              "kind": "receiver",
+              "declared_name": "androidx.profileinstaller.ProfileInstallReceiver",
+              "name": "androidx.profileinstaller.ProfileInstallReceiver",
+              "exported": true,
+              "exported_default": true,
+              "permission": "android.permission.DUMP",
+              "permission_source": "component",
+              "intent_filter_count": 4,
+              "actions": [
+                "androidx.profileinstaller.action.INSTALL_PROFILE",
+                "androidx.profileinstaller.action.SKIP_FILE",
+                "androidx.profileinstaller.action.SAVE_PROFILE",
+                "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+              ],
+              "categories": [],
+              "foreground_service_type": null,
+              "authorities": null,
+              "target_activity": null,
+              "declaration_coverage": "complete",
+              "declaration_index": 31,
+              "location": {
+                "line": 336,
+                "column": 9,
+                "offset": 16382
+              },
+              "enabled": true,
+              "enabled_declaration": "true",
+              "process": null,
+              "grant_uri_permissions": null,
+              "grant_uri_permissions_declaration": null,
+              "intent_filters": [
+                {
+                  "source_index": 0,
+                  "location": {
+                    "line": 342,
+                    "column": 13,
+                    "offset": 16653
+                  },
+                  "priority": null,
+                  "actions": [
+                    "androidx.profileinstaller.action.INSTALL_PROFILE"
+                  ],
+                  "categories": [],
+                  "data": [],
+                  "coverage": "complete"
+                },
+                {
+                  "source_index": 1,
+                  "location": {
+                    "line": 345,
+                    "column": 13,
+                    "offset": 16800
+                  },
+                  "priority": null,
+                  "actions": [
+                    "androidx.profileinstaller.action.SKIP_FILE"
+                  ],
+                  "categories": [],
+                  "data": [],
+                  "coverage": "complete"
+                },
+                {
+                  "source_index": 2,
+                  "location": {
+                    "line": 348,
+                    "column": 13,
+                    "offset": 16941
+                  },
+                  "priority": null,
+                  "actions": [
+                    "androidx.profileinstaller.action.SAVE_PROFILE"
+                  ],
+                  "categories": [],
+                  "data": [],
+                  "coverage": "complete"
+                },
+                {
+                  "source_index": 3,
+                  "location": {
+                    "line": 351,
+                    "column": 13,
+                    "offset": 17085
+                  },
+                  "priority": null,
+                  "actions": [
+                    "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+                  ],
+                  "categories": [],
+                  "data": [],
+                  "coverage": "complete"
+                }
+              ],
+              "meta_data": []
+            },
+            {
+              "kind": "service",
+              "declared_name": "com.google.android.datatransport.runtime.backends.TransportBackendDiscovery",
+              "name": "com.google.android.datatransport.runtime.backends.TransportBackendDiscovery",
+              "exported": false,
+              "exported_default": false,
+              "permission": null,
+              "permission_source": "none",
+              "intent_filter_count": 0,
+              "actions": [],
+              "categories": [],
+              "foreground_service_type": null,
+              "authorities": null,
+              "target_activity": null,
+              "declaration_coverage": "complete",
+              "declaration_index": 32,
+              "location": {
+                "line": 355,
+                "column": 9,
+                "offset": 17252
+              },
+              "enabled": null,
+              "enabled_declaration": null,
+              "process": null,
+              "grant_uri_permissions": null,
+              "grant_uri_permissions_declaration": null,
+              "intent_filters": [],
+              "meta_data": [
+                {
+                  "name": "backend:com.google.android.datatransport.cct.CctBackendFactory",
+                  "location": {
+                    "line": 358,
+                    "column": 13,
+                    "offset": 17414
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "service",
+              "declared_name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService",
+              "name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService",
+              "exported": false,
+              "exported_default": false,
+              "permission": "android.permission.BIND_JOB_SERVICE",
+              "permission_source": "component",
+              "intent_filter_count": 0,
+              "actions": [],
+              "categories": [],
+              "foreground_service_type": null,
+              "authorities": null,
+              "target_activity": null,
+              "declaration_coverage": "complete",
+              "declaration_index": 33,
+              "location": {
+                "line": 362,
+                "column": 9,
+                "offset": 17584
+              },
+              "enabled": null,
+              "enabled_declaration": null,
+              "process": null,
+              "grant_uri_permissions": null,
+              "grant_uri_permissions_declaration": null,
+              "intent_filters": [],
+              "meta_data": []
+            },
+            {
+              "kind": "receiver",
+              "declared_name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver",
+              "name": "com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver",
+              "exported": false,
+              "exported_default": false,
+              "permission": null,
+              "permission_source": "none",
+              "intent_filter_count": 0,
+              "actions": [],
+              "categories": [],
+              "foreground_service_type": null,
+              "authorities": null,
+              "target_activity": null,
+              "declaration_coverage": "complete",
+              "declaration_index": 34,
+              "location": {
+                "line": 366,
+                "column": 9,
+                "offset": 17826
+              },
+              "enabled": null,
+              "enabled_declaration": null,
+              "process": null,
+              "grant_uri_permissions": null,
+              "grant_uri_permissions_declaration": null,
+              "intent_filters": [],
+              "meta_data": []
+            },
+            {
+              "kind": "service",
+              "declared_name": "androidx.room.MultiInstanceInvalidationService",
+              "name": "androidx.room.MultiInstanceInvalidationService",
+              "exported": false,
+              "exported_default": false,
+              "permission": null,
+              "permission_source": "none",
+              "intent_filter_count": 0,
+              "actions": [],
+              "categories": [],
+              "foreground_service_type": null,
+              "authorities": null,
+              "target_activity": null,
+              "declaration_coverage": "complete",
+              "declaration_index": 35,
+              "location": {
+                "line": 369,
+                "column": 9,
+                "offset": 18015
+              },
+              "enabled": null,
+              "enabled_declaration": null,
+              "process": null,
+              "grant_uri_permissions": null,
+              "grant_uri_permissions_declaration": null,
+              "intent_filters": [],
+              "meta_data": []
+            },
+            {
+              "kind": "activity",
+              "declared_name": "com.pairip.licensecheck.LicenseActivity",
+              "name": "com.pairip.licensecheck.LicenseActivity",
+              "exported": false,
+              "exported_default": false,
+              "permission": null,
+              "permission_source": "none",
+              "intent_filter_count": 0,
+              "actions": [],
+              "categories": [],
+              "foreground_service_type": null,
+              "authorities": null,
+              "target_activity": null,
+              "declaration_coverage": "complete",
+              "declaration_index": 36,
+              "location": {
+                "line": 373,
+                "column": 9,
+                "offset": 18188
+              },
+              "enabled": null,
+              "enabled_declaration": null,
+              "process": null,
+              "grant_uri_permissions": null,
+              "grant_uri_permissions_declaration": null,
+              "intent_filters": [],
+              "meta_data": []
+            }
+          ],
+          "limitations": [
+            "4 component declaration(s) set android:enabled to a nonliteral boolean; the declared enabled state is unknown."
+          ]
+        },
+        "class_count": 5524,
+        "resource_count": 681,
+        "signature_verification": "not_performed"
+      },
+      "confidence": "observed",
+      "authority": "shipped-artifact",
+      "environment": null,
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture."
+      ],
+      "relationship_coverage": null,
+      "locations": [
+        {
+          "kind": "artifact-path",
+          "path": "AndroidManifest.xml"
+        }
+      ],
+      "evidence_links": []
+    }
+  },
+  "jsonrpc": "2.0",
+  "id": 4
+}

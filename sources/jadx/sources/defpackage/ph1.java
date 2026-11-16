@@ -1,0 +1,19 @@
+package defpackage;
+
+import java.util.Set;
+
+/* JADX INFO: compiled from: r8-map-id-feb309be28723916b74a2526b1508f8a1f09227099db017fc1624552251bc072 */
+/* JADX INFO: loaded from: classes.dex */
+public final class ph1 {
+    public final String a;
+    public final int b;
+    public final String c;
+    public final Set d;
+
+    public ph1(String str, int i, String str2, Set set) {
+        this.b = i;
+        this.a = str;
+        this.c = str2;
+        this.d = set;
+    }
+}

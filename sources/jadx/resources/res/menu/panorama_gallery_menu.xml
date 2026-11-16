@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="0x7f0800a5"
+        android:id="@+id/action_share"
+        android:title="@string/share"
+        app:showAsAction="always"/>
+    <item
+        android:icon="0x7f0800a3"
+        android:id="@+id/Discard"
+        android:title="@string/discard"
+        app:showAsAction="ifRoom"/>
+</menu>

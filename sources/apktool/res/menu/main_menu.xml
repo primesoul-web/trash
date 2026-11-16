@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_photos" android:id="@id/open_gallery_button" android:title="@string/access_gallery" android:showAsAction="always" app:showAsAction="always" />
+    <item android:icon="@null" android:id="@id/Camera" android:title="@string/camera" android:showAsAction="always" app:showAsAction="always" />
+    <item android:id="@id/Settings" android:title="@string/settings" android:showAsAction="never" app:showAsAction="never" />
+    <item android:id="@id/Help" android:title="@string/help" android:showAsAction="never" app:showAsAction="never" />
+    <item android:id="@id/feedback" android:title="@string/feed_back" app:showAsAction="never" />
+    <item android:id="@id/Share_app" android:title="@string/share_app" app:showAsAction="never" />
+    <item android:id="@id/more" android:title="@string/action_more" android:showAsAction="never" app:showAsAction="never" />
+    <item android:id="@id/About" android:title="@string/about" app:showAsAction="never" />
+    <item android:id="@id/Credits" android:title="@string/credits" app:showAsAction="never" />
+    <item android:id="@id/pro_version" android:title="@string/pro_version" app:showAsAction="never" />
+    <item android:id="@id/settings_ads" android:title="@string/ads" app:showAsAction="never" />
+</menu>

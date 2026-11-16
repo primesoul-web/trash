@@ -1,0 +1,28 @@
+{
+  "rea": {
+    "version": "6.9.0",
+    "source": "https://registry.npmjs.org/rea-agents",
+    "npm_integrity": "sha512-KqDn1UR5BMqHoQ3MGAnPuWiSKwgdFaz1L/uUNgrKt+1W8kPtgYP8AWEOXIF1lDIOBVyPuYIIst2iamo1Wf3r8g==",
+    "documentation_repository": "https://github.com/morluto/rea",
+    "documentation_revision": "d511e8baf1a6729b033318e449b2156357b143b6",
+    "transport": "stdio MCP, JSON-RPC 2.0, protocol 2024-11-05"
+  },
+  "jadx_engine": {
+    "version": "jadx-headless-mcp 0.7.1",
+    "sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75"
+  },
+  "apktool": {
+    "version": "3.0.3",
+    "sha256": "dbf930b076c6b9be08d57c449cacefc3bdd6b71ebd59b3066fc0e1f5b14f9423"
+  },
+  "android_build_tools": {
+    "version": "35.0.0",
+    "archive_sha1": "2cfaa0bbb2336e9ec18ed3ecea84fa2e2af607bc",
+    "checksum_source": "https://dl.google.com/android/repository/repository2-3.xml"
+  },
+  "host": {
+    "java": "OpenJDK 21.0.13",
+    "node": "24.22.1",
+    "python": "3.12.14"
+  }
+}

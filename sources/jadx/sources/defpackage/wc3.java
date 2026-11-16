@@ -1,0 +1,17 @@
+package defpackage;
+
+import android.content.Context;
+import java.io.File;
+
+/* JADX INFO: compiled from: r8-map-id-feb309be28723916b74a2526b1508f8a1f09227099db017fc1624552251bc072 */
+/* JADX INFO: loaded from: classes.dex */
+public final /* synthetic */ class wc3 implements ox {
+    public final /* synthetic */ Context h;
+
+    @Override // defpackage.ox
+    public final Object a() {
+        Context context = this.h;
+        context.getClass();
+        return new File(context.getApplicationContext().getFilesDir(), "datastore/ad_quality_data.pb");
+    }
+}

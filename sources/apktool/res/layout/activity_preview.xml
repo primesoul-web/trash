@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/preview_layout_view" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/toolbar" layout="@layout/tool_bar" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="4.0">
+        <com.facebook.rethinkvision.Bimostitch.MultiTouchImageView android:id="@id/preview" android:background="@android:color/background_dark" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <androidx.appcompat.widget.AppCompatButton android:id="@id/nextButton" android:background="@drawable/ic_baseline_arrow_forward_ios_24" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/activity_horizontal_margin" android:layout_alignParentBottom="true" android:layout_marginEnd="@dimen/activity_vertical_margin" android:layout_alignParentEnd="true" />
+        <androidx.appcompat.widget.AppCompatButton android:id="@id/backButton" android:background="@drawable/ic_baseline_arrow_back_ios_new_24" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/activity_horizontal_margin" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/activity_horizontal_margin" android:layout_alignParentStart="true" />
+        <ProgressBar android:id="@id/preview_progress_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" style="?android:progressBarStyleHorizontal" />
+        <androidx.appcompat.widget.AppCompatTextView android:id="@id/preview_progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding_large" android:text="@string/initializing" android:layout_above="@id/preview_progress_bar" android:layout_centerHorizontal="true" />
+        <ProgressBar android:id="@id/circular_progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:progressBarStyle" />
+    </RelativeLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

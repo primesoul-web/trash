@@ -1,0 +1,20 @@
+{
+  "original_sha256": "e1156e8d0ff15f79241a2ed98cf6a26c71d39c3c37da439e3a753e4b33ed8d8f",
+  "rebuilt_sha256": "7113754d48aa860a8ac70632b333eb756de6fd09941286e5e200e447b6f45171",
+  "original_entries": 681,
+  "rebuilt_entries": 683,
+  "added_entries": [
+    "META-INF/MANIFEST.MF",
+    "META-INF/RECOVERY.RSA",
+    "META-INF/RECOVERY.SF"
+  ],
+  "removed_entries": [
+    "stamp-cert-sha256"
+  ],
+  "changed_entries": [
+    "classes.dex"
+  ],
+  "unmodified_common_entries": 679,
+  "original_zip_crc_test": null,
+  "rebuilt_zip_crc_test": null
+}

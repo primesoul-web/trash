@@ -1,0 +1,10 @@
+package defpackage;
+
+import android.os.Binder;
+import android.os.IInterface;
+
+/* JADX INFO: compiled from: r8-map-id-feb309be28723916b74a2526b1508f8a1f09227099db017fc1624552251bc072 */
+/* JADX INFO: loaded from: classes.dex */
+public abstract class vr2 extends Binder implements t13, IInterface {
+    public static final /* synthetic */ int h = 0;
+}

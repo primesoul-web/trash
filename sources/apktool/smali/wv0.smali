@@ -1,0 +1,20 @@
+.class public abstract Lwv0;
+.super Ljava/lang/Object;
+.source "r8-map-id-feb309be28723916b74a2526b1508f8a1f09227099db017fc1624552251bc072"
+
+
+# direct methods
+.method public static a()Z
+    .locals 1
+
+    .line 1
+    invoke-static {}, Landroid/os/Trace;->isEnabled()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    return v0
+.end method

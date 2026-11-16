@@ -1,0 +1,27 @@
+package defpackage;
+
+/* JADX INFO: compiled from: r8-map-id-feb309be28723916b74a2526b1508f8a1f09227099db017fc1624552251bc072 */
+/* JADX INFO: loaded from: classes.dex */
+public final /* synthetic */ class qf2 implements Runnable {
+    public final /* synthetic */ int h;
+    public final /* synthetic */ sf2 i;
+
+    public /* synthetic */ qf2(sf2 sf2Var, int i) {
+        this.h = i;
+        this.i = sf2Var;
+    }
+
+    @Override // java.lang.Runnable
+    public final /* synthetic */ void run() {
+        int i = this.h;
+        sf2 sf2Var = this.i;
+        switch (i) {
+            case 0:
+                sf2Var.i.execute(new qf2(sf2Var, 1));
+                break;
+            default:
+                sf2Var.g();
+                break;
+        }
+    }
+}

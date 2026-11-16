@@ -1,0 +1,9 @@
+package defpackage;
+
+import android.content.Context;
+
+/* JADX INFO: compiled from: r8-map-id-feb309be28723916b74a2526b1508f8a1f09227099db017fc1624552251bc072 */
+/* JADX INFO: loaded from: classes.dex */
+public interface aw0 extends h40 {
+    al0 a(Context context, al0 al0Var, int i, int i2);
+}

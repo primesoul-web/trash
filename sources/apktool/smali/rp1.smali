@@ -1,0 +1,65 @@
+.class public final Lrp1;
+.super Llz;
+.source "r8-map-id-feb309be28723916b74a2526b1508f8a1f09227099db017fc1624552251bc072"
+
+
+# virtual methods
+.method public final s()Ljava/util/HashMap;
+    .locals 3
+
+    .line 1
+    new-instance p0, Ljava/util/HashMap;
+
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/util/HashMap;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    const/4 v0, 0x0
+
+    .line 7
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    const-wide/16 v1, 0x0
+
+    .line 12
+    .line 13
+    invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v1
+
+    .line 17
+    invoke-virtual {p0, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 18
+    .line 19
+    .line 20
+    const/4 v0, 0x1
+
+    .line 21
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v0
+
+    .line 25
+    invoke-virtual {p0, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 26
+    .line 27
+    .line 28
+    return-object p0
+.end method

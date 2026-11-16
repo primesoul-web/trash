@@ -1,0 +1,24 @@
+package defpackage;
+
+/* JADX INFO: compiled from: r8-map-id-feb309be28723916b74a2526b1508f8a1f09227099db017fc1624552251bc072 */
+/* JADX INFO: loaded from: classes.dex */
+public final class rt {
+    public final int a;
+    public final String b;
+    public final int c;
+    public final int d;
+
+    public rt(String str, int i, int i2) {
+        this.b = str;
+        this.a = i;
+        this.c = i2;
+        this.d = -1;
+    }
+
+    public rt(int i, int i2, int i3, String str) {
+        this.b = str;
+        this.a = i;
+        this.c = i2;
+        this.d = i3;
+    }
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/preview_selector_layout_view" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@id/toolbar" layout="@layout/tool_bar" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_list_view" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:textAppearanceLarge" android:textStyle="bold" android:textColor="#607d8b" android:id="@id/preview_empty_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_previews_saved" android:layout_centerInParent="true" android:lineSpacingMultiplier="@dimen/line_spacing_multiplier" />
+</RelativeLayout>

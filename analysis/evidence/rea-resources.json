@@ -1,0 +1,1402 @@
+{
+  "result": {
+    "_meta": {
+      "provenance": {
+        "untrusted_content": true,
+        "source": "analysis_target"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"evidence_id\":\"ev_d436ef044daabe7a09ed9e83c6f7abc4d16420c62c78ba5d6df1fa7f86194bf5\",\"subject\":{\"name\":\"base.apk\",\"digest\":{\"sha256\":\"e1156e8d0ff15f79241a2ed98cf6a26c71d39c3c37da439e3a753e4b33ed8d8f\"},\"local_path\":\"/workspace/attachments/e111578f-ce02-4ab3-bee9-f03dbce73199/base.apk\",\"format\":\"apk\",\"architecture\":null},\"provider\":{\"id\":\"apktool\",\"name\":\"Apktool\",\"version\":\"3.0.3\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis\",\"operation\":\"decode_android_resources\",\"parameters\":{\"path\":\"/workspace/attachments/e111578f-ce02-4ab3-bee9-f03dbce73199/base.apk\",\"include_strings\":true},\"raw_result\":null,\"normalized_result\":{\"client\":{\"command\":\"/workspace/re-tools/apktool\",\"command_source\":\"environment\",\"apktool_version\":\"3.0.3\"},\"target\":{\"path\":\"/workspace/attachments/e111578f-ce02-4ab3-bee9-f03dbce73199/base.apk\",\"bytes\":6934672,\"sha256\":\"e1156e8d0ff15f79241a2ed98cf6a26c71d39c3c37da439e3a753e4b33ed8d8f\"},\"metadata\":{\"version_name\":\"3.0.00-lite\",\"version_code\":\"253\",\"min_sdk_version\":\"32\",\"target_sdk_version\":\"37\",\"package_name\":\"com.facebook.rethinkvision.Bimostitch\"},\"manifest\":\"<?xml version=\\\"1.0\\\" encoding=\\\"utf-8\\\"?>\\n<manifest xmlns:android=\\\"http://schemas.android.com/apk/res/android\\\" android:compileSdkVersion=\\\"37\\\" android:compileSdkVersionCodename=\\\"17\\\" android:requiredSplitTypes=\\\"base__abi,base__density\\\" android:splitTypes=\\\"\\\" package=\\\"com.facebook.rethinkvision.Bimostitch\\\" platformBuildVersionCode=\\\"37\\\" platformBuildVersionName=\\\"17\\\">\\n    <uses-permission android:name=\\\"android.permission.INTERNET\\\"/>\\n    <uses-permission android:name=\\\"android.permission.WRITE_EXTERNAL_STORAGE\\\"/>\\n    <uses-permission android:name=\\\"android.permission.READ_EXTERNAL_STORAGE\\\"/>\\n    <uses-permission android:name=\\\"android.permission.READ_MEDIA_IMAGES\\\"/>\\n    <uses-permission android:name=\\\"android.permission.READ_MEDIA_VIDEO\\\"/>\\n    <uses-permission android:name=\\\"android.permission.ACCESS_MEDIA_LOCATION\\\"/>\\n    <uses-permission android:name=\\\"android.permission.WAKE_LOCK\\\"/>\\n    <uses-permission android:name=\\\"android.permission.VIBRATE\\\"/>\\n    <uses-permission android:name=\\\"com.android.vending.CHECK_LICENSE\\\"/>\\n    <uses-permission android:name=\\\"android.permission.FOREGROUND_SERVICE\\\"/>\\n    <uses-permission android:name=\\\"android.permission.FOREGROUND_SERVICE_SPECIAL_USE\\\"/>\\n    <uses-permission android:name=\\\"android.permission.POST_NOTIFICATIONS\\\"/>\\n    <queries>\\n        <package android:name=\\\"com.google.android.apps.photos\\\"/>\\n        <intent>\\n            <action android:name=\\\"android.intent.action.ACTION_PICK\\\"/>\\n            <data android:mimeType=\\\"image/*\\\"/>\\n        </intent>\\n        <intent>\\n            <action android:name=\\\"com.android.vending.billing.InAppBillingService.BIND\\\"/>\\n        </intent>\\n        <intent>\\n            <action android:name=\\\"com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND\\\"/>\\n        </intent>\\n        <intent>\\n            <action android:name=\\\"android.intent.action.VIEW\\\"/>\\n            <category android:name=\\\"android.intent.category.BROWSABLE\\\"/>\\n            <data android:scheme=\\\"https\\\"/>\\n        </intent>\\n        <intent>\\n            <action android:name=\\\"android.support.customtabs.action.CustomTabsService\\\"/>\\n        </intent>\\n        <intent>\\n            <action android:name=\\\"android.intent.action.INSERT\\\"/>\\n            <data android:mimeType=\\\"vnd.android.cursor.dir/event\\\"/>\\n        </intent>\\n        <intent>\\n            <action android:name=\\\"android.intent.action.VIEW\\\"/>\\n            <data android:scheme=\\\"sms\\\"/>\\n        </intent>\\n        <intent>\\n            <action android:name=\\\"android.intent.action.DIAL\\\"/>\\n            <data android:path=\\\"tel:\\\"/>\\n        </intent>\\n        <package android:name=\\\"com.android.vending\\\"/>\\n    </queries>\\n    <uses-feature android:name=\\\"android.hardware.touchscreen\\\" android:required=\\\"false\\\"/>\\n    <uses-feature android:name=\\\"android.hardware.camera\\\" android:required=\\\"false\\\"/>\\n    <uses-permission android:name=\\\"com.android.vending.BILLING\\\"/>\\n    <uses-permission android:name=\\\"android.permission.ACCESS_NETWORK_STATE\\\"/>\\n    <uses-permission android:name=\\\"com.google.android.gms.permission.AD_ID\\\"/>\\n    <uses-permission android:name=\\\"android.permission.ACCESS_ADSERVICES_AD_ID\\\"/>\\n    <uses-permission android:name=\\\"android.permission.ACCESS_ADSERVICES_ATTRIBUTION\\\"/>\\n    <uses-permission android:name=\\\"android.permission.ACCESS_ADSERVICES_TOPICS\\\"/>\\n    <permission android:name=\\\"com.facebook.rethinkvision.Bimostitch.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION\\\" android:protectionLevel=\\\"signature\\\"/>\\n    <uses-permission android:name=\\\"com.facebook.rethinkvision.Bimostitch.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION\\\"/>\\n    <application android:allowBackup=\\\"true\\\" android:appComponentFactory=\\\"androidx.core.app.CoreComponentFactory\\\" android:extractNativeLibs=\\\"false\\\" android:icon=\\\"@mipmap/ic_launcher\\\" android:label=\\\"@string/app_name\\\" android:largeHeap=\\\"true\\\" android:name=\\\"com.pairip.application.Application\\\" android:requestLegacyExternalStorage=\\\"true\\\" android:theme=\\\"@style/AppTheme\\\">\\n        <meta-data android:name=\\\"com.google.android.gms.ads.APPLICATION_ID\\\" android:value=\\\"ca-app-pub-7329778626013066~4565416236\\\"/>\\n        <receiver android:exported=\\\"true\\\" android:name=\\\"com.facebook.rethinkvision.Bimostitch.StitcherService$StopServiceReceiver\\\">\\n            <intent-filter>\\n                <action android:name=\\\"com.facebook.rethinkvision.Bimostitch.lite.action.STOP\\\"/>\\n            </intent-filter>\\n        </receiver>\\n        <uses-library android:name=\\\"org.apache.http.legacy\\\" android:required=\\\"false\\\"/>\\n        <activity android:configChanges=\\\"orientation|screenSize\\\" android:exported=\\\"true\\\" android:name=\\\"com.facebook.rethinkvision.Bimostitch.BimostitchActivity\\\" android:theme=\\\"@style/AppTheme\\\">\\n            <intent-filter>\\n                <action android:name=\\\"android.intent.action.MAIN\\\"/>\\n                <category android:name=\\\"android.intent.category.LAUNCHER\\\"/>\\n            </intent-filter>\\n            <intent-filter>\\n                <action android:name=\\\"android.intent.action.SEND_MULTIPLE\\\"/>\\n                <category android:name=\\\"android.intent.category.DEFAULT\\\"/>\\n                <data android:mimeType=\\\"image/*\\\"/>\\n            </intent-filter>\\n        </activity>\\n        <activity android:configChanges=\\\"orientation|screenSize\\\" android:label=\\\"@string/settings\\\" android:name=\\\"com.facebook.rethinkvision.Bimostitch.SettingsActivity\\\" android:theme=\\\"@style/SecondaryTheme\\\"/>\\n        <activity android:configChanges=\\\"orientation|screenSize\\\" android:label=\\\"@string/help\\\" android:name=\\\"com.facebook.rethinkvision.Bimostitch.HelpActivity\\\" android:theme=\\\"@style/SecondaryTheme\\\"/>\\n        <activity android:label=\\\"@string/preview\\\" android:name=\\\"com.facebook.rethinkvision.Bimostitch.PreviewActivity\\\" android:theme=\\\"@style/AppTheme.NoActionBar\\\"/>\\n        <activity android:label=\\\"@string/settings\\\" android:name=\\\"com.facebook.rethinkvision.Bimostitch.QuickSettingsActivity\\\" android:theme=\\\"@style/SecondaryTheme\\\"/>\\n        <activity android:configChanges=\\\"orientation|screenSize\\\" android:label=\\\"@string/image_picker\\\" android:name=\\\"com.facebook.rethinkvision.Bimostitch.ImageDisplay\\\" android:theme=\\\"@style/AppTheme\\\"/>\\n        <provider android:authorities=\\\"com.facebook.rethinkvision.Bimostitch.fileprovider\\\" android:exported=\\\"false\\\" android:grantUriPermissions=\\\"true\\\" android:name=\\\"androidx.core.content.FileProvider\\\">\\n            <meta-data android:name=\\\"android.support.FILE_PROVIDER_PATHS\\\" android:resource=\\\"@xml/provider_paths\\\"/>\\n        </provider>\\n        <activity android:configChanges=\\\"keyboardHidden|orientation|screenSize\\\" android:label=\\\"@string/title_activity_viewer\\\" android:name=\\\"com.facebook.rethinkvision.Bimostitch.ViewerActivity\\\" android:theme=\\\"@style/FullscreenTheme\\\"/>\\n        <service android:enabled=\\\"true\\\" android:exported=\\\"false\\\" android:foregroundServiceType=\\\"specialUse\\\" android:name=\\\"com.facebook.rethinkvision.Bimostitch.StitcherService\\\">\\n            <property android:name=\\\"android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE\\\" android:value=\\\"image_stitching\\\"/>\\n        </service>\\n        <meta-data android:name=\\\"com.google.android.play.billingclient.version\\\" android:value=\\\"9.1.0\\\"/>\\n        <activity android:configChanges=\\\"keyboard|keyboardHidden|orientation|screenLayout|screenSize\\\" android:exported=\\\"false\\\" android:name=\\\"com.android.billingclient.api.ProxyBillingActivity\\\" android:theme=\\\"@android:style/Theme.Translucent.NoTitleBar\\\"/>\\n        <activity android:configChanges=\\\"keyboard|keyboardHidden|orientation|screenLayout|screenSize\\\" android:exported=\\\"false\\\" android:name=\\\"com.android.billingclient.api.ProxyBillingActivityV2\\\" android:theme=\\\"@android:style/Theme.Translucent.NoTitleBar\\\"/>\\n        <activity android:configChanges=\\\"keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize\\\" android:enableOnBackInvokedCallback=\\\"false\\\" android:exported=\\\"false\\\" android:name=\\\"com.google.android.gms.ads.AdActivity\\\" android:theme=\\\"@android:style/Theme.Translucent\\\"/>\\n        <provider android:authorities=\\\"com.facebook.rethinkvision.Bimostitch.mobileadsinitprovider\\\" android:exported=\\\"false\\\" android:initOrder=\\\"100\\\" android:name=\\\"com.google.android.gms.ads.MobileAdsInitProvider\\\"/>\\n        <service android:enabled=\\\"true\\\" android:exported=\\\"false\\\" android:name=\\\"com.google.android.gms.ads.AdService\\\"/>\\n        <activity android:configChanges=\\\"keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize\\\" android:exported=\\\"false\\\" android:name=\\\"com.google.android.gms.ads.OutOfContextTestingActivity\\\"/>\\n        <activity android:excludeFromRecents=\\\"true\\\" android:exported=\\\"false\\\" android:launchMode=\\\"singleTask\\\" android:name=\\\"com.google.android.gms.ads.NotificationHandlerActivity\\\" android:taskAffinity=\\\"\\\" android:theme=\\\"@android:style/Theme.Translucent.NoTitleBar\\\"/>\\n        <meta-data android:name=\\\"com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING\\\" android:value=\\\"true\\\"/>\\n        <meta-data android:name=\\\"com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION\\\" android:value=\\\"true\\\"/>\\n        <activity android:configChanges=\\\"keyboardHidden|orientation|screenLayout|screenSize\\\" android:excludeFromRecents=\\\"true\\\" android:exported=\\\"false\\\" android:launchMode=\\\"singleTop\\\" android:name=\\\"com.google.android.play.core.hsdp.service.HsdpShimActivity\\\" android:theme=\\\"@style/Theme.HsdpServiceTransparent\\\"/>\\n        <activity android:exported=\\\"false\\\" android:name=\\\"com.google.android.gms.common.api.GoogleApiActivity\\\" android:theme=\\\"@android:style/Theme.Translucent.NoTitleBar\\\"/>\\n        <meta-data android:name=\\\"com.google.android.gms.version\\\" android:value=\\\"@integer/google_play_services_version\\\"/>\\n        <provider android:authorities=\\\"com.facebook.rethinkvision.Bimostitch.androidx-startup\\\" android:exported=\\\"false\\\" android:name=\\\"androidx.startup.InitializationProvider\\\">\\n            <meta-data android:name=\\\"androidx.emoji2.text.EmojiCompatInitializer\\\" android:value=\\\"androidx.startup\\\"/>\\n            <meta-data android:name=\\\"androidx.work.WorkManagerInitializer\\\" android:value=\\\"androidx.startup\\\"/>\\n            <meta-data android:name=\\\"androidx.lifecycle.ProcessLifecycleInitializer\\\" android:value=\\\"androidx.startup\\\"/>\\n            <meta-data android:name=\\\"androidx.profileinstaller.ProfileInstallerInitializer\\\" android:value=\\\"androidx.startup\\\"/>\\n        </provider>\\n        <service android:directBootAware=\\\"false\\\" android:enabled=\\\"@bool/enable_system_alarm_service_default\\\" android:exported=\\\"false\\\" android:name=\\\"androidx.work.impl.background.systemalarm.SystemAlarmService\\\"/>\\n        <service android:directBootAware=\\\"false\\\" android:enabled=\\\"@bool/enable_system_job_service_default\\\" android:exported=\\\"true\\\" android:name=\\\"androidx.work.impl.background.systemjob.SystemJobService\\\" android:permission=\\\"android.permission.BIND_JOB_SERVICE\\\"/>\\n        <service android:directBootAware=\\\"false\\\" android:enabled=\\\"@bool/enable_system_foreground_service_default\\\" android:exported=\\\"false\\\" android:name=\\\"androidx.work.impl.foreground.SystemForegroundService\\\"/>\\n        <receiver android:directBootAware=\\\"false\\\" android:enabled=\\\"true\\\" android:exported=\\\"false\\\" android:name=\\\"androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver\\\"/>\\n        <receiver android:directBootAware=\\\"false\\\" android:enabled=\\\"false\\\" android:exported=\\\"false\\\" android:name=\\\"androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy\\\">\\n            <intent-filter>\\n                <action android:name=\\\"android.intent.action.ACTION_POWER_CONNECTED\\\"/>\\n                <action android:name=\\\"android.intent.action.ACTION_POWER_DISCONNECTED\\\"/>\\n            </intent-filter>\\n        </receiver>\\n        <receiver android:directBootAware=\\\"false\\\" android:enabled=\\\"false\\\" android:exported=\\\"false\\\" android:name=\\\"androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy\\\">\\n            <intent-filter>\\n                <action android:name=\\\"android.intent.action.BATTERY_OKAY\\\"/>\\n                <action android:name=\\\"android.intent.action.BATTERY_LOW\\\"/>\\n            </intent-filter>\\n        </receiver>\\n        <receiver android:directBootAware=\\\"false\\\" android:enabled=\\\"false\\\" android:exported=\\\"false\\\" android:name=\\\"androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy\\\">\\n            <intent-filter>\\n                <action android:name=\\\"android.intent.action.DEVICE_STORAGE_LOW\\\"/>\\n                <action android:name=\\\"android.intent.action.DEVICE_STORAGE_OK\\\"/>\\n            </intent-filter>\\n        </receiver>\\n        <receiver android:directBootAware=\\\"false\\\" android:enabled=\\\"false\\\" android:exported=\\\"false\\\" android:name=\\\"androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy\\\">\\n            <intent-filter>\\n                <action android:name=\\\"android.net.conn.CONNECTIVITY_CHANGE\\\"/>\\n            </intent-filter>\\n        </receiver>\\n        <receiver android:directBootAware=\\\"false\\\" android:enabled=\\\"false\\\" android:exported=\\\"false\\\" android:name=\\\"androidx.work.impl.background.systemalarm.RescheduleReceiver\\\">\\n            <intent-filter>\\n                <action android:name=\\\"android.intent.action.BOOT_COMPLETED\\\"/>\\n                <action android:name=\\\"android.intent.action.TIME_SET\\\"/>\\n                <action android:name=\\\"android.intent.action.TIMEZONE_CHANGED\\\"/>\\n            </intent-filter>\\n        </receiver>\\n        <receiver android:directBootAware=\\\"false\\\" android:enabled=\\\"@bool/enable_system_alarm_service_default\\\" android:exported=\\\"false\\\" android:name=\\\"androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver\\\">\\n            <intent-filter>\\n                <action android:name=\\\"androidx.work.impl.background.systemalarm.UpdateProxies\\\"/>\\n            </intent-filter>\\n        </receiver>\\n        <receiver android:directBootAware=\\\"false\\\" android:enabled=\\\"true\\\" android:exported=\\\"true\\\" android:name=\\\"androidx.work.impl.diagnostics.DiagnosticsReceiver\\\" android:permission=\\\"android.permission.DUMP\\\">\\n            <intent-filter>\\n                <action android:name=\\\"androidx.work.diagnostics.REQUEST_DIAGNOSTICS\\\"/>\\n            </intent-filter>\\n        </receiver>\\n        <uses-library android:name=\\\"androidx.window.extensions\\\" android:required=\\\"false\\\"/>\\n        <uses-library android:name=\\\"androidx.window.sidecar\\\" android:required=\\\"false\\\"/>\\n        <uses-library android:name=\\\"android.ext.adservices\\\" android:required=\\\"false\\\"/>\\n        <receiver android:directBootAware=\\\"false\\\" android:enabled=\\\"true\\\" android:exported=\\\"true\\\" android:name=\\\"androidx.profileinstaller.ProfileInstallReceiver\\\" android:permission=\\\"android.permission.DUMP\\\">\\n            <intent-filter>\\n                <action android:name=\\\"androidx.profileinstaller.action.INSTALL_PROFILE\\\"/>\\n            </intent-filter>\\n            <intent-filter>\\n                <action android:name=\\\"androidx.profileinstaller.action.SKIP_FILE\\\"/>\\n            </intent-filter>\\n            <intent-filter>\\n                <action android:name=\\\"androidx.profileinstaller.action.SAVE_PROFILE\\\"/>\\n            </intent-filter>\\n            <intent-filter>\\n                <action android:name=\\\"androidx.profileinstaller.action.BENCHMARK_OPERATION\\\"/>\\n            </intent-filter>\\n        </receiver>\\n        <service android:exported=\\\"false\\\" android:name=\\\"com.google.android.datatransport.runtime.backends.TransportBackendDiscovery\\\">\\n            <meta-data android:name=\\\"backend:com.google.android.datatransport.cct.CctBackendFactory\\\" android:value=\\\"cct\\\"/>\\n        </service>\\n        <service android:exported=\\\"false\\\" android:name=\\\"com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService\\\" android:permission=\\\"android.permission.BIND_JOB_SERVICE\\\"/>\\n        <receiver android:exported=\\\"false\\\" android:name=\\\"com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver\\\"/>\\n        <service android:directBootAware=\\\"true\\\" android:exported=\\\"false\\\" android:name=\\\"androidx.room.MultiInstanceInvalidationService\\\"/>\\n        <activity android:exported=\\\"false\\\" android:name=\\\"com.pairip.licensecheck.LicenseActivity\\\"/>\\n        <meta-data android:name=\\\"com.android.vending.splits.required\\\" android:value=\\\"true\\\"/>\\n        <meta-data android:name=\\\"com.android.stamp.source\\\" android:value=\\\"https://play.google.com/store\\\"/>\\n        <meta-data android:name=\\\"com.android.stamp.type\\\" android:value=\\\"STAMP_TYPE_DISTRIBUTION_APK\\\"/>\\n        <meta-data android:name=\\\"com.android.vending.splits\\\" android:resource=\\\"@xml/splits0\\\"/>\\n        <meta-data android:name=\\\"com.android.vending.derived.apk.id\\\" android:value=\\\"4\\\"/>\\n    </application>\\n</manifest>\\n\",\"strings\":[{\"name\":\"abc_action_bar_up_description\",\"value\":\"Navigate up\"},{\"name\":\"abc_action_mode_done\",\"value\":\"Done\"},{\"name\":\"abc_capital_off\",\"value\":\"OFF\"},{\"name\":\"abc_capital_on\",\"value\":\"ON\"},{\"name\":\"abc_menu_alt_shortcut_label\",\"value\":\"Alt+\"},{\"name\":\"abc_menu_ctrl_shortcut_label\",\"value\":\"Ctrl+\"},{\"name\":\"abc_menu_delete_shortcut_label\",\"value\":\"delete\"},{\"name\":\"abc_menu_enter_shortcut_label\",\"value\":\"enter\"},{\"name\":\"abc_menu_function_shortcut_label\",\"value\":\"Function+\"},{\"name\":\"abc_menu_meta_shortcut_label\",\"value\":\"Meta+\"},{\"name\":\"abc_menu_shift_shortcut_label\",\"value\":\"Shift+\"},{\"name\":\"abc_menu_space_shortcut_label\",\"value\":\"space\"},{\"name\":\"abc_menu_sym_shortcut_label\",\"value\":\"Sym+\"},{\"name\":\"abc_prepend_shortcut_label\",\"value\":\"Menu+\"},{\"name\":\"abc_search_hint\",\"value\":\"Search\u2026\"},{\"name\":\"abc_searchview_description_clear\",\"value\":\"Clear query\"},{\"name\":\"abc_searchview_description_search\",\"value\":\"Search\"},{\"name\":\"abc_searchview_description_submit\",\"value\":\"Submit query\"},{\"name\":\"abc_searchview_description_voice\",\"value\":\"Voice search\"},{\"name\":\"abc_toolbar_collapse_description\",\"value\":\"Collapse\"},{\"name\":\"about\",\"value\":\"About\"},{\"name\":\"about_body\",\"value\":\"Copyright \u00a9 2026.\"},{\"name\":\"about_title\",\"value\":\"Thanks\"},{\"name\":\"access_gallery\",\"value\":\"pick from gallery\"},{\"name\":\"access_gallery_saf\",\"value\":\"open standard picker\"},{\"name\":\"action_more\",\"value\":\"More apps\"},{\"name\":\"action_settings\",\"value\":\"Settings\"},{\"name\":\"ads\",\"value\":\"Ads\"},{\"name\":\"ads_alert\",\"value\":\"\\\"This app is ad supported.\\n\\nYou must provide consent to at least show non-personalized ads.\\n\\nLoad the consent form by pressing Ads Management below, consent to all or press manage options and give consent to 1) Store and/or access information on a device then 2) Open the vendor preferences at the bottom and give consent to Google Advertising Products or 3) Upgrade to ad free pro version\\\"\"},{\"name\":\"ads_management\",\"value\":\"Ads Management\"},{\"name\":\"advanced_blending_summary\",\"value\":\"Best\"},{\"name\":\"advanced_options\",\"value\":\"ADVANCED\"},{\"name\":\"albums\",\"value\":\"ALBUMS\"},{\"name\":\"androidx_startup\",\"value\":\"androidx.startup\"},{\"name\":\"app_name\",\"value\":\"Bimostitch Lite\"},{\"name\":\"appbar_scrolling_view_behavior\",\"value\":\"com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior\"},{\"name\":\"apply\",\"value\":\"APPLY\"},{\"name\":\"authorities\",\"value\":\"com.facebook.rethinkvision.Bimostitch.provider\"},{\"name\":\"auto_color_settings\",\"value\":\"Auto-color balancing\"},{\"name\":\"auto_color_summary\",\"value\":\"Balance out the color differences\"},{\"name\":\"auto_delete_settings\",\"value\":\"Auto-delete photos\"},{\"name\":\"auto_delete_summary\",\"value\":\"Applies only to newly captured photos after stitching\"},{\"name\":\"auto_detect_proj_summary\",\"value\":\"Auto-detect\"},{\"name\":\"auto_exposure_settings\",\"value\":\"Auto-exposure balancing\"},{\"name\":\"auto_exposure_summary\",\"value\":\"Balance out the exposure differences\"},{\"name\":\"auto_lens_calibration_settings\",\"value\":\"Auto-lens calibration\"},{\"name\":\"auto_lens_calibration_summary\",\"value\":\"Compensates for lens distortions\"},{\"name\":\"autostraighten_summary\",\"value\":\"Make panoramas straight\"},{\"name\":\"background_stitch_started\",\"value\":\"Check notification bar for progress\"},{\"name\":\"blend_summary\",\"value\":\"Remove visible seams\"},{\"name\":\"blending_settings\",\"value\":\"Blending\"},{\"name\":\"bottom_sheet_behavior\",\"value\":\"com.google.android.material.bottomsheet.BottomSheetBehavior\"},{\"name\":\"bottomsheet_action_collapse\",\"value\":\"Collapse\"},{\"name\":\"bottomsheet_action_collapse_description\",\"value\":\"Collapse the bottom sheet\"},{\"name\":\"bottomsheet_action_expand\",\"value\":\"Expand\"},{\"name\":\"bottomsheet_action_expand_description\",\"value\":\"Expand the bottom sheet\"},{\"name\":\"bottomsheet_action_expand_halfway\",\"value\":\"Expand halfway\"},{\"name\":\"bottomsheet_action_half_expand_description\",\"value\":\"Half expand the bottom sheet\"},{\"name\":\"bottomsheet_drag_handle_content_description\",\"value\":\"Drag handle\"},{\"name\":\"bottomsheet_state_collapsed\",\"value\":\"Collapsed\"},{\"name\":\"bottomsheet_state_expanded\",\"value\":\"Expanded\"},{\"name\":\"bottomsheet_state_half_expanded\",\"value\":\"Half expanded\"},{\"name\":\"camera\",\"value\":\"capture images\"},{\"name\":\"camera_notification\",\"value\":\"Press back when done.\"},{\"name\":\"cancel\",\"value\":\"Cancel\"},{\"name\":\"channel_description\",\"value\":\"Notification appear in this channel when panorama stitching is done.\"},{\"name\":\"channel_name\",\"value\":\"Panorama Notifications\"},{\"name\":\"character_counter_content_description\",\"value\":\"Characters entered %1$d of %2$d\"},{\"name\":\"character_counter_overflowed_content_description\",\"value\":\"Character limit exceeded %1$d of %2$d\"},{\"name\":\"character_counter_pattern\",\"value\":\"%1$d/%2$d\"},{\"name\":\"check_this_app\",\"value\":\"Check out this cool panorama app\"},{\"name\":\"clear_text_end_icon_content_description\",\"value\":\"Clear text\"},{\"name\":\"close\",\"value\":\"Close\"},{\"name\":\"common_google_play_services_enable_button\",\"value\":\"Enable\"},{\"name\":\"common_google_play_services_enable_text\",\"value\":\"\\\"%1$s won't work unless you enable Google Play services.\\\"\"},{\"name\":\"common_google_play_services_enable_title\",\"value\":\"Enable Google Play services\"},{\"name\":\"common_google_play_services_install_button\",\"value\":\"Install\"},{\"name\":\"common_google_play_services_install_text\",\"value\":\"\\\"%1$s won't run without Google Play services, which are missing from your device.\\\"\"},{\"name\":\"common_google_play_services_install_title\",\"value\":\"Get Google Play services\"},{\"name\":\"common_google_play_services_notification_channel_name\",\"value\":\"Google Play services availability\"},{\"name\":\"common_google_play_services_notification_ticker\",\"value\":\"Google Play services error\"},{\"name\":\"common_google_play_services_unknown_issue\",\"value\":\"%1$s is having trouble with Google Play services. Please try again.\"},{\"name\":\"common_google_play_services_unsupported_text\",\"value\":\"\\\"%1$s won't run without Google Play services, which are not supported by your device.\\\"\"},{\"name\":\"common_google_play_services_update_button\",\"value\":\"Update\"},{\"name\":\"common_google_play_services_update_text\",\"value\":\"\\\"%1$s won't run unless you update Google Play services.\\\"\"},{\"name\":\"common_google_play_services_update_title\",\"value\":\"Update Google Play services\"},{\"name\":\"common_google_play_services_updating_text\",\"value\":\"\\\"%1$s won't run without Google Play services, which are currently updating.\\\"\"},{\"name\":\"common_google_play_services_wear_update_text\",\"value\":\"New version of Google Play services needed. It will update itself shortly.\"},{\"name\":\"common_open_on_phone\",\"value\":\"Open on phone\"},{\"name\":\"common_signin_button_text\",\"value\":\"Sign in\"},{\"name\":\"common_signin_button_text_long\",\"value\":\"Sign in with Google\"},{\"name\":\"copy\",\"value\":\"Copy\"},{\"name\":\"credits\",\"value\":\"Credits\"},{\"name\":\"cropping_panorama\",\"value\":\"Cropping panorama\"},{\"name\":\"cropping_settings\",\"value\":\"Auto-crop\"},{\"name\":\"cropping_summary\",\"value\":\"Remove wavy panorama boundaries\"},{\"name\":\"cylindrical_proj_summary\",\"value\":\"Cylindrical\"},{\"name\":\"default_directory\",\"value\":\"Panorama\"},{\"name\":\"deselect_all\",\"value\":\"Deselect all\"},{\"name\":\"dialog_discard\",\"value\":\"Discard selected item?\"},{\"name\":\"discard\",\"value\":\"Discard\"},{\"name\":\"dismiss_button_description\",\"value\":\"sdk_loading_ui_dismiss_button\"},{\"name\":\"edit\",\"value\":\"Edit\"},{\"name\":\"empty\",\"value\":\"WELCOME\"},{\"name\":\"error_a11y_label\",\"value\":\"Error: invalid\"},{\"name\":\"error_icon_content_description\",\"value\":\"Error\"},{\"name\":\"estimating_parameters\",\"value\":\"Working on panorama\"},{\"name\":\"exit_tile\",\"value\":\"Exit\"},{\"name\":\"expand_button_title\",\"value\":\"Advanced\"},{\"name\":\"exposed_dropdown_menu_content_description\",\"value\":\"Show dropdown menu\"},{\"name\":\"extracted_features\",\"value\":\"Processed image\"},{\"name\":\"fab_transformation_scrim_behavior\",\"value\":\"com.google.android.material.transformation.FabTransformationScrimBehavior\"},{\"name\":\"fab_transformation_sheet_behavior\",\"value\":\"com.google.android.material.transformation.FabTransformationSheetBehavior\"},{\"name\":\"failed_move_pano\",\"value\":\"Failed to move panorama:\"},{\"name\":\"failed_move_pano_body\",\"value\":\"Find the panorama in the app private folder:\"},{\"name\":\"fallback_menu_item_copy_link\",\"value\":\"Copy link\"},{\"name\":\"fallback_menu_item_open_in_browser\",\"value\":\"Open in browser\"},{\"name\":\"fallback_menu_item_share_link\",\"value\":\"Share link\"},{\"name\":\"feed_back\",\"value\":\"Feedback\"},{\"name\":\"file_exists\",\"value\":\"File exists!\"},{\"name\":\"frame_overlap_settings\",\"value\":\"Frame overlap ratio\"},{\"name\":\"frame_settings\",\"value\":\"Sampling rate (fps)\"},{\"name\":\"general_help\",\"value\":\"\\\" &lt;body> &lt;h1>&lt;u>How to use Bimostitch&lt;/u>&lt;/h1> NOTE: When (Pro) is appended to the beginning of a word/statement or just after a dash or dot, then the feature is available only on the Pro version of the app.&lt;br/>&lt;br/>\\n        &amp;#8226; Bimostitch is a fully automated panorama stitcher that enables you to automatically stitch individual overlapping images or (Pro) video into panoramas.&lt;br/>&lt;br/>\\n        &amp;#8226; You can stitch overlapping photos from any source such as drones, cameras, downloaded photos, old photos and photos from other apps.&lt;br/>&lt;br/>\\n        &amp;#8226; Select photos or a (Pro) video by pressing the gallery icon, located on the top-right of the apps home screen, then the app will automatically do the stitching.&lt;br/>&lt;br/>\\n        &amp;#8226; You need to make sure the photos share some common overlapping areas, else the app will ignore them automatically.&lt;br/>&lt;br/>\\n        &amp;#8226; You can turn on/off the preview mode that enables you to quickly preview the panorama before final rendering.&lt;br/>&lt;br/>\\n        &amp;#8226; There are various rendering options to choose from such as seam detection mode which controls how the app locates cutting points for each image. Make sure to select (Pro) Optimal seam detection for best results.&lt;br/>&lt;br/>\\n        &amp;#8226; (Pro) Optimal seam detection allows the app to find the best places to cut in order to minimize visible seams.&lt;br/>&lt;br/>\\n        &amp;#8226; Voronoi just uses a naive line that cuts alone points of equal distance from closest image centers.&lt;br/>&lt;br/>\\n        &amp;#8226; Image borders simply uses the image outline as a seam line.&lt;br/>&lt;br/> NOTE: Blending is off for Image border seam detection since its very difficult to blend along image borders.&lt;br/>&lt;br/> (Pro) You can control the amount of blending the app applies to the image using the Blending Strength slider. To turn on/off blending there is a toggle switch.&lt;br/>&lt;br/>\\n        &amp;#8226; You can also select between the following projection options, equirectangular (projects images onto a spherical surface), cylindrical (projects images onto a cylindrical surface), planar (projects images onto a plane) and auto-detect ( selects between the above mentioned projection options). &lt;br/>&lt;br/>\\n        &amp;#8226; Balancing options include auto-straighten, auto-crop, auto-exposure, (Pro) auto-color.&lt;br/>&lt;br/>\\n        &amp;#8226; Auto-straighten tries to find a common plane in which the panorama was taken then renders it relative to that plane ie if you shoot photos sweeping left to right the common plane is aligned with the horizon. &lt;br/>&lt;br/>\\n        &amp;#8226; Auto-crop finds the best possible way to crop the panorama with minimal loss in resolution.&lt;br/>&lt;br/>\\n        &amp;#8226; Auto-exposure normalizes the exposure differences between images. It is recommended to capture images with uniform exposure for best results.&lt;br/>&lt;br/>\\n        &amp;#8226; (Pro) Auto-color tries to normalize the colors across the entire panorama. Again it is best to have images with uniform colors to begin with for best results.&lt;br/>&lt;br/>\\n        &amp;#8226; The settings, auto-straighten, auto-crop, auto-exposure, (Pro) auto-color, can all be turned on/off with a toggle and the (Pro) sliders help control their effect on the images. The preview allows you to quickly check which settings are best.&lt;br/>&lt;br/>\\n        &amp;#8226; The output options allows you to control the maximum output resolution, the album name, (Pro) the output image format and (Pro) compression quality to control the size of the rendered panoramas, in order to save space on your device set it at 80%.&lt;br/>&lt;br/>\\n        &amp;#8226; The preview allows you to quickly check between different settings before final rendering. (Pro) You can check the source images and save the preview for later rendering. You can turn on/off the preview mode in the settings. When off the app will directly render the panorama as specified by the main defaults (user settings).&lt;br/>&lt;br/>\\n        &amp;#8226; (Pro) The app can stitch a video of panning motion into a panorama. You can shoot a video, panning around about a fixed point and this app will turn it into a wide angle panorama output automatically.&lt;br/>&lt;br/> For faster video stitching you can change the sampling rate for the video to lower fps, higher fps will slow down stitching since the app now needs to sample more frames per second ie it takes time to process each incoming frame.&lt;br/>&lt;br/> You can also change the overlap ratio threshold between frames. This enables the app to identify key frames which are frames that are sufficiently seperated ie overlap ratio between them is just below threshold. Non-key frames are frames whose overlap ratio to the closest key frame is above the threshold. A higher overlap ratio threshold means more key frames being detected hence slower.&lt;br/>&lt;br/>\\n        &amp;#8226; (Pro) You can also control the quality of the optimal seam detection mentioned above in the advanced options.&lt;br/>&lt;br/> This only controls the resolution at which the seam is computed. Lower quality is good enough and also provides speed improvements. The higher quality options are slower but may provide a better output panorama overall.&lt;br/>&lt;br/>\\n        &amp;#8226; Panoramas are stored in the app specific folders (albums), to share them outside the app, while in app, press the standard share button on the bottom right side of the frame containing the panorama thumbnail in order to trigger the export dialog. You can then either save to a folder outside the app where other apps have access or send directly to any app listed in the export dialog.&lt;br/>&lt;br/> To delete a panorama, press and hold to trigger a delete dialog then press confirm or cancel.&lt;br/>&lt;br/>\\n        &amp;#8226; The app only embeds associated panorama XMP metadata, for 3D VR viewers, only if the following conditions are satisfied, the panorama is in equirectangular (spherical) projection, the panorama is horizontally aligned and the stitching algorithm recovers a valid field of view.&lt;br/>&lt;br/>\\n        &amp;#8226; (Pro) Auto lens calibration helps to compensate and correct for lens distortions introduced by wide-angle, ultra wide-angle and fisheye lens.&lt;br/>&lt;br/>\\n        &amp;#8226; The app's viewer does not displace panoramas in full resolution, to view panoramas in full resolution use external viewers.&lt;br/>&lt;br/> &lt;/body> \\\"\"},{\"name\":\"general_help_title\",\"value\":\"General\"},{\"name\":\"get_license\",\"value\":\"Purchase\"},{\"name\":\"get_started_text\",\"value\":\"Press here to get started\"},{\"name\":\"google_photos\",\"value\":\"Google Photos\"},{\"name\":\"help\",\"value\":\"Help\"},{\"name\":\"hi\",\"value\":\"Hi\"},{\"name\":\"hide_bottom_view_on_scroll_behavior\",\"value\":\"com.google.android.material.behavior.HideBottomViewOnScrollBehavior\"},{\"name\":\"icon_content_description\",\"value\":\"Dialog Icon\"},{\"name\":\"image_border__seam_summary\",\"value\":\"Image borders\"},{\"name\":\"image_description\",\"value\":\"image\"},{\"name\":\"image_picker\",\"value\":\"Select\"},{\"name\":\"inbuilt_picker\",\"value\":\"Inbuilt picker\"},{\"name\":\"initializing\",\"value\":\"Initializing\"},{\"name\":\"item_view_role_description\",\"value\":\"Tab\"},{\"name\":\"jpeg_summary\",\"value\":\"JPEG\"},{\"name\":\"learn_more_text\",\"value\":\"Learn More\"},{\"name\":\"linear_blending_summary\",\"value\":\"Good\"},{\"name\":\"m3_ref_typeface_brand_medium\",\"value\":\"sans-serif-medium\"},{\"name\":\"m3_ref_typeface_brand_regular\",\"value\":\"sans-serif\"},{\"name\":\"m3_ref_typeface_plain_medium\",\"value\":\"sans-serif-medium\"},{\"name\":\"m3_ref_typeface_plain_regular\",\"value\":\"sans-serif\"},{\"name\":\"m3_sys_motion_easing_emphasized_path_data\",\"value\":\"M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1\"},{\"name\":\"matched_image\",\"value\":\"Matched image\"},{\"name\":\"material_clock_display_divider\",\"value\":\":\"},{\"name\":\"material_clock_toggle_content_description\",\"value\":\"Select AM or PM\"},{\"name\":\"material_hour_24h_suffix\",\"value\":\"%1$s hours\"},{\"name\":\"material_hour_selection\",\"value\":\"Select hour\"},{\"name\":\"material_hour_suffix\",\"value\":\"\\\"%1$s o'clock\\\"\"},{\"name\":\"material_minute_selection\",\"value\":\"Select minutes\"},{\"name\":\"material_minute_suffix\",\"value\":\"%1$s minutes\"},{\"name\":\"material_motion_easing_accelerated\",\"value\":\"cubic-bezier(0.4, 0.0, 1.0, 1.0)\"},{\"name\":\"material_motion_easing_decelerated\",\"value\":\"cubic-bezier(0.0, 0.0, 0.2, 1.0)\"},{\"name\":\"material_motion_easing_emphasized\",\"value\":\"path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)\"},{\"name\":\"material_motion_easing_linear\",\"value\":\"cubic-bezier(0.0, 0.0, 1.0, 1.0)\"},{\"name\":\"material_motion_easing_standard\",\"value\":\"cubic-bezier(0.4, 0.0, 0.2, 1.0)\"},{\"name\":\"material_slider_range_end\",\"value\":\"Range end\"},{\"name\":\"material_slider_range_start\",\"value\":\"Range start\"},{\"name\":\"material_slider_value\",\"value\":\"Value\"},{\"name\":\"material_timepicker_am\",\"value\":\"AM\"},{\"name\":\"material_timepicker_clock_mode_description\",\"value\":\"Switch to clock mode for the time input.\"},{\"name\":\"material_timepicker_clock_mode_tooltip\",\"value\":\"Switch to clock mode\"},{\"name\":\"material_timepicker_hour\",\"value\":\"Hour\"},{\"name\":\"material_timepicker_hour_error\",\"value\":\"Hour must be 1\u201312\"},{\"name\":\"material_timepicker_hour_error_24h\",\"value\":\"Hour must be 0\u201323\"},{\"name\":\"material_timepicker_minute\",\"value\":\"Minute\"},{\"name\":\"material_timepicker_minute_error\",\"value\":\"Minute must be 0\u201359\"},{\"name\":\"material_timepicker_pm\",\"value\":\"PM\"},{\"name\":\"material_timepicker_select_time\",\"value\":\"Select time\"},{\"name\":\"material_timepicker_text_input_mode_description\",\"value\":\"Switch to text input mode for the time input.\"},{\"name\":\"material_timepicker_text_input_mode_tooltip\",\"value\":\"Switch to text input mode\"},{\"name\":\"merge\",\"value\":\"Merge photos\"},{\"name\":\"message\",\"value\":\"Message\"},{\"name\":\"mtrl_button_snackbar_close_content_description\",\"value\":\"Close\"},{\"name\":\"mtrl_checkbox_button_icon_path_checked\",\"value\":\"M14,18.2 11.4,15.6 10,17 14,21 22,13 20.6,11.6z\"},{\"name\":\"mtrl_checkbox_button_icon_path_group_name\",\"value\":\"icon\"},{\"name\":\"mtrl_checkbox_button_icon_path_indeterminate\",\"value\":\"M13.4,15 11,15 11,17 13.4,17 21,17 21,15z\"},{\"name\":\"mtrl_checkbox_button_icon_path_name\",\"value\":\"icon path\"},{\"name\":\"mtrl_checkbox_button_path_checked\",\"value\":\"M23,7H9C7.9,7,7,7.9,7,9v14c0,1.1,0.9,2,2,2h14c1.1,0,2-0.9,2-2V9C25,7.9,24.1,7,23,7z\"},{\"name\":\"mtrl_checkbox_button_path_group_name\",\"value\":\"button\"},{\"name\":\"mtrl_checkbox_button_path_name\",\"value\":\"button path\"},{\"name\":\"mtrl_checkbox_button_path_unchecked\",\"value\":\"M23,7H9C7.9,7,7,7.9,7,9v14c0,1.1,0.9,2,2,2h14c1.1,0,2-0.9,2-2V9C25,7.9,24.1,7,23,7z M23,23H9V9h14V23z\"},{\"name\":\"mtrl_checkbox_state_description_checked\",\"value\":\"Checked\"},{\"name\":\"mtrl_checkbox_state_description_indeterminate\",\"value\":\"Partially checked\"},{\"name\":\"mtrl_checkbox_state_description_unchecked\",\"value\":\"Not checked\"},{\"name\":\"mtrl_chip_close_icon_content_description\",\"value\":\"Remove %1$s\"},{\"name\":\"mtrl_picker_a11y_next_month\",\"value\":\"Change to next month\"},{\"name\":\"mtrl_picker_a11y_prev_month\",\"value\":\"Change to previous month\"},{\"name\":\"mtrl_picker_cancel\",\"value\":\"Cancel\"},{\"name\":\"mtrl_picker_confirm\",\"value\":\"OK\"},{\"name\":\"mtrl_picker_day_of_week_column_header\",\"value\":\"%1$s\"},{\"name\":\"mtrl_picker_navigate_to_current_year_description\",\"value\":\"Navigate to current year %1$d\"},{\"name\":\"mtrl_picker_navigate_to_year_description\",\"value\":\"Navigate to year %1$d\"},{\"name\":\"mtrl_picker_next_month_tooltip\",\"value\":\"Next month\"},{\"name\":\"mtrl_picker_pane_title_calendar_view\",\"value\":\"Calendar view\"},{\"name\":\"mtrl_picker_pane_title_year_view\",\"value\":\"Year view\"},{\"name\":\"mtrl_picker_prev_month_tooltip\",\"value\":\"Previous month\"},{\"name\":\"mtrl_picker_save\",\"value\":\"Save\"},{\"name\":\"mtrl_picker_toggle_to_calendar_input_mode\",\"value\":\"Switch to calendar input mode\"},{\"name\":\"mtrl_picker_toggle_to_calendar_input_mode_tooltip\",\"value\":\"Switch to calendar\"},{\"name\":\"mtrl_picker_toggle_to_day_selection\",\"value\":\"Switch to Calendar view\"},{\"name\":\"mtrl_picker_toggle_to_text_input_mode\",\"value\":\"Switch to text input mode\"},{\"name\":\"mtrl_picker_toggle_to_text_input_mode_tooltip\",\"value\":\"Switch to text input\"},{\"name\":\"mtrl_picker_toggle_to_year_selection\",\"value\":\"Switch to year view\"},{\"name\":\"mtrl_timepicker_cancel\",\"value\":\"Cancel\"},{\"name\":\"mtrl_timepicker_confirm\",\"value\":\"OK\"},{\"name\":\"native_body\",\"value\":\"Body\"},{\"name\":\"native_headline\",\"value\":\"Headline\"},{\"name\":\"native_media_view\",\"value\":\"Media View\"},{\"name\":\"nav_rail_collapsed_a11y_label\",\"value\":\"Collapsed\"},{\"name\":\"nav_rail_expanded_a11y_label\",\"value\":\"Expanded\"},{\"name\":\"no_blending_summary\",\"value\":\"Non\"},{\"name\":\"no_camera_app\",\"value\":\"No camera app found\"},{\"name\":\"no_match\",\"value\":\"No panorama(s) detected. Select images with overlapping fields of view.\"},{\"name\":\"no_permission\",\"value\":\"Allow app to read photos in the system settings.\"},{\"name\":\"no_previews_saved\",\"value\":\"No previews saved\"},{\"name\":\"no_share_app\",\"value\":\"No app to share with\"},{\"name\":\"not_set\",\"value\":\"Not set\"},{\"name\":\"notification_options\",\"value\":\"NOTIFICATIONS\"},{\"name\":\"notification_settings\",\"value\":\"Get notifications\"},{\"name\":\"notification_summary\",\"value\":\"When stitching is complete (Only when device screen is off)\"},{\"name\":\"notification_text\",\"value\":\"Number of panoramas:\"},{\"name\":\"notification_title\",\"value\":\"Panorama stitching complete.\"},{\"name\":\"notifications_permission_confirm\",\"value\":\"Allow\"},{\"name\":\"notifications_permission_decline\",\"value\":\"\\\"Don't allow\\\"\"},{\"name\":\"notifications_permission_title\",\"value\":\"Allow app to send you notifications?\"},{\"name\":\"of\",\"value\":\"of\"},{\"name\":\"offline_dialog_image_description\",\"value\":\"Icon\"},{\"name\":\"offline_dialog_text\",\"value\":\"\\\"Thanks for your interest.\\nWe will share more once you're back online.\\\"\"},{\"name\":\"offline_notification_title\",\"value\":\"\\\"You are back online! Let's pick up where we left off\\\"\"},{\"name\":\"offline_notification_title_with_advertiser\",\"value\":\"You are back online! Continue learning about %s\"},{\"name\":\"offline_opt_in_confirm\",\"value\":\"OK\"},{\"name\":\"offline_opt_in_decline\",\"value\":\"No thanks\"},{\"name\":\"offline_opt_in_message\",\"value\":\"\\\"We'll send you a notification with a link to the advertiser site.\\\"\"},{\"name\":\"offline_opt_in_title\",\"value\":\"\\\"Open ad when you're back online.\\\"\"},{\"name\":\"ok\",\"value\":\"OK\"},{\"name\":\"on_image_loaded\",\"value\":\"Loaded image\"},{\"name\":\"optimal_seam_summary\",\"value\":\"Optimal (anti-ghosting)\"},{\"name\":\"orientation_settings\",\"value\":\"Auto-straighten\"},{\"name\":\"output_album\",\"value\":\"Album\"},{\"name\":\"output_format\",\"value\":\"Format\"},{\"name\":\"output_options\",\"value\":\"OUTPUT\"},{\"name\":\"output_settings\",\"value\":\"Maximum size (MP)\"},{\"name\":\"pano_display_name\",\"value\":\"PANO #%1$d\"},{\"name\":\"panos\",\"value\":\"PANORAMAS\"},{\"name\":\"password_toggle_content_description\",\"value\":\"Show password\"},{\"name\":\"path_password_eye\",\"value\":\"M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z\"},{\"name\":\"path_password_eye_mask_strike_through\",\"value\":\"M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z\"},{\"name\":\"path_password_eye_mask_visible\",\"value\":\"M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z\"},{\"name\":\"path_password_strike_through\",\"value\":\"M3.27,4.27 L19.74,20.74\"},{\"name\":\"perm_body\",\"value\":\"Bimostitch needs your permission to read or write to your device storage in order to display photos and save panoramas.\"},{\"name\":\"perm_notification_body\",\"value\":\"Bimostitch needs your permission to show stitch progress in the notifaction area.\"},{\"name\":\"perm_tile\",\"value\":\"NOTE\"},{\"name\":\"photos\",\"value\":\"PHOTOS\"},{\"name\":\"pick_with\",\"value\":\"Pick with\"},{\"name\":\"planar_proj_summary\",\"value\":\"Planar\"},{\"name\":\"png_summary\",\"value\":\"PNG\"},{\"name\":\"preference_copied\",\"value\":\"\\\\\\\"%1$s\\\\\\\" copied to clipboard.\"},{\"name\":\"prefs_summ_output_size\",\"value\":\"1.00 MP\"},{\"name\":\"prefs_summ_output_size_10\",\"value\":\"30.25 MP\"},{\"name\":\"prefs_summ_output_size_11\",\"value\":\"100.00 MP\"},{\"name\":\"prefs_summ_output_size_2\",\"value\":\"2.25 MP\"},{\"name\":\"prefs_summ_output_size_3\",\"value\":\"4.00 MP\"},{\"name\":\"prefs_summ_output_size_4\",\"value\":\"6.25 MP\"},{\"name\":\"prefs_summ_output_size_5\",\"value\":\"9.00 MP\"},{\"name\":\"prefs_summ_output_size_6\",\"value\":\"12.25 MP\"},{\"name\":\"prefs_summ_output_size_7\",\"value\":\"16.00 MP\"},{\"name\":\"prefs_summ_output_size_8\",\"value\":\"20.25 MP\"},{\"name\":\"prefs_summ_output_size_9\",\"value\":\"25.00 MP\"},{\"name\":\"preview\",\"value\":\"Preview\"},{\"name\":\"preview_options\",\"value\":\"PREVIEW\"},{\"name\":\"preview_settings\",\"value\":\"Show preview\"},{\"name\":\"preview_summary\",\"value\":\"A quick way to preview your panos before final rendering\"},{\"name\":\"pro_version\",\"value\":\"Pro\"},{\"name\":\"projection_settings\",\"value\":\"Projection\"},{\"name\":\"purchase_pro\",\"value\":\"\\\"Purchase Bimostitch Pro.\\n\\nNo Ads, faster and better.\\\"\"},{\"name\":\"rate\",\"value\":\"Rate\"},{\"name\":\"remove_ads\",\"value\":\"Remove Ads?\"},{\"name\":\"rendering_options\",\"value\":\"RENDERING\"},{\"name\":\"rendering_panorama\",\"value\":\"Rendering panorama\"},{\"name\":\"s1\",\"value\":\"Save image\"},{\"name\":\"s2\",\"value\":\"Allow Ad to store image in Picture gallery?\"},{\"name\":\"s3\",\"value\":\"Accept\"},{\"name\":\"s4\",\"value\":\"Decline\"},{\"name\":\"s5\",\"value\":\"Create calendar event\"},{\"name\":\"s6\",\"value\":\"Allow Ad to create a calendar event?\"},{\"name\":\"s7\",\"value\":\"Test Ad\"},{\"name\":\"seam_quality\",\"value\":\"Seam quality\"},{\"name\":\"seam_settings\",\"value\":\"Seam detection\"},{\"name\":\"search_menu_title\",\"value\":\"Search\"},{\"name\":\"searchbar_scrolling_view_behavior\",\"value\":\"com.google.android.material.search.SearchBar$ScrollingViewBehavior\"},{\"name\":\"searchview_clear_text_content_description\",\"value\":\"Clear text\"},{\"name\":\"searchview_navigation_content_description\",\"value\":\"Back\"},{\"name\":\"select_all\",\"value\":\"Select all\"},{\"name\":\"select_more\",\"value\":\"Select two or more images you would like to stitch or merge.\"},{\"name\":\"select_video\",\"value\":\"Pick video with\"},{\"name\":\"selected\",\"value\":\"selected\"},{\"name\":\"settings\",\"value\":\"Settings\"},{\"name\":\"share\",\"value\":\"Share\"},{\"name\":\"share_app\",\"value\":\"Share this app\"},{\"name\":\"share_subject\",\"value\":\"Android app worth downloading:\"},{\"name\":\"side_sheet_accessibility_pane_title\",\"value\":\"Side Sheet\"},{\"name\":\"side_sheet_behavior\",\"value\":\"com.google.android.material.sidesheet.SideSheetBehavior\"},{\"name\":\"source_images\",\"value\":\"Source Images\"},{\"name\":\"spherical_proj_summary\",\"value\":\"Equirectangular\"},{\"name\":\"status_bar_notification_info_overflow\",\"value\":\"999+\"},{\"name\":\"stitch\",\"value\":\"Done\"},{\"name\":\"stitcher\",\"value\":\"NOTE:\"},{\"name\":\"stitching_in_progress\",\"value\":\"Stitch in progress\"},{\"name\":\"stop\",\"value\":\"CANCEL\"},{\"name\":\"summary_collapsed_preference_list\",\"value\":\"%1$s, %2$s\"},{\"name\":\"support_app\",\"value\":\"Support further development of this app.\"},{\"name\":\"sure\",\"value\":\"Are you sure you want to exit?\"},{\"name\":\"system_picker\",\"value\":\"System picker\"},{\"name\":\"tips_help\",\"value\":\"\\\" &lt;body> &lt;h1>&lt;u>Tips for stitching better panoramas&lt;/u>&lt;/h1> The following guidelines will help you make the best possible panoramas with Bimostitch. &lt;br/>&lt;br/> &amp;#8226; Photos that are plain or clear in the area of overlap will fail to stitch.&lt;br/>&lt;br/>\\n       &amp;#8226; Non overlapping photos will be automatically ignored. Ensure you capture images with not less than 25% overlap for better results.&lt;br/>&lt;br/>\\n       &amp;#8226; Avoid capturing plain clear photos.&lt;br/>&lt;br/>\\n       &amp;#8226; Avoid too many repeated or very similar looking structures in overlapping photos, this can lead to false matches.&lt;br/>&lt;br/>\\n       &amp;#8226; Use your favorite camera app to capture overlapping images.&lt;br/>&lt;br/>\\n       &amp;#8226; Make sure there is enough overlap area between photos.&lt;br/>&lt;br/>\\n       &amp;#8226; Make sure to hold your phone firmly in landscape or portrait mode and rotate it such that the rotation axis passes through the camera lens. Rotate the camera in any direction but keep the camera lens on the same point as much as possible. Do not use your body as a rotation axis.&lt;br/>&lt;br/>\\n       &amp;#8226; Use the camera lens as the reference point and not your body when capturing photos for stitching. Keep the lens or device at the same point as much as possible but rotate it in any direction to capture overlapping photos.&lt;br/>&lt;br/>\\n       &amp;#8226; Keep the lens or camera still when snapping to avoid motion blur.&lt;br/>&lt;br/>\\n       &amp;#8226; To help capture good overlapping shots keep track of the center of the previous shot and snap another when it reaches the edge.&lt;br/>&lt;br/>\\n       &amp;#8226; Avoid capturing photos in direct sunlight.&lt;br/>&lt;br/>\\n       &amp;#8226; Don\u2019t merge photos with severe differences in lighting conditions.&lt;br/>&lt;br/>\\n       &amp;#8226; Avoid moving objects in the area of overlap.&lt;br/>&lt;br/> &lt;/body> \\\"\"},{\"name\":\"tips_help_title\",\"value\":\"Tips\"},{\"name\":\"title_activity_preview_selector\",\"value\":\"Previews\"},{\"name\":\"title_activity_viewer\",\"value\":\"Viewer\"},{\"name\":\"toggle_viewer\",\"value\":\"Toggle viewer\"},{\"name\":\"upgrade\",\"value\":\"Upgrade\"},{\"name\":\"v7_preference_off\",\"value\":\"OFF\"},{\"name\":\"v7_preference_on\",\"value\":\"ON\"},{\"name\":\"video\",\"value\":\"VIDEO\"},{\"name\":\"video_options\",\"value\":\"Video\"},{\"name\":\"video_picker\",\"value\":\"Video picker\"},{\"name\":\"voronoi_seam_summary\",\"value\":\"Voronoi\"},{\"name\":\"vr_viewer_error\",\"value\":\"Unable to show in 3D\"},{\"name\":\"watermark_label_prefix\",\"value\":\"\\\"AdMob - \\\"\"},{\"name\":\"welcome_detail\",\"value\":\"The panorama gallery is empty, to stitch panoramas select images with overlapping fields of view.\"}],\"locale\":null,\"locales\":[],\"decoded_file_count\":732,\"coverage\":\"complete\"},\"confidence\":\"observed\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Decoding skips smali (--no-src); Java-source recovery belongs to the JADX family\"],\"relationship_coverage\":null,\"locations\":[],\"evidence_links\":[]}"
+      }
+    ],
+    "structuredContent": {
+      "evidence_id": "ev_d436ef044daabe7a09ed9e83c6f7abc4d16420c62c78ba5d6df1fa7f86194bf5",
+      "subject": {
+        "name": "base.apk",
+        "digest": {
+          "sha256": "e1156e8d0ff15f79241a2ed98cf6a26c71d39c3c37da439e3a753e4b33ed8d8f"
+        },
+        "local_path": "/workspace/attachments/e111578f-ce02-4ab3-bee9-f03dbce73199/base.apk",
+        "format": "apk",
+        "architecture": null
+      },
+      "provider": {
+        "id": "apktool",
+        "name": "Apktool",
+        "version": "3.0.3"
+      },
+      "analysis_profile": null,
+      "predicate_type": "rea.analysis",
+      "operation": "decode_android_resources",
+      "parameters": {
+        "path": "/workspace/attachments/e111578f-ce02-4ab3-bee9-f03dbce73199/base.apk",
+        "include_strings": true
+      },
+      "raw_result": null,
+      "normalized_result": {
+        "client": {
+          "command": "/workspace/re-tools/apktool",
+          "command_source": "environment",
+          "apktool_version": "3.0.3"
+        },
+        "target": {
+          "path": "/workspace/attachments/e111578f-ce02-4ab3-bee9-f03dbce73199/base.apk",
+          "bytes": 6934672,
+          "sha256": "e1156e8d0ff15f79241a2ed98cf6a26c71d39c3c37da439e3a753e4b33ed8d8f"
+        },
+        "metadata": {
+          "version_name": "3.0.00-lite",
+          "version_code": "253",
+          "min_sdk_version": "32",
+          "target_sdk_version": "37",
+          "package_name": "com.facebook.rethinkvision.Bimostitch"
+        },
+        "manifest": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\" android:compileSdkVersion=\"37\" android:compileSdkVersionCodename=\"17\" android:requiredSplitTypes=\"base__abi,base__density\" android:splitTypes=\"\" package=\"com.facebook.rethinkvision.Bimostitch\" platformBuildVersionCode=\"37\" platformBuildVersionName=\"17\">\n    <uses-permission android:name=\"android.permission.INTERNET\"/>\n    <uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>\n    <uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\"/>\n    <uses-permission android:name=\"android.permission.READ_MEDIA_IMAGES\"/>\n    <uses-permission android:name=\"android.permission.READ_MEDIA_VIDEO\"/>\n    <uses-permission android:name=\"android.permission.ACCESS_MEDIA_LOCATION\"/>\n    <uses-permission android:name=\"android.permission.WAKE_LOCK\"/>\n    <uses-permission android:name=\"android.permission.VIBRATE\"/>\n    <uses-permission android:name=\"com.android.vending.CHECK_LICENSE\"/>\n    <uses-permission android:name=\"android.permission.FOREGROUND_SERVICE\"/>\n    <uses-permission android:name=\"android.permission.FOREGROUND_SERVICE_SPECIAL_USE\"/>\n    <uses-permission android:name=\"android.permission.POST_NOTIFICATIONS\"/>\n    <queries>\n        <package android:name=\"com.google.android.apps.photos\"/>\n        <intent>\n            <action android:name=\"android.intent.action.ACTION_PICK\"/>\n            <data android:mimeType=\"image/*\"/>\n        </intent>\n        <intent>\n            <action android:name=\"com.android.vending.billing.InAppBillingService.BIND\"/>\n        </intent>\n        <intent>\n            <action android:name=\"com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND\"/>\n        </intent>\n        <intent>\n            <action android:name=\"android.intent.action.VIEW\"/>\n            <category android:name=\"android.intent.category.BROWSABLE\"/>\n            <data android:scheme=\"https\"/>\n        </intent>\n        <intent>\n            <action android:name=\"android.support.customtabs.action.CustomTabsService\"/>\n        </intent>\n        <intent>\n            <action android:name=\"android.intent.action.INSERT\"/>\n            <data android:mimeType=\"vnd.android.cursor.dir/event\"/>\n        </intent>\n        <intent>\n            <action android:name=\"android.intent.action.VIEW\"/>\n            <data android:scheme=\"sms\"/>\n        </intent>\n        <intent>\n            <action android:name=\"android.intent.action.DIAL\"/>\n            <data android:path=\"tel:\"/>\n        </intent>\n        <package android:name=\"com.android.vending\"/>\n    </queries>\n    <uses-feature android:name=\"android.hardware.touchscreen\" android:required=\"false\"/>\n    <uses-feature android:name=\"android.hardware.camera\" android:required=\"false\"/>\n    <uses-permission android:name=\"com.android.vending.BILLING\"/>\n    <uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>\n    <uses-permission android:name=\"com.google.android.gms.permission.AD_ID\"/>\n    <uses-permission android:name=\"android.permission.ACCESS_ADSERVICES_AD_ID\"/>\n    <uses-permission android:name=\"android.permission.ACCESS_ADSERVICES_ATTRIBUTION\"/>\n    <uses-permission android:name=\"android.permission.ACCESS_ADSERVICES_TOPICS\"/>\n    <permission android:name=\"com.facebook.rethinkvision.Bimostitch.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION\" android:protectionLevel=\"signature\"/>\n    <uses-permission android:name=\"com.facebook.rethinkvision.Bimostitch.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION\"/>\n    <application android:allowBackup=\"true\" android:appComponentFactory=\"androidx.core.app.CoreComponentFactory\" android:extractNativeLibs=\"false\" android:icon=\"@mipmap/ic_launcher\" android:label=\"@string/app_name\" android:largeHeap=\"true\" android:name=\"com.pairip.application.Application\" android:requestLegacyExternalStorage=\"true\" android:theme=\"@style/AppTheme\">\n        <meta-data android:name=\"com.google.android.gms.ads.APPLICATION_ID\" android:value=\"ca-app-pub-7329778626013066~4565416236\"/>\n        <receiver android:exported=\"true\" android:name=\"com.facebook.rethinkvision.Bimostitch.StitcherService$StopServiceReceiver\">\n            <intent-filter>\n                <action android:name=\"com.facebook.rethinkvision.Bimostitch.lite.action.STOP\"/>\n            </intent-filter>\n        </receiver>\n        <uses-library android:name=\"org.apache.http.legacy\" android:required=\"false\"/>\n        <activity android:configChanges=\"orientation|screenSize\" android:exported=\"true\" android:name=\"com.facebook.rethinkvision.Bimostitch.BimostitchActivity\" android:theme=\"@style/AppTheme\">\n            <intent-filter>\n                <action android:name=\"android.intent.action.MAIN\"/>\n                <category android:name=\"android.intent.category.LAUNCHER\"/>\n            </intent-filter>\n            <intent-filter>\n                <action android:name=\"android.intent.action.SEND_MULTIPLE\"/>\n                <category android:name=\"android.intent.category.DEFAULT\"/>\n                <data android:mimeType=\"image/*\"/>\n            </intent-filter>\n        </activity>\n        <activity android:configChanges=\"orientation|screenSize\" android:label=\"@string/settings\" android:name=\"com.facebook.rethinkvision.Bimostitch.SettingsActivity\" android:theme=\"@style/SecondaryTheme\"/>\n        <activity android:configChanges=\"orientation|screenSize\" android:label=\"@string/help\" android:name=\"com.facebook.rethinkvision.Bimostitch.HelpActivity\" android:theme=\"@style/SecondaryTheme\"/>\n        <activity android:label=\"@string/preview\" android:name=\"com.facebook.rethinkvision.Bimostitch.PreviewActivity\" android:theme=\"@style/AppTheme.NoActionBar\"/>\n        <activity android:label=\"@string/settings\" android:name=\"com.facebook.rethinkvision.Bimostitch.QuickSettingsActivity\" android:theme=\"@style/SecondaryTheme\"/>\n        <activity android:configChanges=\"orientation|screenSize\" android:label=\"@string/image_picker\" android:name=\"com.facebook.rethinkvision.Bimostitch.ImageDisplay\" android:theme=\"@style/AppTheme\"/>\n        <provider android:authorities=\"com.facebook.rethinkvision.Bimostitch.fileprovider\" android:exported=\"false\" android:grantUriPermissions=\"true\" android:name=\"androidx.core.content.FileProvider\">\n            <meta-data android:name=\"android.support.FILE_PROVIDER_PATHS\" android:resource=\"@xml/provider_paths\"/>\n        </provider>\n        <activity android:configChanges=\"keyboardHidden|orientation|screenSize\" android:label=\"@string/title_activity_viewer\" android:name=\"com.facebook.rethinkvision.Bimostitch.ViewerActivity\" android:theme=\"@style/FullscreenTheme\"/>\n        <service android:enabled=\"true\" android:exported=\"false\" android:foregroundServiceType=\"specialUse\" android:name=\"com.facebook.rethinkvision.Bimostitch.StitcherService\">\n            <property android:name=\"android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE\" android:value=\"image_stitching\"/>\n        </service>\n        <meta-data android:name=\"com.google.android.play.billingclient.version\" android:value=\"9.1.0\"/>\n        <activity android:configChanges=\"keyboard|keyboardHidden|orientation|screenLayout|screenSize\" android:exported=\"false\" android:name=\"com.android.billingclient.api.ProxyBillingActivity\" android:theme=\"@android:style/Theme.Translucent.NoTitleBar\"/>\n        <activity android:configChanges=\"keyboard|keyboardHidden|orientation|screenLayout|screenSize\" android:exported=\"false\" android:name=\"com.android.billingclient.api.ProxyBillingActivityV2\" android:theme=\"@android:style/Theme.Translucent.NoTitleBar\"/>\n        <activity android:configChanges=\"keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize\" android:enableOnBackInvokedCallback=\"false\" android:exported=\"false\" android:name=\"com.google.android.gms.ads.AdActivity\" android:theme=\"@android:style/Theme.Translucent\"/>\n        <provider android:authorities=\"com.facebook.rethinkvision.Bimostitch.mobileadsinitprovider\" android:exported=\"false\" android:initOrder=\"100\" android:name=\"com.google.android.gms.ads.MobileAdsInitProvider\"/>\n        <service android:enabled=\"true\" android:exported=\"false\" android:name=\"com.google.android.gms.ads.AdService\"/>\n        <activity android:configChanges=\"keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize\" android:exported=\"false\" android:name=\"com.google.android.gms.ads.OutOfContextTestingActivity\"/>\n        <activity android:excludeFromRecents=\"true\" android:exported=\"false\" android:launchMode=\"singleTask\" android:name=\"com.google.android.gms.ads.NotificationHandlerActivity\" android:taskAffinity=\"\" android:theme=\"@android:style/Theme.Translucent.NoTitleBar\"/>\n        <meta-data android:name=\"com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING\" android:value=\"true\"/>\n        <meta-data android:name=\"com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION\" android:value=\"true\"/>\n        <activity android:configChanges=\"keyboardHidden|orientation|screenLayout|screenSize\" android:excludeFromRecents=\"true\" android:exported=\"false\" android:launchMode=\"singleTop\" android:name=\"com.google.android.play.core.hsdp.service.HsdpShimActivity\" android:theme=\"@style/Theme.HsdpServiceTransparent\"/>\n        <activity android:exported=\"false\" android:name=\"com.google.android.gms.common.api.GoogleApiActivity\" android:theme=\"@android:style/Theme.Translucent.NoTitleBar\"/>\n        <meta-data android:name=\"com.google.android.gms.version\" android:value=\"@integer/google_play_services_version\"/>\n        <provider android:authorities=\"com.facebook.rethinkvision.Bimostitch.androidx-startup\" android:exported=\"false\" android:name=\"androidx.startup.InitializationProvider\">\n            <meta-data android:name=\"androidx.emoji2.text.EmojiCompatInitializer\" android:value=\"androidx.startup\"/>\n            <meta-data android:name=\"androidx.work.WorkManagerInitializer\" android:value=\"androidx.startup\"/>\n            <meta-data android:name=\"androidx.lifecycle.ProcessLifecycleInitializer\" android:value=\"androidx.startup\"/>\n            <meta-data android:name=\"androidx.profileinstaller.ProfileInstallerInitializer\" android:value=\"androidx.startup\"/>\n        </provider>\n        <service android:directBootAware=\"false\" android:enabled=\"@bool/enable_system_alarm_service_default\" android:exported=\"false\" android:name=\"androidx.work.impl.background.systemalarm.SystemAlarmService\"/>\n        <service android:directBootAware=\"false\" android:enabled=\"@bool/enable_system_job_service_default\" android:exported=\"true\" android:name=\"androidx.work.impl.background.systemjob.SystemJobService\" android:permission=\"android.permission.BIND_JOB_SERVICE\"/>\n        <service android:directBootAware=\"false\" android:enabled=\"@bool/enable_system_foreground_service_default\" android:exported=\"false\" android:name=\"androidx.work.impl.foreground.SystemForegroundService\"/>\n        <receiver android:directBootAware=\"false\" android:enabled=\"true\" android:exported=\"false\" android:name=\"androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver\"/>\n        <receiver android:directBootAware=\"false\" android:enabled=\"false\" android:exported=\"false\" android:name=\"androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy\">\n            <intent-filter>\n                <action android:name=\"android.intent.action.ACTION_POWER_CONNECTED\"/>\n                <action android:name=\"android.intent.action.ACTION_POWER_DISCONNECTED\"/>\n            </intent-filter>\n        </receiver>\n        <receiver android:directBootAware=\"false\" android:enabled=\"false\" android:exported=\"false\" android:name=\"androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy\">\n            <intent-filter>\n                <action android:name=\"android.intent.action.BATTERY_OKAY\"/>\n                <action android:name=\"android.intent.action.BATTERY_LOW\"/>\n            </intent-filter>\n        </receiver>\n        <receiver android:directBootAware=\"false\" android:enabled=\"false\" android:exported=\"false\" android:name=\"androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy\">\n            <intent-filter>\n                <action android:name=\"android.intent.action.DEVICE_STORAGE_LOW\"/>\n                <action android:name=\"android.intent.action.DEVICE_STORAGE_OK\"/>\n            </intent-filter>\n        </receiver>\n        <receiver android:directBootAware=\"false\" android:enabled=\"false\" android:exported=\"false\" android:name=\"androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy\">\n            <intent-filter>\n                <action android:name=\"android.net.conn.CONNECTIVITY_CHANGE\"/>\n            </intent-filter>\n        </receiver>\n        <receiver android:directBootAware=\"false\" android:enabled=\"false\" android:exported=\"false\" android:name=\"androidx.work.impl.background.systemalarm.RescheduleReceiver\">\n            <intent-filter>\n                <action android:name=\"android.intent.action.BOOT_COMPLETED\"/>\n                <action android:name=\"android.intent.action.TIME_SET\"/>\n                <action android:name=\"android.intent.action.TIMEZONE_CHANGED\"/>\n            </intent-filter>\n        </receiver>\n        <receiver android:directBootAware=\"false\" android:enabled=\"@bool/enable_system_alarm_service_default\" android:exported=\"false\" android:name=\"androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver\">\n            <intent-filter>\n                <action android:name=\"androidx.work.impl.background.systemalarm.UpdateProxies\"/>\n            </intent-filter>\n        </receiver>\n        <receiver android:directBootAware=\"false\" android:enabled=\"true\" android:exported=\"true\" android:name=\"androidx.work.impl.diagnostics.DiagnosticsReceiver\" android:permission=\"android.permission.DUMP\">\n            <intent-filter>\n                <action android:name=\"androidx.work.diagnostics.REQUEST_DIAGNOSTICS\"/>\n            </intent-filter>\n        </receiver>\n        <uses-library android:name=\"androidx.window.extensions\" android:required=\"false\"/>\n        <uses-library android:name=\"androidx.window.sidecar\" android:required=\"false\"/>\n        <uses-library android:name=\"android.ext.adservices\" android:required=\"false\"/>\n        <receiver android:directBootAware=\"false\" android:enabled=\"true\" android:exported=\"true\" android:name=\"androidx.profileinstaller.ProfileInstallReceiver\" android:permission=\"android.permission.DUMP\">\n            <intent-filter>\n                <action android:name=\"androidx.profileinstaller.action.INSTALL_PROFILE\"/>\n            </intent-filter>\n            <intent-filter>\n                <action android:name=\"androidx.profileinstaller.action.SKIP_FILE\"/>\n            </intent-filter>\n            <intent-filter>\n                <action android:name=\"androidx.profileinstaller.action.SAVE_PROFILE\"/>\n            </intent-filter>\n            <intent-filter>\n                <action android:name=\"androidx.profileinstaller.action.BENCHMARK_OPERATION\"/>\n            </intent-filter>\n        </receiver>\n        <service android:exported=\"false\" android:name=\"com.google.android.datatransport.runtime.backends.TransportBackendDiscovery\">\n            <meta-data android:name=\"backend:com.google.android.datatransport.cct.CctBackendFactory\" android:value=\"cct\"/>\n        </service>\n        <service android:exported=\"false\" android:name=\"com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService\" android:permission=\"android.permission.BIND_JOB_SERVICE\"/>\n        <receiver android:exported=\"false\" android:name=\"com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver\"/>\n        <service android:directBootAware=\"true\" android:exported=\"false\" android:name=\"androidx.room.MultiInstanceInvalidationService\"/>\n        <activity android:exported=\"false\" android:name=\"com.pairip.licensecheck.LicenseActivity\"/>\n        <meta-data android:name=\"com.android.vending.splits.required\" android:value=\"true\"/>\n        <meta-data android:name=\"com.android.stamp.source\" android:value=\"https://play.google.com/store\"/>\n        <meta-data android:name=\"com.android.stamp.type\" android:value=\"STAMP_TYPE_DISTRIBUTION_APK\"/>\n        <meta-data android:name=\"com.android.vending.splits\" android:resource=\"@xml/splits0\"/>\n        <meta-data android:name=\"com.android.vending.derived.apk.id\" android:value=\"4\"/>\n    </application>\n</manifest>\n",
+        "strings": [
+          {
+            "name": "abc_action_bar_up_description",
+            "value": "Navigate up"
+          },
+          {
+            "name": "abc_action_mode_done",
+            "value": "Done"
+          },
+          {
+            "name": "abc_capital_off",
+            "value": "OFF"
+          },
+          {
+            "name": "abc_capital_on",
+            "value": "ON"
+          },
+          {
+            "name": "abc_menu_alt_shortcut_label",
+            "value": "Alt+"
+          },
+          {
+            "name": "abc_menu_ctrl_shortcut_label",
+            "value": "Ctrl+"
+          },
+          {
+            "name": "abc_menu_delete_shortcut_label",
+            "value": "delete"
+          },
+          {
+            "name": "abc_menu_enter_shortcut_label",
+            "value": "enter"
+          },
+          {
+            "name": "abc_menu_function_shortcut_label",
+            "value": "Function+"
+          },
+          {
+            "name": "abc_menu_meta_shortcut_label",
+            "value": "Meta+"
+          },
+          {
+            "name": "abc_menu_shift_shortcut_label",
+            "value": "Shift+"
+          },
+          {
+            "name": "abc_menu_space_shortcut_label",
+            "value": "space"
+          },
+          {
+            "name": "abc_menu_sym_shortcut_label",
+            "value": "Sym+"
+          },
+          {
+            "name": "abc_prepend_shortcut_label",
+            "value": "Menu+"
+          },
+          {
+            "name": "abc_search_hint",
+            "value": "Search\u2026"
+          },
+          {
+            "name": "abc_searchview_description_clear",
+            "value": "Clear query"
+          },
+          {
+            "name": "abc_searchview_description_search",
+            "value": "Search"
+          },
+          {
+            "name": "abc_searchview_description_submit",
+            "value": "Submit query"
+          },
+          {
+            "name": "abc_searchview_description_voice",
+            "value": "Voice search"
+          },
+          {
+            "name": "abc_toolbar_collapse_description",
+            "value": "Collapse"
+          },
+          {
+            "name": "about",
+            "value": "About"
+          },
+          {
+            "name": "about_body",
+            "value": "Copyright \u00a9 2026."
+          },
+          {
+            "name": "about_title",
+            "value": "Thanks"
+          },
+          {
+            "name": "access_gallery",
+            "value": "pick from gallery"
+          },
+          {
+            "name": "access_gallery_saf",
+            "value": "open standard picker"
+          },
+          {
+            "name": "action_more",
+            "value": "More apps"
+          },
+          {
+            "name": "action_settings",
+            "value": "Settings"
+          },
+          {
+            "name": "ads",
+            "value": "Ads"
+          },
+          {
+            "name": "ads_alert",
+            "value": "\"This app is ad supported.\n\nYou must provide consent to at least show non-personalized ads.\n\nLoad the consent form by pressing Ads Management below, consent to all or press manage options and give consent to 1) Store and/or access information on a device then 2) Open the vendor preferences at the bottom and give consent to Google Advertising Products or 3) Upgrade to ad free pro version\""
+          },
+          {
+            "name": "ads_management",
+            "value": "Ads Management"
+          },
+          {
+            "name": "advanced_blending_summary",
+            "value": "Best"
+          },
+          {
+            "name": "advanced_options",
+            "value": "ADVANCED"
+          },
+          {
+            "name": "albums",
+            "value": "ALBUMS"
+          },
+          {
+            "name": "androidx_startup",
+            "value": "androidx.startup"
+          },
+          {
+            "name": "app_name",
+            "value": "Bimostitch Lite"
+          },
+          {
+            "name": "appbar_scrolling_view_behavior",
+            "value": "com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+          },
+          {
+            "name": "apply",
+            "value": "APPLY"
+          },
+          {
+            "name": "authorities",
+            "value": "com.facebook.rethinkvision.Bimostitch.provider"
+          },
+          {
+            "name": "auto_color_settings",
+            "value": "Auto-color balancing"
+          },
+          {
+            "name": "auto_color_summary",
+            "value": "Balance out the color differences"
+          },
+          {
+            "name": "auto_delete_settings",
+            "value": "Auto-delete photos"
+          },
+          {
+            "name": "auto_delete_summary",
+            "value": "Applies only to newly captured photos after stitching"
+          },
+          {
+            "name": "auto_detect_proj_summary",
+            "value": "Auto-detect"
+          },
+          {
+            "name": "auto_exposure_settings",
+            "value": "Auto-exposure balancing"
+          },
+          {
+            "name": "auto_exposure_summary",
+            "value": "Balance out the exposure differences"
+          },
+          {
+            "name": "auto_lens_calibration_settings",
+            "value": "Auto-lens calibration"
+          },
+          {
+            "name": "auto_lens_calibration_summary",
+            "value": "Compensates for lens distortions"
+          },
+          {
+            "name": "autostraighten_summary",
+            "value": "Make panoramas straight"
+          },
+          {
+            "name": "background_stitch_started",
+            "value": "Check notification bar for progress"
+          },
+          {
+            "name": "blend_summary",
+            "value": "Remove visible seams"
+          },
+          {
+            "name": "blending_settings",
+            "value": "Blending"
+          },
+          {
+            "name": "bottom_sheet_behavior",
+            "value": "com.google.android.material.bottomsheet.BottomSheetBehavior"
+          },
+          {
+            "name": "bottomsheet_action_collapse",
+            "value": "Collapse"
+          },
+          {
+            "name": "bottomsheet_action_collapse_description",
+            "value": "Collapse the bottom sheet"
+          },
+          {
+            "name": "bottomsheet_action_expand",
+            "value": "Expand"
+          },
+          {
+            "name": "bottomsheet_action_expand_description",
+            "value": "Expand the bottom sheet"
+          },
+          {
+            "name": "bottomsheet_action_expand_halfway",
+            "value": "Expand halfway"
+          },
+          {
+            "name": "bottomsheet_action_half_expand_description",
+            "value": "Half expand the bottom sheet"
+          },
+          {
+            "name": "bottomsheet_drag_handle_content_description",
+            "value": "Drag handle"
+          },
+          {
+            "name": "bottomsheet_state_collapsed",
+            "value": "Collapsed"
+          },
+          {
+            "name": "bottomsheet_state_expanded",
+            "value": "Expanded"
+          },
+          {
+            "name": "bottomsheet_state_half_expanded",
+            "value": "Half expanded"
+          },
+          {
+            "name": "camera",
+            "value": "capture images"
+          },
+          {
+            "name": "camera_notification",
+            "value": "Press back when done."
+          },
+          {
+            "name": "cancel",
+            "value": "Cancel"
+          },
+          {
+            "name": "channel_description",
+            "value": "Notification appear in this channel when panorama stitching is done."
+          },
+          {
+            "name": "channel_name",
+            "value": "Panorama Notifications"
+          },
+          {
+            "name": "character_counter_content_description",
+            "value": "Characters entered %1$d of %2$d"
+          },
+          {
+            "name": "character_counter_overflowed_content_description",
+            "value": "Character limit exceeded %1$d of %2$d"
+          },
+          {
+            "name": "character_counter_pattern",
+            "value": "%1$d/%2$d"
+          },
+          {
+            "name": "check_this_app",
+            "value": "Check out this cool panorama app"
+          },
+          {
+            "name": "clear_text_end_icon_content_description",
+            "value": "Clear text"
+          },
+          {
+            "name": "close",
+            "value": "Close"
+          },
+          {
+            "name": "common_google_play_services_enable_button",
+            "value": "Enable"
+          },
+          {
+            "name": "common_google_play_services_enable_text",
+            "value": "\"%1$s won't work unless you enable Google Play services.\""
+          },
+          {
+            "name": "common_google_play_services_enable_title",
+            "value": "Enable Google Play services"
+          },
+          {
+            "name": "common_google_play_services_install_button",
+            "value": "Install"
+          },
+          {
+            "name": "common_google_play_services_install_text",
+            "value": "\"%1$s won't run without Google Play services, which are missing from your device.\""
+          },
+          {
+            "name": "common_google_play_services_install_title",
+            "value": "Get Google Play services"
+          },
+          {
+            "name": "common_google_play_services_notification_channel_name",
+            "value": "Google Play services availability"
+          },
+          {
+            "name": "common_google_play_services_notification_ticker",
+            "value": "Google Play services error"
+          },
+          {
+            "name": "common_google_play_services_unknown_issue",
+            "value": "%1$s is having trouble with Google Play services. Please try again."
+          },
+          {
+            "name": "common_google_play_services_unsupported_text",
+            "value": "\"%1$s won't run without Google Play services, which are not supported by your device.\""
+          },
+          {
+            "name": "common_google_play_services_update_button",
+            "value": "Update"
+          },
+          {
+            "name": "common_google_play_services_update_text",
+            "value": "\"%1$s won't run unless you update Google Play services.\""
+          },
+          {
+            "name": "common_google_play_services_update_title",
+            "value": "Update Google Play services"
+          },
+          {
+            "name": "common_google_play_services_updating_text",
+            "value": "\"%1$s won't run without Google Play services, which are currently updating.\""
+          },
+          {
+            "name": "common_google_play_services_wear_update_text",
+            "value": "New version of Google Play services needed. It will update itself shortly."
+          },
+          {
+            "name": "common_open_on_phone",
+            "value": "Open on phone"
+          },
+          {
+            "name": "common_signin_button_text",
+            "value": "Sign in"
+          },
+          {
+            "name": "common_signin_button_text_long",
+            "value": "Sign in with Google"
+          },
+          {
+            "name": "copy",
+            "value": "Copy"
+          },
+          {
+            "name": "credits",
+            "value": "Credits"
+          },
+          {
+            "name": "cropping_panorama",
+            "value": "Cropping panorama"
+          },
+          {
+            "name": "cropping_settings",
+            "value": "Auto-crop"
+          },
+          {
+            "name": "cropping_summary",
+            "value": "Remove wavy panorama boundaries"
+          },
+          {
+            "name": "cylindrical_proj_summary",
+            "value": "Cylindrical"
+          },
+          {
+            "name": "default_directory",
+            "value": "Panorama"
+          },
+          {
+            "name": "deselect_all",
+            "value": "Deselect all"
+          },
+          {
+            "name": "dialog_discard",
+            "value": "Discard selected item?"
+          },
+          {
+            "name": "discard",
+            "value": "Discard"
+          },
+          {
+            "name": "dismiss_button_description",
+            "value": "sdk_loading_ui_dismiss_button"
+          },
+          {
+            "name": "edit",
+            "value": "Edit"
+          },
+          {
+            "name": "empty",
+            "value": "WELCOME"
+          },
+          {
+            "name": "error_a11y_label",
+            "value": "Error: invalid"
+          },
+          {
+            "name": "error_icon_content_description",
+            "value": "Error"
+          },
+          {
+            "name": "estimating_parameters",
+            "value": "Working on panorama"
+          },
+          {
+            "name": "exit_tile",
+            "value": "Exit"
+          },
+          {
+            "name": "expand_button_title",
+            "value": "Advanced"
+          },
+          {
+            "name": "exposed_dropdown_menu_content_description",
+            "value": "Show dropdown menu"
+          },
+          {
+            "name": "extracted_features",
+            "value": "Processed image"
+          },
+          {
+            "name": "fab_transformation_scrim_behavior",
+            "value": "com.google.android.material.transformation.FabTransformationScrimBehavior"
+          },
+          {
+            "name": "fab_transformation_sheet_behavior",
+            "value": "com.google.android.material.transformation.FabTransformationSheetBehavior"
+          },
+          {
+            "name": "failed_move_pano",
+            "value": "Failed to move panorama:"
+          },
+          {
+            "name": "failed_move_pano_body",
+            "value": "Find the panorama in the app private folder:"
+          },
+          {
+            "name": "fallback_menu_item_copy_link",
+            "value": "Copy link"
+          },
+          {
+            "name": "fallback_menu_item_open_in_browser",
+            "value": "Open in browser"
+          },
+          {
+            "name": "fallback_menu_item_share_link",
+            "value": "Share link"
+          },
+          {
+            "name": "feed_back",
+            "value": "Feedback"
+          },
+          {
+            "name": "file_exists",
+            "value": "File exists!"
+          },
+          {
+            "name": "frame_overlap_settings",
+            "value": "Frame overlap ratio"
+          },
+          {
+            "name": "frame_settings",
+            "value": "Sampling rate (fps)"
+          },
+          {
+            "name": "general_help",
+            "value": "\" &lt;body> &lt;h1>&lt;u>How to use Bimostitch&lt;/u>&lt;/h1> NOTE: When (Pro) is appended to the beginning of a word/statement or just after a dash or dot, then the feature is available only on the Pro version of the app.&lt;br/>&lt;br/>\n        &amp;#8226; Bimostitch is a fully automated panorama stitcher that enables you to automatically stitch individual overlapping images or (Pro) video into panoramas.&lt;br/>&lt;br/>\n        &amp;#8226; You can stitch overlapping photos from any source such as drones, cameras, downloaded photos, old photos and photos from other apps.&lt;br/>&lt;br/>\n        &amp;#8226; Select photos or a (Pro) video by pressing the gallery icon, located on the top-right of the apps home screen, then the app will automatically do the stitching.&lt;br/>&lt;br/>\n        &amp;#8226; You need to make sure the photos share some common overlapping areas, else the app will ignore them automatically.&lt;br/>&lt;br/>\n        &amp;#8226; You can turn on/off the preview mode that enables you to quickly preview the panorama before final rendering.&lt;br/>&lt;br/>\n        &amp;#8226; There are various rendering options to choose from such as seam detection mode which controls how the app locates cutting points for each image. Make sure to select (Pro) Optimal seam detection for best results.&lt;br/>&lt;br/>\n        &amp;#8226; (Pro) Optimal seam detection allows the app to find the best places to cut in order to minimize visible seams.&lt;br/>&lt;br/>\n        &amp;#8226; Voronoi just uses a naive line that cuts alone points of equal distance from closest image centers.&lt;br/>&lt;br/>\n        &amp;#8226; Image borders simply uses the image outline as a seam line.&lt;br/>&lt;br/> NOTE: Blending is off for Image border seam detection since its very difficult to blend along image borders.&lt;br/>&lt;br/> (Pro) You can control the amount of blending the app applies to the image using the Blending Strength slider. To turn on/off blending there is a toggle switch.&lt;br/>&lt;br/>\n        &amp;#8226; You can also select between the following projection options, equirectangular (projects images onto a spherical surface), cylindrical (projects images onto a cylindrical surface), planar (projects images onto a plane) and auto-detect ( selects between the above mentioned projection options). &lt;br/>&lt;br/>\n        &amp;#8226; Balancing options include auto-straighten, auto-crop, auto-exposure, (Pro) auto-color.&lt;br/>&lt;br/>\n        &amp;#8226; Auto-straighten tries to find a common plane in which the panorama was taken then renders it relative to that plane ie if you shoot photos sweeping left to right the common plane is aligned with the horizon. &lt;br/>&lt;br/>\n        &amp;#8226; Auto-crop finds the best possible way to crop the panorama with minimal loss in resolution.&lt;br/>&lt;br/>\n        &amp;#8226; Auto-exposure normalizes the exposure differences between images. It is recommended to capture images with uniform exposure for best results.&lt;br/>&lt;br/>\n        &amp;#8226; (Pro) Auto-color tries to normalize the colors across the entire panorama. Again it is best to have images with uniform colors to begin with for best results.&lt;br/>&lt;br/>\n        &amp;#8226; The settings, auto-straighten, auto-crop, auto-exposure, (Pro) auto-color, can all be turned on/off with a toggle and the (Pro) sliders help control their effect on the images. The preview allows you to quickly check which settings are best.&lt;br/>&lt;br/>\n        &amp;#8226; The output options allows you to control the maximum output resolution, the album name, (Pro) the output image format and (Pro) compression quality to control the size of the rendered panoramas, in order to save space on your device set it at 80%.&lt;br/>&lt;br/>\n        &amp;#8226; The preview allows you to quickly check between different settings before final rendering. (Pro) You can check the source images and save the preview for later rendering. You can turn on/off the preview mode in the settings. When off the app will directly render the panorama as specified by the main defaults (user settings).&lt;br/>&lt;br/>\n        &amp;#8226; (Pro) The app can stitch a video of panning motion into a panorama. You can shoot a video, panning around about a fixed point and this app will turn it into a wide angle panorama output automatically.&lt;br/>&lt;br/> For faster video stitching you can change the sampling rate for the video to lower fps, higher fps will slow down stitching since the app now needs to sample more frames per second ie it takes time to process each incoming frame.&lt;br/>&lt;br/> You can also change the overlap ratio threshold between frames. This enables the app to identify key frames which are frames that are sufficiently seperated ie overlap ratio between them is just below threshold. Non-key frames are frames whose overlap ratio to the closest key frame is above the threshold. A higher overlap ratio threshold means more key frames being detected hence slower.&lt;br/>&lt;br/>\n        &amp;#8226; (Pro) You can also control the quality of the optimal seam detection mentioned above in the advanced options.&lt;br/>&lt;br/> This only controls the resolution at which the seam is computed. Lower quality is good enough and also provides speed improvements. The higher quality options are slower but may provide a better output panorama overall.&lt;br/>&lt;br/>\n        &amp;#8226; Panoramas are stored in the app specific folders (albums), to share them outside the app, while in app, press the standard share button on the bottom right side of the frame containing the panorama thumbnail in order to trigger the export dialog. You can then either save to a folder outside the app where other apps have access or send directly to any app listed in the export dialog.&lt;br/>&lt;br/> To delete a panorama, press and hold to trigger a delete dialog then press confirm or cancel.&lt;br/>&lt;br/>\n        &amp;#8226; The app only embeds associated panorama XMP metadata, for 3D VR viewers, only if the following conditions are satisfied, the panorama is in equirectangular (spherical) projection, the panorama is horizontally aligned and the stitching algorithm recovers a valid field of view.&lt;br/>&lt;br/>\n        &amp;#8226; (Pro) Auto lens calibration helps to compensate and correct for lens distortions introduced by wide-angle, ultra wide-angle and fisheye lens.&lt;br/>&lt;br/>\n        &amp;#8226; The app's viewer does not displace panoramas in full resolution, to view panoramas in full resolution use external viewers.&lt;br/>&lt;br/> &lt;/body> \""
+          },
+          {
+            "name": "general_help_title",
+            "value": "General"
+          },
+          {
+            "name": "get_license",
+            "value": "Purchase"
+          },
+          {
+            "name": "get_started_text",
+            "value": "Press here to get started"
+          },
+          {
+            "name": "google_photos",
+            "value": "Google Photos"
+          },
+          {
+            "name": "help",
+            "value": "Help"
+          },
+          {
+            "name": "hi",
+            "value": "Hi"
+          },
+          {
+            "name": "hide_bottom_view_on_scroll_behavior",
+            "value": "com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+          },
+          {
+            "name": "icon_content_description",
+            "value": "Dialog Icon"
+          },
+          {
+            "name": "image_border__seam_summary",
+            "value": "Image borders"
+          },
+          {
+            "name": "image_description",
+            "value": "image"
+          },
+          {
+            "name": "image_picker",
+            "value": "Select"
+          },
+          {
+            "name": "inbuilt_picker",
+            "value": "Inbuilt picker"
+          },
+          {
+            "name": "initializing",
+            "value": "Initializing"
+          },
+          {
+            "name": "item_view_role_description",
+            "value": "Tab"
+          },
+          {
+            "name": "jpeg_summary",
+            "value": "JPEG"
+          },
+          {
+            "name": "learn_more_text",
+            "value": "Learn More"
+          },
+          {
+            "name": "linear_blending_summary",
+            "value": "Good"
+          },
+          {
+            "name": "m3_ref_typeface_brand_medium",
+            "value": "sans-serif-medium"
+          },
+          {
+            "name": "m3_ref_typeface_brand_regular",
+            "value": "sans-serif"
+          },
+          {
+            "name": "m3_ref_typeface_plain_medium",
+            "value": "sans-serif-medium"
+          },
+          {
+            "name": "m3_ref_typeface_plain_regular",
+            "value": "sans-serif"
+          },
+          {
+            "name": "m3_sys_motion_easing_emphasized_path_data",
+            "value": "M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1"
+          },
+          {
+            "name": "matched_image",
+            "value": "Matched image"
+          },
+          {
+            "name": "material_clock_display_divider",
+            "value": ":"
+          },
+          {
+            "name": "material_clock_toggle_content_description",
+            "value": "Select AM or PM"
+          },
+          {
+            "name": "material_hour_24h_suffix",
+            "value": "%1$s hours"
+          },
+          {
+            "name": "material_hour_selection",
+            "value": "Select hour"
+          },
+          {
+            "name": "material_hour_suffix",
+            "value": "\"%1$s o'clock\""
+          },
+          {
+            "name": "material_minute_selection",
+            "value": "Select minutes"
+          },
+          {
+            "name": "material_minute_suffix",
+            "value": "%1$s minutes"
+          },
+          {
+            "name": "material_motion_easing_accelerated",
+            "value": "cubic-bezier(0.4, 0.0, 1.0, 1.0)"
+          },
+          {
+            "name": "material_motion_easing_decelerated",
+            "value": "cubic-bezier(0.0, 0.0, 0.2, 1.0)"
+          },
+          {
+            "name": "material_motion_easing_emphasized",
+            "value": "path(M 0,0 C 0.05, 0, 0.133333, 0.06, 0.166666, 0.4 C 0.208333, 0.82, 0.25, 1, 1, 1)"
+          },
+          {
+            "name": "material_motion_easing_linear",
+            "value": "cubic-bezier(0.0, 0.0, 1.0, 1.0)"
+          },
+          {
+            "name": "material_motion_easing_standard",
+            "value": "cubic-bezier(0.4, 0.0, 0.2, 1.0)"
+          },
+          {
+            "name": "material_slider_range_end",
+            "value": "Range end"
+          },
+          {
+            "name": "material_slider_range_start",
+            "value": "Range start"
+          },
+          {
+            "name": "material_slider_value",
+            "value": "Value"
+          },
+          {
+            "name": "material_timepicker_am",
+            "value": "AM"
+          },
+          {
+            "name": "material_timepicker_clock_mode_description",
+            "value": "Switch to clock mode for the time input."
+          },
+          {
+            "name": "material_timepicker_clock_mode_tooltip",
+            "value": "Switch to clock mode"
+          },
+          {
+            "name": "material_timepicker_hour",
+            "value": "Hour"
+          },
+          {
+            "name": "material_timepicker_hour_error",
+            "value": "Hour must be 1\u201312"
+          },
+          {
+            "name": "material_timepicker_hour_error_24h",
+            "value": "Hour must be 0\u201323"
+          },
+          {
+            "name": "material_timepicker_minute",
+            "value": "Minute"
+          },
+          {
+            "name": "material_timepicker_minute_error",
+            "value": "Minute must be 0\u201359"
+          },
+          {
+            "name": "material_timepicker_pm",
+            "value": "PM"
+          },
+          {
+            "name": "material_timepicker_select_time",
+            "value": "Select time"
+          },
+          {
+            "name": "material_timepicker_text_input_mode_description",
+            "value": "Switch to text input mode for the time input."
+          },
+          {
+            "name": "material_timepicker_text_input_mode_tooltip",
+            "value": "Switch to text input mode"
+          },
+          {
+            "name": "merge",
+            "value": "Merge photos"
+          },
+          {
+            "name": "message",
+            "value": "Message"
+          },
+          {
+            "name": "mtrl_button_snackbar_close_content_description",
+            "value": "Close"
+          },
+          {
+            "name": "mtrl_checkbox_button_icon_path_checked",
+            "value": "M14,18.2 11.4,15.6 10,17 14,21 22,13 20.6,11.6z"
+          },
+          {
+            "name": "mtrl_checkbox_button_icon_path_group_name",
+            "value": "icon"
+          },
+          {
+            "name": "mtrl_checkbox_button_icon_path_indeterminate",
+            "value": "M13.4,15 11,15 11,17 13.4,17 21,17 21,15z"
+          },
+          {
+            "name": "mtrl_checkbox_button_icon_path_name",
+            "value": "icon path"
+          },
+          {
+            "name": "mtrl_checkbox_button_path_checked",
+            "value": "M23,7H9C7.9,7,7,7.9,7,9v14c0,1.1,0.9,2,2,2h14c1.1,0,2-0.9,2-2V9C25,7.9,24.1,7,23,7z"
+          },
+          {
+            "name": "mtrl_checkbox_button_path_group_name",
+            "value": "button"
+          },
+          {
+            "name": "mtrl_checkbox_button_path_name",
+            "value": "button path"
+          },
+          {
+            "name": "mtrl_checkbox_button_path_unchecked",
+            "value": "M23,7H9C7.9,7,7,7.9,7,9v14c0,1.1,0.9,2,2,2h14c1.1,0,2-0.9,2-2V9C25,7.9,24.1,7,23,7z M23,23H9V9h14V23z"
+          },
+          {
+            "name": "mtrl_checkbox_state_description_checked",
+            "value": "Checked"
+          },
+          {
+            "name": "mtrl_checkbox_state_description_indeterminate",
+            "value": "Partially checked"
+          },
+          {
+            "name": "mtrl_checkbox_state_description_unchecked",
+            "value": "Not checked"
+          },
+          {
+            "name": "mtrl_chip_close_icon_content_description",
+            "value": "Remove %1$s"
+          },
+          {
+            "name": "mtrl_picker_a11y_next_month",
+            "value": "Change to next month"
+          },
+          {
+            "name": "mtrl_picker_a11y_prev_month",
+            "value": "Change to previous month"
+          },
+          {
+            "name": "mtrl_picker_cancel",
+            "value": "Cancel"
+          },
+          {
+            "name": "mtrl_picker_confirm",
+            "value": "OK"
+          },
+          {
+            "name": "mtrl_picker_day_of_week_column_header",
+            "value": "%1$s"
+          },
+          {
+            "name": "mtrl_picker_navigate_to_current_year_description",
+            "value": "Navigate to current year %1$d"
+          },
+          {
+            "name": "mtrl_picker_navigate_to_year_description",
+            "value": "Navigate to year %1$d"
+          },
+          {
+            "name": "mtrl_picker_next_month_tooltip",
+            "value": "Next month"
+          },
+          {
+            "name": "mtrl_picker_pane_title_calendar_view",
+            "value": "Calendar view"
+          },
+          {
+            "name": "mtrl_picker_pane_title_year_view",
+            "value": "Year view"
+          },
+          {
+            "name": "mtrl_picker_prev_month_tooltip",
+            "value": "Previous month"
+          },
+          {
+            "name": "mtrl_picker_save",
+            "value": "Save"
+          },
+          {
+            "name": "mtrl_picker_toggle_to_calendar_input_mode",
+            "value": "Switch to calendar input mode"
+          },
+          {
+            "name": "mtrl_picker_toggle_to_calendar_input_mode_tooltip",
+            "value": "Switch to calendar"
+          },
+          {
+            "name": "mtrl_picker_toggle_to_day_selection",
+            "value": "Switch to Calendar view"
+          },
+          {
+            "name": "mtrl_picker_toggle_to_text_input_mode",
+            "value": "Switch to text input mode"
+          },
+          {
+            "name": "mtrl_picker_toggle_to_text_input_mode_tooltip",
+            "value": "Switch to text input"
+          },
+          {
+            "name": "mtrl_picker_toggle_to_year_selection",
+            "value": "Switch to year view"
+          },
+          {
+            "name": "mtrl_timepicker_cancel",
+            "value": "Cancel"
+          },
+          {
+            "name": "mtrl_timepicker_confirm",
+            "value": "OK"
+          },
+          {
+            "name": "native_body",
+            "value": "Body"
+          },
+          {
+            "name": "native_headline",
+            "value": "Headline"
+          },
+          {
+            "name": "native_media_view",
+            "value": "Media View"
+          },
+          {
+            "name": "nav_rail_collapsed_a11y_label",
+            "value": "Collapsed"
+          },
+          {
+            "name": "nav_rail_expanded_a11y_label",
+            "value": "Expanded"
+          },
+          {
+            "name": "no_blending_summary",
+            "value": "Non"
+          },
+          {
+            "name": "no_camera_app",
+            "value": "No camera app found"
+          },
+          {
+            "name": "no_match",
+            "value": "No panorama(s) detected. Select images with overlapping fields of view."
+          },
+          {
+            "name": "no_permission",
+            "value": "Allow app to read photos in the system settings."
+          },
+          {
+            "name": "no_previews_saved",
+            "value": "No previews saved"
+          },
+          {
+            "name": "no_share_app",
+            "value": "No app to share with"
+          },
+          {
+            "name": "not_set",
+            "value": "Not set"
+          },
+          {
+            "name": "notification_options",
+            "value": "NOTIFICATIONS"
+          },
+          {
+            "name": "notification_settings",
+            "value": "Get notifications"
+          },
+          {
+            "name": "notification_summary",
+            "value": "When stitching is complete (Only when device screen is off)"
+          },
+          {
+            "name": "notification_text",
+            "value": "Number of panoramas:"
+          },
+          {
+            "name": "notification_title",
+            "value": "Panorama stitching complete."
+          },
+          {
+            "name": "notifications_permission_confirm",
+            "value": "Allow"
+          },
+          {
+            "name": "notifications_permission_decline",
+            "value": "\"Don't allow\""
+          },
+          {
+            "name": "notifications_permission_title",
+            "value": "Allow app to send you notifications?"
+          },
+          {
+            "name": "of",
+            "value": "of"
+          },
+          {
+            "name": "offline_dialog_image_description",
+            "value": "Icon"
+          },
+          {
+            "name": "offline_dialog_text",
+            "value": "\"Thanks for your interest.\nWe will share more once you're back online.\""
+          },
+          {
+            "name": "offline_notification_title",
+            "value": "\"You are back online! Let's pick up where we left off\""
+          },
+          {
+            "name": "offline_notification_title_with_advertiser",
+            "value": "You are back online! Continue learning about %s"
+          },
+          {
+            "name": "offline_opt_in_confirm",
+            "value": "OK"
+          },
+          {
+            "name": "offline_opt_in_decline",
+            "value": "No thanks"
+          },
+          {
+            "name": "offline_opt_in_message",
+            "value": "\"We'll send you a notification with a link to the advertiser site.\""
+          },
+          {
+            "name": "offline_opt_in_title",
+            "value": "\"Open ad when you're back online.\""
+          },
+          {
+            "name": "ok",
+            "value": "OK"
+          },
+          {
+            "name": "on_image_loaded",
+            "value": "Loaded image"
+          },
+          {
+            "name": "optimal_seam_summary",
+            "value": "Optimal (anti-ghosting)"
+          },
+          {
+            "name": "orientation_settings",
+            "value": "Auto-straighten"
+          },
+          {
+            "name": "output_album",
+            "value": "Album"
+          },
+          {
+            "name": "output_format",
+            "value": "Format"
+          },
+          {
+            "name": "output_options",
+            "value": "OUTPUT"
+          },
+          {
+            "name": "output_settings",
+            "value": "Maximum size (MP)"
+          },
+          {
+            "name": "pano_display_name",
+            "value": "PANO #%1$d"
+          },
+          {
+            "name": "panos",
+            "value": "PANORAMAS"
+          },
+          {
+            "name": "password_toggle_content_description",
+            "value": "Show password"
+          },
+          {
+            "name": "path_password_eye",
+            "value": "M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z"
+          },
+          {
+            "name": "path_password_eye_mask_strike_through",
+            "value": "M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z"
+          },
+          {
+            "name": "path_password_eye_mask_visible",
+            "value": "M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z"
+          },
+          {
+            "name": "path_password_strike_through",
+            "value": "M3.27,4.27 L19.74,20.74"
+          },
+          {
+            "name": "perm_body",
+            "value": "Bimostitch needs your permission to read or write to your device storage in order to display photos and save panoramas."
+          },
+          {
+            "name": "perm_notification_body",
+            "value": "Bimostitch needs your permission to show stitch progress in the notifaction area."
+          },
+          {
+            "name": "perm_tile",
+            "value": "NOTE"
+          },
+          {
+            "name": "photos",
+            "value": "PHOTOS"
+          },
+          {
+            "name": "pick_with",
+            "value": "Pick with"
+          },
+          {
+            "name": "planar_proj_summary",
+            "value": "Planar"
+          },
+          {
+            "name": "png_summary",
+            "value": "PNG"
+          },
+          {
+            "name": "preference_copied",
+            "value": "\\\"%1$s\\\" copied to clipboard."
+          },
+          {
+            "name": "prefs_summ_output_size",
+            "value": "1.00 MP"
+          },
+          {
+            "name": "prefs_summ_output_size_10",
+            "value": "30.25 MP"
+          },
+          {
+            "name": "prefs_summ_output_size_11",
+            "value": "100.00 MP"
+          },
+          {
+            "name": "prefs_summ_output_size_2",
+            "value": "2.25 MP"
+          },
+          {
+            "name": "prefs_summ_output_size_3",
+            "value": "4.00 MP"
+          },
+          {
+            "name": "prefs_summ_output_size_4",
+            "value": "6.25 MP"
+          },
+          {
+            "name": "prefs_summ_output_size_5",
+            "value": "9.00 MP"
+          },
+          {
+            "name": "prefs_summ_output_size_6",
+            "value": "12.25 MP"
+          },
+          {
+            "name": "prefs_summ_output_size_7",
+            "value": "16.00 MP"
+          },
+          {
+            "name": "prefs_summ_output_size_8",
+            "value": "20.25 MP"
+          },
+          {
+            "name": "prefs_summ_output_size_9",
+            "value": "25.00 MP"
+          },
+          {
+            "name": "preview",
+            "value": "Preview"
+          },
+          {
+            "name": "preview_options",
+            "value": "PREVIEW"
+          },
+          {
+            "name": "preview_settings",
+            "value": "Show preview"
+          },
+          {
+            "name": "preview_summary",
+            "value": "A quick way to preview your panos before final rendering"
+          },
+          {
+            "name": "pro_version",
+            "value": "Pro"
+          },
+          {
+            "name": "projection_settings",
+            "value": "Projection"
+          },
+          {
+            "name": "purchase_pro",
+            "value": "\"Purchase Bimostitch Pro.\n\nNo Ads, faster and better.\""
+          },
+          {
+            "name": "rate",
+            "value": "Rate"
+          },
+          {
+            "name": "remove_ads",
+            "value": "Remove Ads?"
+          },
+          {
+            "name": "rendering_options",
+            "value": "RENDERING"
+          },
+          {
+            "name": "rendering_panorama",
+            "value": "Rendering panorama"
+          },
+          {
+            "name": "s1",
+            "value": "Save image"
+          },
+          {
+            "name": "s2",
+            "value": "Allow Ad to store image in Picture gallery?"
+          },
+          {
+            "name": "s3",
+            "value": "Accept"
+          },
+          {
+            "name": "s4",
+            "value": "Decline"
+          },
+          {
+            "name": "s5",
+            "value": "Create calendar event"
+          },
+          {
+            "name": "s6",
+            "value": "Allow Ad to create a calendar event?"
+          },
+          {
+            "name": "s7",
+            "value": "Test Ad"
+          },
+          {
+            "name": "seam_quality",
+            "value": "Seam quality"
+          },
+          {
+            "name": "seam_settings",
+            "value": "Seam detection"
+          },
+          {
+            "name": "search_menu_title",
+            "value": "Search"
+          },
+          {
+            "name": "searchbar_scrolling_view_behavior",
+            "value": "com.google.android.material.search.SearchBar$ScrollingViewBehavior"
+          },
+          {
+            "name": "searchview_clear_text_content_description",
+            "value": "Clear text"
+          },
+          {
+            "name": "searchview_navigation_content_description",
+            "value": "Back"
+          },
+          {
+            "name": "select_all",
+            "value": "Select all"
+          },
+          {
+            "name": "select_more",
+            "value": "Select two or more images you would like to stitch or merge."
+          },
+          {
+            "name": "select_video",
+            "value": "Pick video with"
+          },
+          {
+            "name": "selected",
+            "value": "selected"
+          },
+          {
+            "name": "settings",
+            "value": "Settings"
+          },
+          {
+            "name": "share",
+            "value": "Share"
+          },
+          {
+            "name": "share_app",
+            "value": "Share this app"
+          },
+          {
+            "name": "share_subject",
+            "value": "Android app worth downloading:"
+          },
+          {
+            "name": "side_sheet_accessibility_pane_title",
+            "value": "Side Sheet"
+          },
+          {
+            "name": "side_sheet_behavior",
+            "value": "com.google.android.material.sidesheet.SideSheetBehavior"
+          },
+          {
+            "name": "source_images",
+            "value": "Source Images"
+          },
+          {
+            "name": "spherical_proj_summary",
+            "value": "Equirectangular"
+          },
+          {
+            "name": "status_bar_notification_info_overflow",
+            "value": "999+"
+          },
+          {
+            "name": "stitch",
+            "value": "Done"
+          },
+          {
+            "name": "stitcher",
+            "value": "NOTE:"
+          },
+          {
+            "name": "stitching_in_progress",
+            "value": "Stitch in progress"
+          },
+          {
+            "name": "stop",
+            "value": "CANCEL"
+          },
+          {
+            "name": "summary_collapsed_preference_list",
+            "value": "%1$s, %2$s"
+          },
+          {
+            "name": "support_app",
+            "value": "Support further development of this app."
+          },
+          {
+            "name": "sure",
+            "value": "Are you sure you want to exit?"
+          },
+          {
+            "name": "system_picker",
+            "value": "System picker"
+          },
+          {
+            "name": "tips_help",
+            "value": "\" &lt;body> &lt;h1>&lt;u>Tips for stitching better panoramas&lt;/u>&lt;/h1> The following guidelines will help you make the best possible panoramas with Bimostitch. &lt;br/>&lt;br/> &amp;#8226; Photos that are plain or clear in the area of overlap will fail to stitch.&lt;br/>&lt;br/>\n       &amp;#8226; Non overlapping photos will be automatically ignored. Ensure you capture images with not less than 25% overlap for better results.&lt;br/>&lt;br/>\n       &amp;#8226; Avoid capturing plain clear photos.&lt;br/>&lt;br/>\n       &amp;#8226; Avoid too many repeated or very similar looking structures in overlapping photos, this can lead to false matches.&lt;br/>&lt;br/>\n       &amp;#8226; Use your favorite camera app to capture overlapping images.&lt;br/>&lt;br/>\n       &amp;#8226; Make sure there is enough overlap area between photos.&lt;br/>&lt;br/>\n       &amp;#8226; Make sure to hold your phone firmly in landscape or portrait mode and rotate it such that the rotation axis passes through the camera lens. Rotate the camera in any direction but keep the camera lens on the same point as much as possible. Do not use your body as a rotation axis.&lt;br/>&lt;br/>\n       &amp;#8226; Use the camera lens as the reference point and not your body when capturing photos for stitching. Keep the lens or device at the same point as much as possible but rotate it in any direction to capture overlapping photos.&lt;br/>&lt;br/>\n       &amp;#8226; Keep the lens or camera still when snapping to avoid motion blur.&lt;br/>&lt;br/>\n       &amp;#8226; To help capture good overlapping shots keep track of the center of the previous shot and snap another when it reaches the edge.&lt;br/>&lt;br/>\n       &amp;#8226; Avoid capturing photos in direct sunlight.&lt;br/>&lt;br/>\n       &amp;#8226; Don\u2019t merge photos with severe differences in lighting conditions.&lt;br/>&lt;br/>\n       &amp;#8226; Avoid moving objects in the area of overlap.&lt;br/>&lt;br/> &lt;/body> \""
+          },
+          {
+            "name": "tips_help_title",
+            "value": "Tips"
+          },
+          {
+            "name": "title_activity_preview_selector",
+            "value": "Previews"
+          },
+          {
+            "name": "title_activity_viewer",
+            "value": "Viewer"
+          },
+          {
+            "name": "toggle_viewer",
+            "value": "Toggle viewer"
+          },
+          {
+            "name": "upgrade",
+            "value": "Upgrade"
+          },
+          {
+            "name": "v7_preference_off",
+            "value": "OFF"
+          },
+          {
+            "name": "v7_preference_on",
+            "value": "ON"
+          },
+          {
+            "name": "video",
+            "value": "VIDEO"
+          },
+          {
+            "name": "video_options",
+            "value": "Video"
+          },
+          {
+            "name": "video_picker",
+            "value": "Video picker"
+          },
+          {
+            "name": "voronoi_seam_summary",
+            "value": "Voronoi"
+          },
+          {
+            "name": "vr_viewer_error",
+            "value": "Unable to show in 3D"
+          },
+          {
+            "name": "watermark_label_prefix",
+            "value": "\"AdMob - \""
+          },
+          {
+            "name": "welcome_detail",
+            "value": "The panorama gallery is empty, to stitch panoramas select images with overlapping fields of view."
+          }
+        ],
+        "locale": null,
+        "locales": [],
+        "decoded_file_count": 732,
+        "coverage": "complete"
+      },
+      "confidence": "observed",
+      "authority": "shipped-artifact",
+      "environment": null,
+      "limitations": [
+        "Decoding skips smali (--no-src); Java-source recovery belongs to the JADX family"
+      ],
+      "relationship_coverage": null,
+      "locations": [],
+      "evidence_links": []
+    }
+  },
+  "jsonrpc": "2.0",
+  "id": 5
+}

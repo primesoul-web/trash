@@ -1,0 +1,9 @@
+Calling inspect_android_package
+Calling decode_android_resources
+Calling search_android_classes
+Calling inspect_android_class
+Calling inspect_android_method
+Calling inspect_android_class
+Calling trace_android_references
+Calling inspect_apk_signature
+REA MCP evidence saved to /workspace/trash/.build/rea-session.bnzm4_0r

@@ -1,0 +1,46 @@
+package defpackage;
+
+import android.util.JsonReader;
+import java.io.IOException;
+import java.util.ArrayList;
+
+/* JADX INFO: compiled from: r8-map-id-feb309be28723916b74a2526b1508f8a1f09227099db017fc1624552251bc072 */
+/* JADX INFO: loaded from: classes.dex */
+public final class h53 {
+    public final int a;
+    public final int b;
+    public final boolean c;
+
+    public h53(int i, int i2, boolean z) {
+        this.a = i;
+        this.b = i2;
+        this.c = z;
+    }
+
+    public static ArrayList a(JsonReader jsonReader) throws IOException {
+        ArrayList arrayList = new ArrayList();
+        jsonReader.beginArray();
+        while (jsonReader.hasNext()) {
+            jsonReader.beginObject();
+            int iNextInt = 0;
+            int iNextInt2 = 0;
+            boolean zNextBoolean = false;
+            while (jsonReader.hasNext()) {
+                String strNextName = jsonReader.nextName();
+                if ("width".equals(strNextName)) {
+                    iNextInt = jsonReader.nextInt();
+                } else if ("height".equals(strNextName)) {
+                    iNextInt2 = jsonReader.nextInt();
+                } else if ("is_fluid_height".equals(strNextName)) {
+                    zNextBoolean = jsonReader.nextBoolean();
+                } else {
+                    jsonReader.skipValue();
+                }
+            }
+            jsonReader.endObject();
+            arrayList.add(new h53(iNextInt, iNextInt2, zNextBoolean));
+        }
+        jsonReader.endArray();
+        return arrayList;
+    }
+}

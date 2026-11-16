@@ -1,0 +1,15 @@
+package defpackage;
+
+import android.view.MotionEvent;
+
+/* JADX INFO: compiled from: r8-map-id-feb309be28723916b74a2526b1508f8a1f09227099db017fc1624552251bc072 */
+/* JADX INFO: loaded from: classes.dex */
+public final class jf3 {
+    public final float a;
+    public final float b;
+
+    public jf3(MotionEvent motionEvent) {
+        this.a = motionEvent.getX();
+        this.b = motionEvent.getY();
+    }
+}

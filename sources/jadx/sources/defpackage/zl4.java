@@ -1,0 +1,21 @@
+package defpackage;
+
+import android.os.Bundle;
+
+/* JADX INFO: compiled from: r8-map-id-feb309be28723916b74a2526b1508f8a1f09227099db017fc1624552251bc072 */
+/* JADX INFO: loaded from: classes.dex */
+public interface zl4 {
+    void a();
+
+    void b();
+
+    void c(int i, int i2, long j, int i3);
+
+    void d();
+
+    void f();
+
+    void g(int i, z94 z94Var, long j, int i2);
+
+    void i(Bundle bundle);
+}

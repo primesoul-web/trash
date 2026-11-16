@@ -1,0 +1,20 @@
+{
+  "original_smali_classes": 5652,
+  "rebuilt_smali_classes": 5652,
+  "missing": [],
+  "added": [],
+  "changed": [
+    "androidx/recyclerview/widget/RecyclerView.smali",
+    "c21.smali",
+    "com/facebook/rethinkvision/Bimostitch/StitcherService.smali",
+    "h21.smali",
+    "lp1.smali",
+    "qz0.smali",
+    "t50.smali",
+    "tw0.smali",
+    "vw0.smali",
+    "xo1.smali",
+    "yc4.smali"
+  ],
+  "identical": 5641
+}

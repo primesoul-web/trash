@@ -1,0 +1,339 @@
+{
+  "result": {
+    "_meta": {
+      "provenance": {
+        "untrusted_content": true,
+        "source": "analysis_target"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"evidence_id\":\"ev_ba8a1c2633d30d27952cf504ea85e57afb50bebecf9d989b4fe3f348136c7ffe\",\"subject\":{\"name\":\"base.apk\",\"digest\":{\"sha256\":\"e1156e8d0ff15f79241a2ed98cf6a26c71d39c3c37da439e3a753e4b33ed8d8f\"},\"local_path\":\"/workspace/attachments/e111578f-ce02-4ab3-bee9-f03dbce73199/base.apk\",\"format\":\"apk\",\"architecture\":null},\"provider\":{\"id\":\"jadx\",\"name\":\"JADX headless\",\"version\":\"0.7.1\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis\",\"operation\":\"inspect_android_class\",\"parameters\":{\"path\":\"/workspace/attachments/e111578f-ce02-4ab3-bee9-f03dbce73199/base.apk\",\"class_name\":\"com.facebook.rethinkvision.Bimostitch.StitcherService\"},\"raw_result\":{\"server\":{\"name\":\"rea-jadx-bridge\",\"version\":\"10\"},\"bridge_sha256\":\"f9d6d68eadd3d51a89e2debda359454c20534560080d4438f9b9cfe5a19f0b2e\",\"jar_sha256\":\"6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75\",\"loaded\":{\"state\":\"LOADED\",\"apk_path\":\"/tmp/rea-android-w19K2d/target.apk\",\"class_count\":5524,\"resource_count\":681,\"threads\":1,\"resources\":\"full\"},\"calls\":[{\"operation\":\"rea_jvm_status\",\"input\":{},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"engine_reported_version\\\":\\\"0.7.1\\\",\\\"available_processors\\\":4,\\\"java_version\\\":\\\"21.0.13\\\",\\\"max_heap_bytes\\\":8589934592,\\\"metadata_scope\\\":\\\"parsed_members\\\"}\"}],\"isError\":false}},{\"operation\":\"get_class_summary\",\"input\":{\"class_name\":\"com.facebook.rethinkvision.Bimostitch.StitcherService\",\"dex_static_values\":true},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"inner_class_count\\\":1,\\\"inner_class_raw_names\\\":[\\\"com.facebook.rethinkvision.Bimostitch.StitcherService$StopServiceReceiver\\\"],\\\"fields\\\":[{\\\"dex_type\\\":\\\"Z\\\",\\\"raw_name\\\":\\\"A\\\",\\\"name\\\":\\\"A\\\",\\\"type\\\":\\\"boolean\\\",\\\"def_pos\\\":0},{\\\"dex_type\\\":\\\"Z\\\",\\\"raw_name\\\":\\\"B\\\",\\\"name\\\":\\\"B\\\",\\\"type\\\":\\\"boolean\\\",\\\"def_pos\\\":0},{\\\"dex_type\\\":\\\"Z\\\",\\\"raw_name\\\":\\\"C\\\",\\\"name\\\":\\\"C\\\",\\\"type\\\":\\\"boolean\\\",\\\"def_pos\\\":0},{\\\"dex_type\\\":\\\"I\\\",\\\"raw_name\\\":\\\"D\\\",\\\"name\\\":\\\"D\\\",\\\"type\\\":\\\"int\\\",\\\"def_pos\\\":0},{\\\"dex_type\\\":\\\"Z\\\",\\\"raw_name\\\":\\\"E\\\",\\\"name\\\":\\\"E\\\",\\\"type\\\":\\\"boolean\\\",\\\"def_pos\\\":0},{\\\"dex_type\\\":\\\"Z\\\",\\\"raw_name\\\":\\\"F\\\",\\\"name\\\":\\\"F\\\",\\\"type\\\":\\\"boolean\\\",\\\"def_pos\\\":0},{\\\"dex_type\\\":\\\"Ljava/util/ArrayDeque;\\\",\\\"raw_name\\\":\\\"G\\\",\\\"name\\\":\\\"G\\\",\\\"type\\\":\\\"java.util.ArrayDeque\\\",\\\"def_pos\\\":0},{\\\"dex_type\\\":\\\"Ljava/util/concurrent/ExecutorService;\\\",\\\"raw_name\\\":\\\"H\\\",\\\"name\\\":\\\"H\\\",\\\"type\\\":\\\"java.util.concurrent.ExecutorService\\\",\\\"def_pos\\\":0},{\\\"dex_type\\\":\\\"I\\\",\\\"raw_name\\\":\\\"h\\\",\\\"name\\\":\\\"h\\\",\\\"type\\\":\\\"int\\\",\\\"def_pos\\\":0},{\\\"dex_type\\\":\\\"I\\\",\\\"raw_name\\\":\\\"i\\\",\\\"name\\\":\\\"i\\\",\\\"type\\\":\\\"int\\\",\\\"def_pos\\\":0},{\\\"dex_type\\\":\\\"D\\\",\\\"raw_name\\\":\\\"j\\\",\\\"name\\\":\\\"j\\\",\\\"type\\\":\\\"double\\\",\\\"def_pos\\\":0},{\\\"dex_type\\\":\\\"D\\\",\\\"raw_name\\\":\\\"k\\\",\\\"name\\\":\\\"k\\\",\\\"type\\\":\\\"double\\\",\\\"def_pos\\\":0},{\\\"dex_type\\\":\\\"D\\\",\\\"raw_name\\\":\\\"l\\\",\\\"name\\\":\\\"l\\\",\\\"type\\\":\\\"double\\\",\\\"def_pos\\\":0},{\\\"dex_type\\\":\\\"D\\\",\\\"raw_name\\\":\\\"m\\\",\\\"name\\\":\\\"m\\\",\\\"type\\\":\\\"double\\\",\\\"def_pos\\\":0},{\\\"dex_type\\\":\\\"D\\\",\\\"raw_name\\\":\\\"n\\\",\\\"name\\\":\\\"n\\\",\\\"type\\\":\\\"double\\\",\\\"def_pos\\\":0},{\\\"dex_type\\\":\\\"D\\\",\\\"raw_name\\\":\\\"o\\\",\\\"name\\\":\\\"o\\\",\\\"type\\\":\\\"double\\\",\\\"def_pos\\\":0},{\\\"dex_type\\\":\\\"D\\\",\\\"raw_name\\\":\\\"p\\\",\\\"name\\\":\\\"p\\\",\\\"type\\\":\\\"double\\\",\\\"def_pos\\\":0},{\\\"dex_type\\\":\\\"D\\\",\\\"raw_name\\\":\\\"q\\\",\\\"name\\\":\\\"q\\\",\\\"type\\\":\\\"double\\\",\\\"def_pos\\\":0},{\\\"dex_type\\\":\\\"D\\\",\\\"raw_name\\\":\\\"r\\\",\\\"name\\\":\\\"r\\\",\\\"type\\\":\\\"double\\\",\\\"def_pos\\\":0},{\\\"dex_type\\\":\\\"D\\\",\\\"raw_name\\\":\\\"s\\\",\\\"name\\\":\\\"s\\\",\\\"type\\\":\\\"double\\\",\\\"def_pos\\\":0},{\\\"dex_type\\\":\\\"D\\\",\\\"raw_name\\\":\\\"t\\\",\\\"name\\\":\\\"t\\\",\\\"type\\\":\\\"double\\\",\\\"def_pos\\\":0},{\\\"dex_type\\\":\\\"D\\\",\\\"raw_name\\\":\\\"u\\\",\\\"name\\\":\\\"u\\\",\\\"type\\\":\\\"double\\\",\\\"def_pos\\\":0},{\\\"dex_type\\\":\\\"Lae0;\\\",\\\"raw_name\\\":\\\"v\\\",\\\"name\\\":\\\"v\\\",\\\"type\\\":\\\"ae0\\\",\\\"def_pos\\\":0},{\\\"dex_type\\\":\\\"Lud0;\\\",\\\"raw_name\\\":\\\"w\\\",\\\"name\\\":\\\"w\\\",\\\"type\\\":\\\"ud0\\\",\\\"def_pos\\\":0},{\\\"dex_type\\\":\\\"Landroid/os/PowerManager$WakeLock;\\\",\\\"raw_name\\\":\\\"x\\\",\\\"name\\\":\\\"x\\\",\\\"type\\\":\\\"android.os.PowerManager$WakeLock\\\",\\\"def_pos\\\":0},{\\\"dex_type\\\":\\\"Landroid/app/PendingIntent;\\\",\\\"raw_name\\\":\\\"y\\\",\\\"name\\\":\\\"y\\\",\\\"type\\\":\\\"android.app.PendingIntent\\\",\\\"def_pos\\\":0},{\\\"dex_type\\\":\\\"Z\\\",\\\"raw_name\\\":\\\"z\\\",\\\"name\\\":\\\"z\\\",\\\"type\\\":\\\"boolean\\\",\\\"def_pos\\\":0}],\\\"methods\\\":[{\\\"dex_descriptor\\\":\\\"()V\\\",\\\"raw_name\\\":\\\"\\\\u003cclinit\\\\u003e\\\",\\\"def_pos\\\":0,\\\"is_constructor\\\":false,\\\"name\\\":\\\"\\\\u003cclinit\\\\u003e\\\",\\\"signature\\\":\\\"\\\\u003cclinit\\\\u003e(): void\\\"},{\\\"dex_descriptor\\\":\\\"()V\\\",\\\"raw_name\\\":\\\"\\\\u003cinit\\\\u003e\\\",\\\"def_pos\\\":0,\\\"is_constructor\\\":true,\\\"name\\\":\\\"\\\\u003cinit\\\\u003e\\\",\\\"signature\\\":\\\"\\\\u003cinit\\\\u003e(): void\\\"},{\\\"dex_descriptor\\\":\\\"()V\\\",\\\"raw_name\\\":\\\"a\\\",\\\"def_pos\\\":0,\\\"is_constructor\\\":false,\\\"name\\\":\\\"a\\\",\\\"signature\\\":\\\"a(): void\\\"},{\\\"dex_descriptor\\\":\\\"(Lr5;)Landroid/app/PendingIntent;\\\",\\\"raw_name\\\":\\\"b\\\",\\\"def_pos\\\":0,\\\"is_constructor\\\":false,\\\"name\\\":\\\"b\\\",\\\"signature\\\":\\\"b(r5): android.app.PendingIntent\\\"},{\\\"dex_descriptor\\\":\\\"(Lbu0;)V\\\",\\\"raw_name\\\":\\\"c\\\",\\\"def_pos\\\":0,\\\"is_constructor\\\":false,\\\"name\\\":\\\"c\\\",\\\"signature\\\":\\\"c(bu0): void\\\"},{\\\"dex_descriptor\\\":\\\"(DIILjava/lang/String;)V\\\",\\\"raw_name\\\":\\\"d\\\",\\\"def_pos\\\":0,\\\"is_constructor\\\":false,\\\"name\\\":\\\"d\\\",\\\"signature\\\":\\\"d(double, int, int, java.lang.String): void\\\"},{\\\"dex_descriptor\\\":\\\"(Landroid/content/Intent;)Landroid/os/IBinder;\\\",\\\"raw_name\\\":\\\"onBind\\\",\\\"def_pos\\\":0,\\\"is_constructor\\\":false,\\\"name\\\":\\\"onBind\\\",\\\"signature\\\":\\\"onBind(android.content.Intent): android.os.IBinder\\\"},{\\\"dex_descriptor\\\":\\\"()V\\\",\\\"raw_name\\\":\\\"onDestroy\\\",\\\"def_pos\\\":0,\\\"is_constructor\\\":false,\\\"name\\\":\\\"onDestroy\\\",\\\"signature\\\":\\\"onDestroy(): void\\\"},{\\\"dex_descriptor\\\":\\\"(Landroid/content/Intent;II)I\\\",\\\"raw_name\\\":\\\"onStartCommand\\\",\\\"def_pos\\\":0,\\\"is_constructor\\\":false,\\\"name\\\":\\\"onStartCommand\\\",\\\"signature\\\":\\\"onStartCommand(android.content.Intent, int, int): int\\\"},{\\\"dex_descriptor\\\":\\\"(Ljava/lang/String;[I)Z\\\",\\\"raw_name\\\":\\\"on_preview_state_saved\\\",\\\"def_pos\\\":0,\\\"is_constructor\\\":false,\\\"name\\\":\\\"on_preview_state_saved\\\",\\\"signature\\\":\\\"on_preview_state_saved(java.lang.String, int[]): boolean\\\"},{\\\"dex_descriptor\\\":\\\"(IIII)Z\\\",\\\"raw_name\\\":\\\"on_progress\\\",\\\"def_pos\\\":0,\\\"is_constructor\\\":false,\\\"name\\\":\\\"on_progress\\\",\\\"signature\\\":\\\"on_progress(int, int, int, int): boolean\\\"},{\\\"dex_descriptor\\\":\\\"(II)Z\\\",\\\"raw_name\\\":\\\"panoramas_recognized\\\",\\\"def_pos\\\":0,\\\"is_constructor\\\":false,\\\"name\\\":\\\"panoramas_recognized\\\",\\\"signature\\\":\\\"panoramas_recognized(int, int): boolean\\\"}],\\\"full_name\\\":\\\"com.facebook.rethinkvision.Bimostitch.StitcherService\\\",\\\"inner_classes\\\":[\\\"com.facebook.rethinkvision.Bimostitch.StitcherService.StopServiceReceiver\\\"],\\\"field_count\\\":27,\\\"method_count\\\":12,\\\"raw_name\\\":\\\"com.facebook.rethinkvision.Bimostitch.StitcherService\\\",\\\"name\\\":\\\"StitcherService\\\"}\"}],\"isError\":false}}]},\"normalized_result\":{\"engine\":{\"name\":\"jadx-headless-mcp\",\"version\":\"0.7.1\",\"artifact_sha256\":\"6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75\",\"source_revision\":\"5844800a486d2248fa949b74c9896285f5b54de2\",\"worker_count\":1,\"heap_limit_mib\":8192},\"class_name\":\"com.facebook.rethinkvision.Bimostitch.StitcherService\",\"methods\":[{\"name\":\"<clinit>\",\"reported_signature\":\"<clinit>(): void\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"name\":\"<init>\",\"reported_signature\":\"<init>(): void\",\"overload_index\":0,\"is_constructor\":true,\"dex_descriptor\":\"()V\"},{\"name\":\"a\",\"reported_signature\":\"a(): void\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"name\":\"b\",\"reported_signature\":\"b(r5): android.app.PendingIntent\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Lr5;)Landroid/app/PendingIntent;\"},{\"name\":\"c\",\"reported_signature\":\"c(bu0): void\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Lbu0;)V\"},{\"name\":\"d\",\"reported_signature\":\"d(double, int, int, java.lang.String): void\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(DIILjava/lang/String;)V\"},{\"name\":\"onBind\",\"reported_signature\":\"onBind(android.content.Intent): android.os.IBinder\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/content/Intent;)Landroid/os/IBinder;\"},{\"name\":\"onDestroy\",\"reported_signature\":\"onDestroy(): void\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"()V\"},{\"name\":\"onStartCommand\",\"reported_signature\":\"onStartCommand(android.content.Intent, int, int): int\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Landroid/content/Intent;II)I\"},{\"name\":\"on_preview_state_saved\",\"reported_signature\":\"on_preview_state_saved(java.lang.String, int[]): boolean\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/String;[I)Z\"},{\"name\":\"on_progress\",\"reported_signature\":\"on_progress(int, int, int, int): boolean\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(IIII)Z\"},{\"name\":\"panoramas_recognized\",\"reported_signature\":\"panoramas_recognized(int, int): boolean\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":\"(II)Z\"}],\"fields\":[{\"name\":\"A\",\"reported_type\":\"boolean\",\"dex_static_value\":null},{\"name\":\"B\",\"reported_type\":\"boolean\",\"dex_static_value\":null},{\"name\":\"C\",\"reported_type\":\"boolean\",\"dex_static_value\":null},{\"name\":\"D\",\"reported_type\":\"int\",\"dex_static_value\":null},{\"name\":\"E\",\"reported_type\":\"boolean\",\"dex_static_value\":null},{\"name\":\"F\",\"reported_type\":\"boolean\",\"dex_static_value\":null},{\"name\":\"G\",\"reported_type\":\"java.util.ArrayDeque\",\"dex_static_value\":null},{\"name\":\"H\",\"reported_type\":\"java.util.concurrent.ExecutorService\",\"dex_static_value\":null},{\"name\":\"h\",\"reported_type\":\"int\",\"dex_static_value\":null},{\"name\":\"i\",\"reported_type\":\"int\",\"dex_static_value\":null},{\"name\":\"j\",\"reported_type\":\"double\",\"dex_static_value\":null},{\"name\":\"k\",\"reported_type\":\"double\",\"dex_static_value\":null},{\"name\":\"l\",\"reported_type\":\"double\",\"dex_static_value\":null},{\"name\":\"m\",\"reported_type\":\"double\",\"dex_static_value\":null},{\"name\":\"n\",\"reported_type\":\"double\",\"dex_static_value\":null},{\"name\":\"o\",\"reported_type\":\"double\",\"dex_static_value\":null},{\"name\":\"p\",\"reported_type\":\"double\",\"dex_static_value\":null},{\"name\":\"q\",\"reported_type\":\"double\",\"dex_static_value\":null},{\"name\":\"r\",\"reported_type\":\"double\",\"dex_static_value\":null},{\"name\":\"s\",\"reported_type\":\"double\",\"dex_static_value\":null},{\"name\":\"t\",\"reported_type\":\"double\",\"dex_static_value\":null},{\"name\":\"u\",\"reported_type\":\"double\",\"dex_static_value\":null},{\"name\":\"v\",\"reported_type\":\"ae0\",\"dex_static_value\":null},{\"name\":\"w\",\"reported_type\":\"ud0\",\"dex_static_value\":null},{\"name\":\"x\",\"reported_type\":\"android.os.PowerManager$WakeLock\",\"dex_static_value\":null},{\"name\":\"y\",\"reported_type\":\"android.app.PendingIntent\",\"dex_static_value\":null},{\"name\":\"z\",\"reported_type\":\"boolean\",\"dex_static_value\":null}],\"inner_classes\":[\"com.facebook.rethinkvision.Bimostitch.StitcherService.StopServiceReceiver\"]},\"confidence\":\"observed\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Static decompiler observations do not establish runtime behavior; the APK is never executed.\",\"Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.\",\"Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.\",\"Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.\",\"Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.\"],\"relationship_coverage\":null,\"locations\":[],\"evidence_links\":[]}"
+      }
+    ],
+    "structuredContent": {
+      "evidence_id": "ev_ba8a1c2633d30d27952cf504ea85e57afb50bebecf9d989b4fe3f348136c7ffe",
+      "subject": {
+        "name": "base.apk",
+        "digest": {
+          "sha256": "e1156e8d0ff15f79241a2ed98cf6a26c71d39c3c37da439e3a753e4b33ed8d8f"
+        },
+        "local_path": "/workspace/attachments/e111578f-ce02-4ab3-bee9-f03dbce73199/base.apk",
+        "format": "apk",
+        "architecture": null
+      },
+      "provider": {
+        "id": "jadx",
+        "name": "JADX headless",
+        "version": "0.7.1"
+      },
+      "analysis_profile": null,
+      "predicate_type": "rea.analysis",
+      "operation": "inspect_android_class",
+      "parameters": {
+        "path": "/workspace/attachments/e111578f-ce02-4ab3-bee9-f03dbce73199/base.apk",
+        "class_name": "com.facebook.rethinkvision.Bimostitch.StitcherService"
+      },
+      "raw_result": {
+        "server": {
+          "name": "rea-jadx-bridge",
+          "version": "10"
+        },
+        "bridge_sha256": "f9d6d68eadd3d51a89e2debda359454c20534560080d4438f9b9cfe5a19f0b2e",
+        "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "loaded": {
+          "state": "LOADED",
+          "apk_path": "/tmp/rea-android-w19K2d/target.apk",
+          "class_count": 5524,
+          "resource_count": 681,
+          "threads": 1,
+          "resources": "full"
+        },
+        "calls": [
+          {
+            "operation": "rea_jvm_status",
+            "input": {},
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":4,\"java_version\":\"21.0.13\",\"max_heap_bytes\":8589934592,\"metadata_scope\":\"parsed_members\"}"
+                }
+              ],
+              "isError": false
+            }
+          },
+          {
+            "operation": "get_class_summary",
+            "input": {
+              "class_name": "com.facebook.rethinkvision.Bimostitch.StitcherService",
+              "dex_static_values": true
+            },
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"inner_class_count\":1,\"inner_class_raw_names\":[\"com.facebook.rethinkvision.Bimostitch.StitcherService$StopServiceReceiver\"],\"fields\":[{\"dex_type\":\"Z\",\"raw_name\":\"A\",\"name\":\"A\",\"type\":\"boolean\",\"def_pos\":0},{\"dex_type\":\"Z\",\"raw_name\":\"B\",\"name\":\"B\",\"type\":\"boolean\",\"def_pos\":0},{\"dex_type\":\"Z\",\"raw_name\":\"C\",\"name\":\"C\",\"type\":\"boolean\",\"def_pos\":0},{\"dex_type\":\"I\",\"raw_name\":\"D\",\"name\":\"D\",\"type\":\"int\",\"def_pos\":0},{\"dex_type\":\"Z\",\"raw_name\":\"E\",\"name\":\"E\",\"type\":\"boolean\",\"def_pos\":0},{\"dex_type\":\"Z\",\"raw_name\":\"F\",\"name\":\"F\",\"type\":\"boolean\",\"def_pos\":0},{\"dex_type\":\"Ljava/util/ArrayDeque;\",\"raw_name\":\"G\",\"name\":\"G\",\"type\":\"java.util.ArrayDeque\",\"def_pos\":0},{\"dex_type\":\"Ljava/util/concurrent/ExecutorService;\",\"raw_name\":\"H\",\"name\":\"H\",\"type\":\"java.util.concurrent.ExecutorService\",\"def_pos\":0},{\"dex_type\":\"I\",\"raw_name\":\"h\",\"name\":\"h\",\"type\":\"int\",\"def_pos\":0},{\"dex_type\":\"I\",\"raw_name\":\"i\",\"name\":\"i\",\"type\":\"int\",\"def_pos\":0},{\"dex_type\":\"D\",\"raw_name\":\"j\",\"name\":\"j\",\"type\":\"double\",\"def_pos\":0},{\"dex_type\":\"D\",\"raw_name\":\"k\",\"name\":\"k\",\"type\":\"double\",\"def_pos\":0},{\"dex_type\":\"D\",\"raw_name\":\"l\",\"name\":\"l\",\"type\":\"double\",\"def_pos\":0},{\"dex_type\":\"D\",\"raw_name\":\"m\",\"name\":\"m\",\"type\":\"double\",\"def_pos\":0},{\"dex_type\":\"D\",\"raw_name\":\"n\",\"name\":\"n\",\"type\":\"double\",\"def_pos\":0},{\"dex_type\":\"D\",\"raw_name\":\"o\",\"name\":\"o\",\"type\":\"double\",\"def_pos\":0},{\"dex_type\":\"D\",\"raw_name\":\"p\",\"name\":\"p\",\"type\":\"double\",\"def_pos\":0},{\"dex_type\":\"D\",\"raw_name\":\"q\",\"name\":\"q\",\"type\":\"double\",\"def_pos\":0},{\"dex_type\":\"D\",\"raw_name\":\"r\",\"name\":\"r\",\"type\":\"double\",\"def_pos\":0},{\"dex_type\":\"D\",\"raw_name\":\"s\",\"name\":\"s\",\"type\":\"double\",\"def_pos\":0},{\"dex_type\":\"D\",\"raw_name\":\"t\",\"name\":\"t\",\"type\":\"double\",\"def_pos\":0},{\"dex_type\":\"D\",\"raw_name\":\"u\",\"name\":\"u\",\"type\":\"double\",\"def_pos\":0},{\"dex_type\":\"Lae0;\",\"raw_name\":\"v\",\"name\":\"v\",\"type\":\"ae0\",\"def_pos\":0},{\"dex_type\":\"Lud0;\",\"raw_name\":\"w\",\"name\":\"w\",\"type\":\"ud0\",\"def_pos\":0},{\"dex_type\":\"Landroid/os/PowerManager$WakeLock;\",\"raw_name\":\"x\",\"name\":\"x\",\"type\":\"android.os.PowerManager$WakeLock\",\"def_pos\":0},{\"dex_type\":\"Landroid/app/PendingIntent;\",\"raw_name\":\"y\",\"name\":\"y\",\"type\":\"android.app.PendingIntent\",\"def_pos\":0},{\"dex_type\":\"Z\",\"raw_name\":\"z\",\"name\":\"z\",\"type\":\"boolean\",\"def_pos\":0}],\"methods\":[{\"dex_descriptor\":\"()V\",\"raw_name\":\"\\u003cclinit\\u003e\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"\\u003cclinit\\u003e\",\"signature\":\"\\u003cclinit\\u003e(): void\"},{\"dex_descriptor\":\"()V\",\"raw_name\":\"\\u003cinit\\u003e\",\"def_pos\":0,\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"signature\":\"\\u003cinit\\u003e(): void\"},{\"dex_descriptor\":\"()V\",\"raw_name\":\"a\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"a\",\"signature\":\"a(): void\"},{\"dex_descriptor\":\"(Lr5;)Landroid/app/PendingIntent;\",\"raw_name\":\"b\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"b\",\"signature\":\"b(r5): android.app.PendingIntent\"},{\"dex_descriptor\":\"(Lbu0;)V\",\"raw_name\":\"c\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"c\",\"signature\":\"c(bu0): void\"},{\"dex_descriptor\":\"(DIILjava/lang/String;)V\",\"raw_name\":\"d\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"d\",\"signature\":\"d(double, int, int, java.lang.String): void\"},{\"dex_descriptor\":\"(Landroid/content/Intent;)Landroid/os/IBinder;\",\"raw_name\":\"onBind\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"onBind\",\"signature\":\"onBind(android.content.Intent): android.os.IBinder\"},{\"dex_descriptor\":\"()V\",\"raw_name\":\"onDestroy\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"onDestroy\",\"signature\":\"onDestroy(): void\"},{\"dex_descriptor\":\"(Landroid/content/Intent;II)I\",\"raw_name\":\"onStartCommand\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"onStartCommand\",\"signature\":\"onStartCommand(android.content.Intent, int, int): int\"},{\"dex_descriptor\":\"(Ljava/lang/String;[I)Z\",\"raw_name\":\"on_preview_state_saved\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"on_preview_state_saved\",\"signature\":\"on_preview_state_saved(java.lang.String, int[]): boolean\"},{\"dex_descriptor\":\"(IIII)Z\",\"raw_name\":\"on_progress\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"on_progress\",\"signature\":\"on_progress(int, int, int, int): boolean\"},{\"dex_descriptor\":\"(II)Z\",\"raw_name\":\"panoramas_recognized\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"panoramas_recognized\",\"signature\":\"panoramas_recognized(int, int): boolean\"}],\"full_name\":\"com.facebook.rethinkvision.Bimostitch.StitcherService\",\"inner_classes\":[\"com.facebook.rethinkvision.Bimostitch.StitcherService.StopServiceReceiver\"],\"field_count\":27,\"method_count\":12,\"raw_name\":\"com.facebook.rethinkvision.Bimostitch.StitcherService\",\"name\":\"StitcherService\"}"
+                }
+              ],
+              "isError": false
+            }
+          }
+        ]
+      },
+      "normalized_result": {
+        "engine": {
+          "name": "jadx-headless-mcp",
+          "version": "0.7.1",
+          "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+          "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+          "worker_count": 1,
+          "heap_limit_mib": 8192
+        },
+        "class_name": "com.facebook.rethinkvision.Bimostitch.StitcherService",
+        "methods": [
+          {
+            "name": "<clinit>",
+            "reported_signature": "<clinit>(): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()V"
+          },
+          {
+            "name": "<init>",
+            "reported_signature": "<init>(): void",
+            "overload_index": 0,
+            "is_constructor": true,
+            "dex_descriptor": "()V"
+          },
+          {
+            "name": "a",
+            "reported_signature": "a(): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()V"
+          },
+          {
+            "name": "b",
+            "reported_signature": "b(r5): android.app.PendingIntent",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Lr5;)Landroid/app/PendingIntent;"
+          },
+          {
+            "name": "c",
+            "reported_signature": "c(bu0): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Lbu0;)V"
+          },
+          {
+            "name": "d",
+            "reported_signature": "d(double, int, int, java.lang.String): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(DIILjava/lang/String;)V"
+          },
+          {
+            "name": "onBind",
+            "reported_signature": "onBind(android.content.Intent): android.os.IBinder",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Landroid/content/Intent;)Landroid/os/IBinder;"
+          },
+          {
+            "name": "onDestroy",
+            "reported_signature": "onDestroy(): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()V"
+          },
+          {
+            "name": "onStartCommand",
+            "reported_signature": "onStartCommand(android.content.Intent, int, int): int",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Landroid/content/Intent;II)I"
+          },
+          {
+            "name": "on_preview_state_saved",
+            "reported_signature": "on_preview_state_saved(java.lang.String, int[]): boolean",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/lang/String;[I)Z"
+          },
+          {
+            "name": "on_progress",
+            "reported_signature": "on_progress(int, int, int, int): boolean",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(IIII)Z"
+          },
+          {
+            "name": "panoramas_recognized",
+            "reported_signature": "panoramas_recognized(int, int): boolean",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(II)Z"
+          }
+        ],
+        "fields": [
+          {
+            "name": "A",
+            "reported_type": "boolean",
+            "dex_static_value": null
+          },
+          {
+            "name": "B",
+            "reported_type": "boolean",
+            "dex_static_value": null
+          },
+          {
+            "name": "C",
+            "reported_type": "boolean",
+            "dex_static_value": null
+          },
+          {
+            "name": "D",
+            "reported_type": "int",
+            "dex_static_value": null
+          },
+          {
+            "name": "E",
+            "reported_type": "boolean",
+            "dex_static_value": null
+          },
+          {
+            "name": "F",
+            "reported_type": "boolean",
+            "dex_static_value": null
+          },
+          {
+            "name": "G",
+            "reported_type": "java.util.ArrayDeque",
+            "dex_static_value": null
+          },
+          {
+            "name": "H",
+            "reported_type": "java.util.concurrent.ExecutorService",
+            "dex_static_value": null
+          },
+          {
+            "name": "h",
+            "reported_type": "int",
+            "dex_static_value": null
+          },
+          {
+            "name": "i",
+            "reported_type": "int",
+            "dex_static_value": null
+          },
+          {
+            "name": "j",
+            "reported_type": "double",
+            "dex_static_value": null
+          },
+          {
+            "name": "k",
+            "reported_type": "double",
+            "dex_static_value": null
+          },
+          {
+            "name": "l",
+            "reported_type": "double",
+            "dex_static_value": null
+          },
+          {
+            "name": "m",
+            "reported_type": "double",
+            "dex_static_value": null
+          },
+          {
+            "name": "n",
+            "reported_type": "double",
+            "dex_static_value": null
+          },
+          {
+            "name": "o",
+            "reported_type": "double",
+            "dex_static_value": null
+          },
+          {
+            "name": "p",
+            "reported_type": "double",
+            "dex_static_value": null
+          },
+          {
+            "name": "q",
+            "reported_type": "double",
+            "dex_static_value": null
+          },
+          {
+            "name": "r",
+            "reported_type": "double",
+            "dex_static_value": null
+          },
+          {
+            "name": "s",
+            "reported_type": "double",
+            "dex_static_value": null
+          },
+          {
+            "name": "t",
+            "reported_type": "double",
+            "dex_static_value": null
+          },
+          {
+            "name": "u",
+            "reported_type": "double",
+            "dex_static_value": null
+          },
+          {
+            "name": "v",
+            "reported_type": "ae0",
+            "dex_static_value": null
+          },
+          {
+            "name": "w",
+            "reported_type": "ud0",
+            "dex_static_value": null
+          },
+          {
+            "name": "x",
+            "reported_type": "android.os.PowerManager$WakeLock",
+            "dex_static_value": null
+          },
+          {
+            "name": "y",
+            "reported_type": "android.app.PendingIntent",
+            "dex_static_value": null
+          },
+          {
+            "name": "z",
+            "reported_type": "boolean",
+            "dex_static_value": null
+          }
+        ],
+        "inner_classes": [
+          "com.facebook.rethinkvision.Bimostitch.StitcherService.StopServiceReceiver"
+        ]
+      },
+      "confidence": "observed",
+      "authority": "shipped-artifact",
+      "environment": null,
+      "limitations": [
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture."
+      ],
+      "relationship_coverage": null,
+      "locations": [],
+      "evidence_links": []
+    }
+  },
+  "jsonrpc": "2.0",
+  "id": 7
+}

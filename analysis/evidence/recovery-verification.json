@@ -1,0 +1,43 @@
+{
+  "original_sha256": "e1156e8d0ff15f79241a2ed98cf6a26c71d39c3c37da439e3a753e4b33ed8d8f",
+  "rebuilt_sha256": "7113754d48aa860a8ac70632b333eb756de6fd09941286e5e200e447b6f45171",
+  "original_entries": 681,
+  "rebuilt_entries": 683,
+  "added_entries": [
+    "META-INF/MANIFEST.MF",
+    "META-INF/RECOVERY.RSA",
+    "META-INF/RECOVERY.SF"
+  ],
+  "removed_entries": [
+    "stamp-cert-sha256"
+  ],
+  "changed_entries": [
+    "classes.dex"
+  ],
+  "original_dex_class_defs": 5652,
+  "rebuilt_dex_class_defs": 5652,
+  "native_library_entries": [],
+  "java_files": 5522,
+  "smali_files": 5652,
+  "roundtrip": {
+    "classes": 5652,
+    "text_identical_classes": 5641,
+    "default_static_initializer_only_differences": [
+      "androidx/recyclerview/widget/RecyclerView.smali",
+      "c21.smali",
+      "com/facebook/rethinkvision/Bimostitch/StitcherService.smali",
+      "h21.smali",
+      "lp1.smali",
+      "qz0.smali",
+      "t50.smali",
+      "tw0.smali",
+      "vw0.smali",
+      "xo1.smali",
+      "yc4.smali"
+    ],
+    "non_equivalent_files": [],
+    "instruction_and_declaration_match_after_default_normalization": true
+  },
+  "archive_and_preservation_checks": "passed",
+  "runtime_tests": "not run: required ABI/density splits and native library absent"
+}

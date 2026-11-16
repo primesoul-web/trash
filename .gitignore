@@ -1,0 +1,8 @@
+/.tools/
+/.build/
+*.p12
+*.keystore
+*.idsig
+__pycache__/
+/sources/apktool/build/
+/sources/apktool/dist/

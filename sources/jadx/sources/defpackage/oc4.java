@@ -1,0 +1,37 @@
+package defpackage;
+
+/* JADX INFO: compiled from: r8-map-id-feb309be28723916b74a2526b1508f8a1f09227099db017fc1624552251bc072 */
+/* JADX INFO: loaded from: classes.dex */
+public final class oc4 extends xh4 {
+    private static final oc4 zzb;
+    private int zzd;
+    private int zze;
+    private int zzf;
+
+    static {
+        oc4 oc4Var = new oc4();
+        zzb = oc4Var;
+        xh4.l(oc4.class, oc4Var);
+    }
+
+    @Override // defpackage.xh4
+    public final Object f(int i) {
+        int i2 = i - 1;
+        if (i2 == 0) {
+            return (byte) 1;
+        }
+        if (i2 == 2) {
+            return new fj4(zzb, "\u0004\u0002\u0000\u0001\u0001\u0002\u0002\u0000\u0000\u0000\u0001᠌\u0000\u0002᠌\u0001", new Object[]{"zzd", "zze", vq.G, "zzf", n00.E});
+        }
+        if (i2 == 3) {
+            return new oc4();
+        }
+        if (i2 == 4) {
+            return new wv3(zzb);
+        }
+        if (i2 == 5) {
+            return zzb;
+        }
+        throw null;
+    }
+}

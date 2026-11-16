@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="0x7f0800b2"
+        android:id="@+id/Merge"
+        android:title="@string/merge"
+        android:showAsAction="ifRoom"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/Select_all"
+        android:title="@string/select_all"
+        android:showAsAction="never"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/Deselect_all"
+        android:title="@string/deselect_all"
+        android:showAsAction="never"
+        app:showAsAction="never"/>
+</menu>

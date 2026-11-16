@@ -1,0 +1,166 @@
+{
+  "result": {
+    "_meta": {
+      "provenance": {
+        "untrusted_content": true,
+        "source": "analysis_target"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"evidence_id\":\"ev_ffd45de5a833fec8492def1f4008443f01b94756f5a9b111e32167da6f189095\",\"subject\":{\"name\":\"base.apk\",\"digest\":{\"sha256\":\"e1156e8d0ff15f79241a2ed98cf6a26c71d39c3c37da439e3a753e4b33ed8d8f\"},\"local_path\":\"/workspace/attachments/e111578f-ce02-4ab3-bee9-f03dbce73199/base.apk\",\"format\":\"apk\",\"architecture\":null},\"provider\":{\"id\":\"rea-analysis-view\",\"name\":\"REA analysis view projection\",\"version\":\"1\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis-view\",\"operation\":\"inspect_analysis_view\",\"parameters\":{\"parent_evidence_id\":\"ev_fdee945505336c0c5b66f80a7652f689b4c43a2a3c48f20fc146644ef65f8a7e\",\"view\":{\"kind\":\"summary\"}},\"raw_result\":null,\"normalized_result\":{\"kind\":\"summary\",\"view\":{\"kind\":\"summary\"},\"parent_evidence_id\":\"ev_fdee945505336c0c5b66f80a7652f689b4c43a2a3c48f20fc146644ef65f8a7e\",\"parent_operation\":\"inspect_apk_signature\",\"parent_digest\":\"fdee945505336c0c5b66f80a7652f689b4c43a2a3c48f20fc146644ef65f8a7e\",\"view_digest\":\"2cd5ae216d8af1232244952acd80f30d6882dbe75756958aeaa0f585a085368a\",\"artifact\":{\"path\":\"/workspace/attachments/e111578f-ce02-4ab3-bee9-f03dbce73199/base.apk\",\"sha256\":\"e1156e8d0ff15f79241a2ed98cf6a26c71d39c3c37da439e3a753e4b33ed8d8f\"},\"coverage\":{\"status\":\"complete-within-view\",\"examined\":1,\"total\":1,\"next_offset\":null,\"exhausted\":true},\"limitations\":[\"4 bytes outside known signing fields were not interpreted; suffixes do not by themselves establish malformed signing.\",\"No signature is verified: signer, rotation-lineage and source-stamp signatures are NOT cryptographically checked, and certificate chains, revocation and authenticity are NOT evaluated. Certificates and lineages are what the APK declares.\",\"Not read: v4 .apk.idsig, verity digests (matches_apk null), and the v1 X-Android-APK-Signed marker, so v1_only cannot distinguish a v1-only APK from one whose v2/v3 block was removed.\",\"Static structural inspection only. No Android code executes, no device or adb is involved, and odex/vdex/oat/cdex are not read.\",\"matches_apk and self_consistent only show that the declared content digest equals the digest of the current bytes. This is not a signature verification: anyone who changes the bytes can recompute the digest and write it into the signed data. SHA-256 identifies the exact bytes, not the producer.\",\"v1 signers are what each signature block's outer PKCS#7 SignedData declares. Signer unsigned attributes, including nested signatures and timestamps, are not decoded; signatures, the .SF and MANIFEST.MF digests and entry coverage are NOT verified.\"],\"unknowns\":[\"Declared signer and rotation identities are unverified; authenticity and v1 entry coverage remain unknown.\"],\"summary\":{\"artifact\":{\"path\":\"/workspace/attachments/e111578f-ce02-4ab3-bee9-f03dbce73199/base.apk\",\"sha256\":\"e1156e8d0ff15f79241a2ed98cf6a26c71d39c3c37da439e3a753e4b33ed8d8f\",\"bytes\":6934672},\"schemes\":{\"v1\":{\"present\":false,\"signers\":0},\"v2\":{\"present\":true,\"signers\":1},\"v3\":{\"present\":true,\"signers\":1},\"v3.1\":{\"present\":false,\"signers\":0}},\"signers\":[{\"id\":\"apk:e1156e8d0ff15f79241a2ed98cf6a26c71d39c3c37da439e3a753e4b33ed8d8f:v2:signer:0\",\"scheme\":\"v2\",\"index\":0,\"certificate_sha256\":\"71a08ca5912c78810701541f3978f7c95bda9998bf33d7d284d2b643bfd65f13\"},{\"id\":\"apk:e1156e8d0ff15f79241a2ed98cf6a26c71d39c3c37da439e3a753e4b33ed8d8f:v3:signer:0\",\"scheme\":\"v3\",\"index\":0,\"certificate_sha256\":\"71a08ca5912c78810701541f3978f7c95bda9998bf33d7d284d2b643bfd65f13\"}],\"counts\":{\"signers\":2,\"digests\":2,\"lineage\":0},\"source_stamp\":{\"present\":true,\"decode_error\":null,\"certificate_sha256\":\"3257d599a49d2c961a471ca9843f59d341a405884583fc087df4237b733bbd6d\"},\"posture\":{\"v1_only\":false,\"schemes_agree_on_signer\":true,\"signer_change_declared_by_rotation\":false,\"v1_signers_match_block_signers\":null,\"rotation_present\":false,\"source_stamp_present\":true,\"strongest_scheme\":\"v3\",\"self_consistent\":true},\"source_coverage\":{\"scope\":\"declared-signing-records\",\"uninterpreted_bytes\":4,\"signer_identity\":\"complete-within-records\",\"lineage_decoding\":\"complete-within-records\",\"signature_verification\":\"not-performed\",\"v1_entry_coverage\":\"unknown\",\"authenticity\":\"unknown\"}}},\"confidence\":\"derived\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"4 bytes outside known signing fields were not interpreted; suffixes do not by themselves establish malformed signing.\",\"No signature is verified: signer, rotation-lineage and source-stamp signatures are NOT cryptographically checked, and certificate chains, revocation and authenticity are NOT evaluated. Certificates and lineages are what the APK declares.\",\"Not read: v4 .apk.idsig, verity digests (matches_apk null), and the v1 X-Android-APK-Signed marker, so v1_only cannot distinguish a v1-only APK from one whose v2/v3 block was removed.\",\"Static structural inspection only. No Android code executes, no device or adb is involved, and odex/vdex/oat/cdex are not read.\",\"matches_apk and self_consistent only show that the declared content digest equals the digest of the current bytes. This is not a signature verification: anyone who changes the bytes can recompute the digest and write it into the signed data. SHA-256 identifies the exact bytes, not the producer.\",\"v1 signers are what each signature block's outer PKCS#7 SignedData declares. Signer unsigned attributes, including nested signatures and timestamps, are not decoded; signatures, the .SF and MANIFEST.MF digests and entry coverage are NOT verified.\"],\"relationship_coverage\":null,\"locations\":[{\"kind\":\"artifact-path\",\"path\":\"/workspace/attachments/e111578f-ce02-4ab3-bee9-f03dbce73199/base.apk\"}],\"evidence_links\":[\"ev_fdee945505336c0c5b66f80a7652f689b4c43a2a3c48f20fc146644ef65f8a7e\"]}"
+      }
+    ],
+    "structuredContent": {
+      "evidence_id": "ev_ffd45de5a833fec8492def1f4008443f01b94756f5a9b111e32167da6f189095",
+      "subject": {
+        "name": "base.apk",
+        "digest": {
+          "sha256": "e1156e8d0ff15f79241a2ed98cf6a26c71d39c3c37da439e3a753e4b33ed8d8f"
+        },
+        "local_path": "/workspace/attachments/e111578f-ce02-4ab3-bee9-f03dbce73199/base.apk",
+        "format": "apk",
+        "architecture": null
+      },
+      "provider": {
+        "id": "rea-analysis-view",
+        "name": "REA analysis view projection",
+        "version": "1"
+      },
+      "analysis_profile": null,
+      "predicate_type": "rea.analysis-view",
+      "operation": "inspect_analysis_view",
+      "parameters": {
+        "parent_evidence_id": "ev_fdee945505336c0c5b66f80a7652f689b4c43a2a3c48f20fc146644ef65f8a7e",
+        "view": {
+          "kind": "summary"
+        }
+      },
+      "raw_result": null,
+      "normalized_result": {
+        "kind": "summary",
+        "view": {
+          "kind": "summary"
+        },
+        "parent_evidence_id": "ev_fdee945505336c0c5b66f80a7652f689b4c43a2a3c48f20fc146644ef65f8a7e",
+        "parent_operation": "inspect_apk_signature",
+        "parent_digest": "fdee945505336c0c5b66f80a7652f689b4c43a2a3c48f20fc146644ef65f8a7e",
+        "view_digest": "2cd5ae216d8af1232244952acd80f30d6882dbe75756958aeaa0f585a085368a",
+        "artifact": {
+          "path": "/workspace/attachments/e111578f-ce02-4ab3-bee9-f03dbce73199/base.apk",
+          "sha256": "e1156e8d0ff15f79241a2ed98cf6a26c71d39c3c37da439e3a753e4b33ed8d8f"
+        },
+        "coverage": {
+          "status": "complete-within-view",
+          "examined": 1,
+          "total": 1,
+          "next_offset": null,
+          "exhausted": true
+        },
+        "limitations": [
+          "4 bytes outside known signing fields were not interpreted; suffixes do not by themselves establish malformed signing.",
+          "No signature is verified: signer, rotation-lineage and source-stamp signatures are NOT cryptographically checked, and certificate chains, revocation and authenticity are NOT evaluated. Certificates and lineages are what the APK declares.",
+          "Not read: v4 .apk.idsig, verity digests (matches_apk null), and the v1 X-Android-APK-Signed marker, so v1_only cannot distinguish a v1-only APK from one whose v2/v3 block was removed.",
+          "Static structural inspection only. No Android code executes, no device or adb is involved, and odex/vdex/oat/cdex are not read.",
+          "matches_apk and self_consistent only show that the declared content digest equals the digest of the current bytes. This is not a signature verification: anyone who changes the bytes can recompute the digest and write it into the signed data. SHA-256 identifies the exact bytes, not the producer.",
+          "v1 signers are what each signature block's outer PKCS#7 SignedData declares. Signer unsigned attributes, including nested signatures and timestamps, are not decoded; signatures, the .SF and MANIFEST.MF digests and entry coverage are NOT verified."
+        ],
+        "unknowns": [
+          "Declared signer and rotation identities are unverified; authenticity and v1 entry coverage remain unknown."
+        ],
+        "summary": {
+          "artifact": {
+            "path": "/workspace/attachments/e111578f-ce02-4ab3-bee9-f03dbce73199/base.apk",
+            "sha256": "e1156e8d0ff15f79241a2ed98cf6a26c71d39c3c37da439e3a753e4b33ed8d8f",
+            "bytes": 6934672
+          },
+          "schemes": {
+            "v1": {
+              "present": false,
+              "signers": 0
+            },
+            "v2": {
+              "present": true,
+              "signers": 1
+            },
+            "v3": {
+              "present": true,
+              "signers": 1
+            },
+            "v3.1": {
+              "present": false,
+              "signers": 0
+            }
+          },
+          "signers": [
+            {
+              "id": "apk:e1156e8d0ff15f79241a2ed98cf6a26c71d39c3c37da439e3a753e4b33ed8d8f:v2:signer:0",
+              "scheme": "v2",
+              "index": 0,
+              "certificate_sha256": "71a08ca5912c78810701541f3978f7c95bda9998bf33d7d284d2b643bfd65f13"
+            },
+            {
+              "id": "apk:e1156e8d0ff15f79241a2ed98cf6a26c71d39c3c37da439e3a753e4b33ed8d8f:v3:signer:0",
+              "scheme": "v3",
+              "index": 0,
+              "certificate_sha256": "71a08ca5912c78810701541f3978f7c95bda9998bf33d7d284d2b643bfd65f13"
+            }
+          ],
+          "counts": {
+            "signers": 2,
+            "digests": 2,
+            "lineage": 0
+          },
+          "source_stamp": {
+            "present": true,
+            "decode_error": null,
+            "certificate_sha256": "3257d599a49d2c961a471ca9843f59d341a405884583fc087df4237b733bbd6d"
+          },
+          "posture": {
+            "v1_only": false,
+            "schemes_agree_on_signer": true,
+            "signer_change_declared_by_rotation": false,
+            "v1_signers_match_block_signers": null,
+            "rotation_present": false,
+            "source_stamp_present": true,
+            "strongest_scheme": "v3",
+            "self_consistent": true
+          },
+          "source_coverage": {
+            "scope": "declared-signing-records",
+            "uninterpreted_bytes": 4,
+            "signer_identity": "complete-within-records",
+            "lineage_decoding": "complete-within-records",
+            "signature_verification": "not-performed",
+            "v1_entry_coverage": "unknown",
+            "authenticity": "unknown"
+          }
+        }
+      },
+      "confidence": "derived",
+      "authority": "shipped-artifact",
+      "environment": null,
+      "limitations": [
+        "4 bytes outside known signing fields were not interpreted; suffixes do not by themselves establish malformed signing.",
+        "No signature is verified: signer, rotation-lineage and source-stamp signatures are NOT cryptographically checked, and certificate chains, revocation and authenticity are NOT evaluated. Certificates and lineages are what the APK declares.",
+        "Not read: v4 .apk.idsig, verity digests (matches_apk null), and the v1 X-Android-APK-Signed marker, so v1_only cannot distinguish a v1-only APK from one whose v2/v3 block was removed.",
+        "Static structural inspection only. No Android code executes, no device or adb is involved, and odex/vdex/oat/cdex are not read.",
+        "matches_apk and self_consistent only show that the declared content digest equals the digest of the current bytes. This is not a signature verification: anyone who changes the bytes can recompute the digest and write it into the signed data. SHA-256 identifies the exact bytes, not the producer.",
+        "v1 signers are what each signature block's outer PKCS#7 SignedData declares. Signer unsigned attributes, including nested signatures and timestamps, are not decoded; signatures, the .SF and MANIFEST.MF digests and entry coverage are NOT verified."
+      ],
+      "relationship_coverage": null,
+      "locations": [
+        {
+          "kind": "artifact-path",
+          "path": "/workspace/attachments/e111578f-ce02-4ab3-bee9-f03dbce73199/base.apk"
+        }
+      ],
+      "evidence_links": [
+        "ev_fdee945505336c0c5b66f80a7652f689b4c43a2a3c48f20fc146644ef65f8a7e"
+      ]
+    }
+  },
+  "jsonrpc": "2.0",
+  "id": 9
+}
